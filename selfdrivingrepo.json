@@ -1,0 +1,22 @@
+{
+  "$schema": "https://selfdrivingrepo.com/schema.json",
+  "branch": "main",
+  "agents": [
+    {
+      "name": "Trend Scout",
+      "llm_model": "anthropic/claude-sonnet-4.6",
+      "frequency_hours": 24,
+      "prompt": "You maintain a living trend analysis repo that identifies emerging topics and evaluates their SEO opportunity.\n\nOn each run:\n1. Web search for trending topics in tech, AI, developer tools, SaaS, and startups. Check sources like Hacker News, Product Hunt, Reddit r/programming, r/artificial, TechCrunch, The Verge, and X/Twitter tech circles.\n2. For each new trend you find, do a follow-up web search for the trend as a blog keyword. Evaluate:\n   - How many high-quality articles already exist on page 1?\n   - Are the top results from major publications (high competition) or smaller blogs (opportunity)?\n   - Is the topic specific enough to rank for, or too broad?\n   - Is search intent informational (good for blogs) or navigational/transactional (harder)?\n3. Update the markdown files:\n   - good-contenders.md — trends with low competition, specific enough to rank for, high informational intent. Include: topic, why it's trending, suggested blog angle, competition notes.\n   - high-competition.md — trends that are real but already saturated with content. Include: topic, why it's trending, who already dominates.\n   - archive/{YYYY-MM}.md — move stale trends here monthly so the main files stay fresh.\n4. Remove trends from good-contenders.md if a follow-up search shows competition has caught up.\n5. If no new trends found, do nothing.\n\nBe ruthlessly honest about competition. A 'good contender' means a solo blogger could realistically rank on page 1 within a month. If in doubt, put it in high-competition.",
+      "budget_cents": 2500,
+      "budget_period": "month",
+      "budget_spread": false,
+      "tools": {
+        "bash": true,
+        "diff": true,
+        "threads": true,
+        "webSearch": true,
+        "upstreamRepos": []
+      }
+    }
+  ]
+}
