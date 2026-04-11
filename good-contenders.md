@@ -1,6 +1,6 @@
 # Good Contenders
 *Trends with low competition, specific enough to rank for, high informational intent.*
-*Last updated: 2026-04-10*
+*Last updated: 2026-04-11*
 
 ---
 
@@ -15,7 +15,7 @@
 - Hacker News thread: 212 comments, but no standalone op-ed or analysis blog post ranking.
 - HBR has "AI Brain Fry" and "AI Doesn't Reduce Work" — but these are paywalled and not on the r/programming angle.
 - Search intent: strongly informational/opinion. Perfect for a developer-audience blog.
-- The topic is now ~8 days old. Ranking window is closing fast — **act within the next 5–7 days**.
+- ⚠️ The topic is now ~9 days old. Ranking window is nearly closed — **this is the last viable day to act** if you want organic traction from the news cycle.
 - Low-to-moderate competition on the analytical angle. High topical authority potential for a developer-focused blog.
 
 ---
@@ -70,24 +70,7 @@
 
 ---
 
-## 5. LinkedIn BrowserGate — What Developers Should Actually Do About Browser Fingerprinting
-
-**Why it's trending:** "BrowserGate" — LinkedIn's covert scanning of 6,222 browser extensions — exploded on Hacker News (1,889 points on April 2), was covered by Ars Technica (April 9), PCMag (April 7), CyberNews (April 7), and led to two class-action lawsuits filed in US District Court in California. Reddit r/webdev, r/europe, r/netsec all have active threads. The technique exposed — probing Chrome extension IDs via publicly accessible resource URLs — is a known browser fingerprinting method that any developer can understand and defend against.
-
-**Suggested blog angle:** *"How LinkedIn's extension scanner actually works — and how to stop it"* — a technical breakdown aimed at developers. Cover the JavaScript injection technique, what extension probing actually does at the DOM level, and what Chrome/Firefox/Brave settings (or alternative profiles) prevent it. Alternatively: *"What BrowserGate teaches developers about browser fingerprinting in 2026."*
-
-**Competition notes:**
-- News outlets (Ars, PCMag, CyberNews, Cybernews) covered the *what* and *who*. None covered the *technical how* for developers or the *practical mitigation* in depth.
-- Medium posts are summary/explainer pieces (not technical breakdowns).
-- LinkedIn's own response (HN thread) is corporate defensive, not technical.
-- The developer-audience angle (how the technique works, how to protect yourself) is unoccupied.
-- Search intent: informational + technical. Strong developer audience.
-- Moderate competition on "LinkedIn browser extension" broadly; low competition on the developer-technical angle.
-- Ranking window: 1–2 weeks before the news cycle fades. Act fast.
-
----
-
-## 6. Running Local LLMs with Ollama + MLX on Apple Silicon — A Developer's Setup Guide
+## 5. Running Local LLMs with Ollama + MLX on Apple Silicon — A Developer's Setup Guide
 
 **Why it's trending:** Ollama 0.19 (released March 30, 2026) switched to Apple's MLX backend on Apple Silicon, delivering ~1.6× faster prefill and ~2× faster generation on M-series chips. Covered by MacRumors, 9to5Mac, AppleInsider. Product Hunt ranked Ollama v0.19 #8 in April. The update specifically benefits users running Claude Code, OpenClaw, and coding agents locally. Apple Silicon Mac owners who were using local LLMs for coding agents suddenly have a meaningfully different experience.
 
@@ -101,3 +84,37 @@
 - Search intent: strongly how-to / informational. Mac developer audience.
 - Low competition on the specific "Ollama MLX Claude Code setup" angle. Good shot at page 1 for long-tail phrases within 2–3 weeks.
 - **Note:** Preview is limited to Qwen3.5-35B-A3B for now (32GB+ RAM required). Scope the post to users who meet this requirement.
+
+---
+
+## 6. Running Claude Code on a Cloud VM — The "Grass" Approach for Laptop-Free Agent Workflows
+
+**Why it's trending:** Product Hunt launched Grass (April 9, 2026, 260 upvotes) — a tool that gives your coding agent a dedicated 24/7 cloud VM so you don't need your laptop open. Built on Daytona compute, it lets developers monitor and steer Claude Code or OpenCode sessions from their phone. The broader concept — offloading your coding agent to persistent cloud infrastructure instead of burning your local CPU/RAM — is just emerging. Related: Addy Osmani (Google) describes GitHub's Jules and Copilot Agent doing the same with async cloud VMs. The idea of "your agent has its own machine" is catching mainstream developer attention.
+
+**Suggested blog angle:** *"Why your coding agent needs its own VM (and how to set one up for free)"* — a practical guide covering: why running Claude Code locally is suboptimal (RAM contention, session loss, laptop tie-up), how persistent cloud VMs change the workflow, how to use Grass or DIY with a Daytona/Hetzner/Fly.io VM, and what "monitor from your phone" actually looks like in practice. Alternative angle: *"The case for running your AI coding agent in the cloud: a solo developer's guide to async coding workflows."*
+
+**Competition notes:**
+- Grass product page (Product Hunt, April 9): describes the product but not a tutorial or conceptual guide.
+- No blog post, tutorial, or developer guide covers the "coding agent on dedicated cloud VM" workflow specifically yet.
+- AppWizzy press release (Feb 2026): covers AI-managed VMs for deployments, not coding agents — different angle.
+- Addy Osmani's Medium post (Dec 2025) mentions async cloud VMs for Jules/Copilot Agent but doesn't cover DIY setup.
+- Search intent: informational + how-to. Developer audience (solo devs, indie hackers, small teams).
+- Very low competition on this specific angle. High opportunity for a 1,500-word practical guide to rank on "coding agent cloud VM," "run Claude Code cloud," or "Grass alternative DIY."
+- Window: topic is 2 days old. Write within 5–7 days before others cover it.
+
+---
+
+## 7. Reviewing AI-Generated Pull Requests — A Senior Engineer's Checklist
+
+**Why it's trending:** An April 2026 survey shows 84% of developers use AI coding tools daily, but only 29% trust what they ship in production. A viral Medium post (April 6, 2026, 19 claps) from a staff engineer details the exact checks he runs on every AI-generated PR before it touches production. Reddit r/vibecoding is full of devs asking how to manage AI output quality. This "trust gap" is the defining pain point for engineering teams in 2026: agents are fast, but no one has a standardized way to validate their output.
+
+**Suggested blog angle:** *"The AI-generated PR review checklist: 7 things senior engineers check before merging agent code"* — a practical, developer-oriented guide with specific checklist items (cache invalidation, database query plans, resource assumptions, failure coverage, blast radius). Real examples, opinionated, written from a production engineering perspective. Alternative angle: *"How to review code when 80% of it wasn't written by a human."*
+
+**Competition notes:**
+- Medium post (Clean Code Journal, Apr 6): covers "5 patterns" in a personal narrative format — good but short (5 min read), no dedicated SEO, paywalled on Stackademic.
+- Vibe coding security checklist (good-contenders #3 above): focuses on *security vulnerabilities*; this entry focuses on *production reliability and operational correctness* — different, complementary angle.
+- No dedicated standalone checklist post exists on "how to review AI-generated PRs" from a senior/staff engineer perspective.
+- Checkmarx and Faros.ai cover AI PR review from a *tooling* angle (buy our product). No developer-first checklist post.
+- Search intent: informational + task-oriented. Strong developer audience.
+- Low competition on the specific senior-engineer / operational-correctness angle. High shareability on LinkedIn and Hacker News.
+- Ranking potential: good within 2–3 weeks on long-tail phrases like "how to review AI generated code pull request" or "AI agent PR review checklist."
