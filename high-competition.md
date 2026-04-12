@@ -1,6 +1,6 @@
 # High Competition
 *Real trends but already saturated with content. Hard for a solo blogger to rank page 1.*
-*Last updated: 2026-04-11*
+*Last updated: 2026-04-12*
 
 ---
 
@@ -236,3 +236,63 @@
 - Reddit r/opensource (active thread)
 
 **Why it's hard to rank:** News cycle ran from April 8–10, accounts are being reinstated, and the story is effectively resolved. BleepingComputer's investigative piece is comprehensive. Windows Central's nuanced take covers the "what actually happened" angle. The window for any new content to get traction has closed.
+
+---
+
+## 15. Cursor 3 Agents Window — Developer Workflow Guide (Previously a Good Contender — Competition Caught Up)
+
+**Why it's trending:** Cursor 3 launched April 2, 2026 with its Agents Window — parallel agent orchestration, worktree isolation, cloud/local handoff, and Design Mode. Product Hunt #10 for April. HN launch day traction. Revenue at $2B ARR. Widely considered the biggest shift in AI-assisted coding workflow since autocomplete.
+
+**Who dominates (as of April 12, 2026):**
+- DataCamp (Apr 8, 2026 — 15-minute comprehensive guide including limitations, known bugs, and pricing — high authority)
+- Digital Applied (Apr 3, 2026 — 8-minute feature walkthrough with worktree examples)
+- Antigravity Lab (Apr 4, 2026 — thorough "Cursor 3 Agents Window vs Antigravity" comparison with code examples)
+- Cursor official blog (cursor.com/blog/cursor-3 and cursor.com/blog/agent-best-practices — primary authority)
+- Cursor community forum (hundreds of threads with real user gotchas)
+- Medium / Alex Wurts (Mar 31, 2026 — parallel agent workflow philosophy)
+- LinkedIn (Shane Spencer post — highly shared launch day breakdown)
+
+**Why it's hard to rank:** DataCamp's comprehensive guide covers the feature overview, limitations (the "hang when window loses focus" bug, error amplification in unstructured multi-agent networks), workflow guidance, and pricing. Cursor's official blog and docs are authoritative. The Antigravity Lab comparison covers the "how does this compare" angle. All meaningful angles are now occupied by high-authority sources. The window for the "I tried it and here's my real workflow" personal guide to rank has effectively closed with DataCamp's depth of coverage.
+
+---
+
+## 16. npm / Open Source Supply Chain Attack Wave — Axios Compromise (North Korea)
+
+**Why it's trending:** On March 31, 2026, North Korean-linked hackers (UNC1069/Sapphire Sleet) compromised the Axios npm package — 100M+ weekly downloads, present in ~80% of cloud/code environments. Malicious versions deployed WAVESHAPER.V2 RAT across Windows/macOS/Linux via a phantom dependency's postinstall script. An estimated 600,000 installs occurred in the 3-hour attack window. Separately, 1,700+ malicious packages spread across npm, PyPI, Go, and Rust via the "Contagious Interview" campaign. The Axios attack followed TeamPCP's weaponization of Trivy, Checkmarx, and LiteLLM.
+
+**Who dominates (as of April 12, 2026):**
+- Google Cloud / GTIG (Mar 31, 2026 — original attribution, YARA rules, technical analysis)
+- Microsoft Security Blog (Apr 1, 2026 — "Mitigating the Axios npm supply chain compromise" — complete remediation guide)
+- Palo Alto Unit 42 (Apr 1/9, 2026 — threat brief with IoCs and mitigation)
+- SANS Institute (Apr 1, 2026 — emergency briefing with attribution confirmation)
+- Huntress (Mar 31, 2026 — detonation timeline, 89-second first infection, full remediation steps)
+- Help Net Security (Apr 1, 2026 — comprehensive attribution and timeline)
+- SecurityWeek (Apr 2, 2026 — attack mechanics and North Korean link)
+- Docker (Apr 6, 2026 — "Defending Your Software Supply Chain: What Every Engineering Team Should Do Now" — architectural defense guide)
+- ArmorCode (Mar 31, 2026 — enterprise detection guide)
+- The Hacker News (Apr 8, 2026 — 1,700 packages across 5 ecosystems)
+- GitHub Blog (supply chain roadmap — npm hardening plan)
+
+**Why it's hard to rank:** Every major security vendor (Google, Microsoft, Palo Alto, Huntress), specialist publication (SecurityWeek, BleepingComputer, HelpNetSecurity, SANS), and infrastructure platform (Docker, GitHub) published thorough post-mortems and remediation guides within days. Docker's April 6 guide covers architectural defense comprehensively. The "practical checklist" angle is occupied by Microsoft's remediation post and GitHub's hardening roadmap. The topic is now 12 days old and the initial wave has passed.
+
+---
+
+## 17. Apple App Store Vibe Coding Crackdown / 84% App Submission Surge
+
+**Why it's trending:** Q1 2026 saw an 84% YoY jump in App Store submissions (235,800 in 3 months), driven by vibe coding tools. Approval times ballooned from 24 hours to 7–30 days. Apple pulled "Anything" and blocked updates for Replit and Vibecode, citing Guideline 2.5.2 (apps may not execute code that changes functionality post-review). The standoff pits Apple's walled-garden control model against vibe coding platforms that generate and execute code dynamically.
+
+**Who dominates (as of April 12, 2026):**
+- The Information (Apr 5, 2026 — original "Vibe Coding Effect" report with Sensor Tower data — paywalled but widely cited)
+- The Next Web (Apr 5, 2026 — thorough analysis including structural problem, developer economics, platform reckoning)
+- Forbes / Josipa Majic Predin (Mar 24/28, 2026 — "App Store Is Flooded With AI Slop")
+- 9to5Mac (Apr 6, 2026 — Apple's AI review team response)
+- CNBC (Mar 31, 2026 — "Apple's crackdown on AI apps puts it wrong side of history")
+- CNET (Apr 9, 2026 — "App Store Guidelines Have Some Vibe Coding Apps in Limbo")
+- Fast Company (Apr 6, 2026 — "Apple app store unexpected phenomenon")
+- Gizmodo (Apr 7, 2026 — surge data and context)
+- Mashable (Apr 1, 2026 — pulled "Anything" from App Store)
+- Business Insider (Mar 29, 2026 — developer approval delay report)
+- Adalo blog (Apr 1, 2026 — practical developer guide on architectural compliance)
+- MindStudio blog (Mar 21, 2026 — "Why Apple Is Blocking Replit" — developer-focused explanation)
+
+**Why it's hard to rank:** Every major tech publication covered the surge and the crackdown. The structural analysis, developer impact, and what-to-do angles are all covered by a combination of mainstream tech press and no-code platform vendor blogs (Adalo, MindStudio) with direct SEO interest. The story is 7–14 days old with no new major development since "Anything" briefly returned April 3 then was pulled again. The developer guide angle is occupied by vendor content marketing.

@@ -1,26 +1,10 @@
 # Good Contenders
 *Trends with low competition, specific enough to rank for, high informational intent.*
-*Last updated: 2026-04-11*
+*Last updated: 2026-04-12*
 
 ---
 
-## 1. The r/programming LLM Ban — What Developer AI Backlash Really Means
-
-**Why it's trending:** On April 2, 2026, r/programming (6.9M members) announced a temporary ban on all LLM-related content. This was covered as news by Tom's Hardware, Yahoo Tech, MSN, and sparked 212 comments on Hacker News. r/rust did the same. Wikipedia banned AI-generated articles the same week. AI fatigue has gone from personal complaints to institutional policy.
-
-**Suggested blog angle:** *"What the r/programming LLM ban tells us about developer sentiment in 2026"* — an analysis piece, not news. Key themes: signal-to-noise ratio problem, the difference between using AI and discussing AI, what this means for developer community culture. Alternative angle: *"AI fatigue is now policy: how developer communities are pushing back against the AI content flood."*
-
-**Competition notes:**
-- News coverage: Tom's Hardware, Yahoo Tech, MSN, YouTube (all news-format, April 3–4, 2026).
-- Hacker News thread: 212 comments, but no standalone op-ed or analysis blog post ranking.
-- HBR has "AI Brain Fry" and "AI Doesn't Reduce Work" — but these are paywalled and not on the r/programming angle.
-- Search intent: strongly informational/opinion. Perfect for a developer-audience blog.
-- ⚠️ The topic is now ~9 days old. Ranking window is nearly closed — **this is the last viable day to act** if you want organic traction from the news cycle.
-- Low-to-moderate competition on the analytical angle. High topical authority potential for a developer-focused blog.
-
----
-
-## 2. Multi-Agent Swarm Orchestration with Claude Code — Practical Patterns
+## 1. Multi-Agent Swarm Orchestration with Claude Code — Practical Patterns
 
 **Why it's trending:** Claude Code's leaked 512k-line source revealed advanced "swarm" orchestration features. Steve Yegge's "Gas Town" platform orchestrates Claude Code swarms. n8n's April 2026 blog calls multi-agent orchestration the defining question of 2026. Microsoft's Copilot Studio just shipped multi-agent GA. Cursor 3 launched its Agents Window on April 2 with parallel agents at its core. The concept of "orchestrator + worker" agent patterns is heating up fast.
 
@@ -35,7 +19,7 @@
 
 ---
 
-## 3. Security Checklist for AI-Generated Code (Vibe Coding Security)
+## 2. Security Checklist for AI-Generated Code (Vibe Coding Security)
 
 **Why it's trending:** Daily.dev reports 45% of AI-generated code contains vulnerabilities. Forbes published "Vibe Coding Has a Massive Security Problem." Pomerium's April 2026 post covers MCP security risks. Developer communities are now waking up to the fact that vibe-coded apps routinely introduce auth flaws, SQL injection, and IDOR vulnerabilities.
 
@@ -52,25 +36,7 @@
 
 ---
 
-## 4. Cursor 3 Agents Window — Real Developer Workflow Guide (Not a Feature Overview)
-
-**Why it's trending:** Cursor 3 launched April 2, 2026 with its Agents Window — a full architectural overhaul to parallel, cloud/local agent orchestration. Product Hunt ranking #10 for April. 542 points on HN launch day. Annualized revenue at $2B. Every developer IDE or AI tool circles this as the biggest shift in coding workflow since autocomplete. Agent users now outnumber Tab autocomplete users 2:1 inside Cursor.
-
-**Suggested blog angle:** *"One week with Cursor 3: what actually works, what breaks, and how to set up parallel agents for a real project"* — a personal workflow post, not a feature summary. Key differentiators: cover the known bugs (agents hang when window loses focus), the RAM usage reality, when to use cloud vs local agents, how worktrees actually work in practice for multi-repo projects. The "developer who tried it and survived" perspective.
-
-**Competition notes:**
-- DataCamp (Apr 8): comprehensive "what is Cursor 3" piece — high authority, but a feature overview, not a workflow guide.
-- eWeek (Apr 6): news-format, no depth.
-- Towards AI / Medium (Apr 7): first impressions, paywalled.
-- Digital Applied (Apr 3): solid guide but covers features, not real-project gotchas.
-- Cursor's own blog: official documentation, not opinionated workflow advice.
-- Gap: nobody has published a *"here's my actual workflow, here's what failed, here's the setup that works"* post for developers already on Cursor 3 who aren't getting good results yet.
-- Search intent: strongly informational + how-to. Developer audience.
-- Low competition on the opinionated practical angle. A 1,500–2,000 word personal guide could rank within 2–3 weeks on "Cursor 3 workflow" or "Cursor 3 parallel agents guide."
-
----
-
-## 5. Running Local LLMs with Ollama + MLX on Apple Silicon — A Developer's Setup Guide
+## 3. Running Local LLMs with Ollama + MLX on Apple Silicon — A Developer's Setup Guide
 
 **Why it's trending:** Ollama 0.19 (released March 30, 2026) switched to Apple's MLX backend on Apple Silicon, delivering ~1.6× faster prefill and ~2× faster generation on M-series chips. Covered by MacRumors, 9to5Mac, AppleInsider. Product Hunt ranked Ollama v0.19 #8 in April. The update specifically benefits users running Claude Code, OpenClaw, and coding agents locally. Apple Silicon Mac owners who were using local LLMs for coding agents suddenly have a meaningfully different experience.
 
@@ -87,7 +53,7 @@
 
 ---
 
-## 6. Running Claude Code on a Cloud VM — The "Grass" Approach for Laptop-Free Agent Workflows
+## 4. Running Claude Code on a Cloud VM — The "Grass" Approach for Laptop-Free Agent Workflows
 
 **Why it's trending:** Product Hunt launched Grass (April 9, 2026, 260 upvotes) — a tool that gives your coding agent a dedicated 24/7 cloud VM so you don't need your laptop open. Built on Daytona compute, it lets developers monitor and steer Claude Code or OpenCode sessions from their phone. The broader concept — offloading your coding agent to persistent cloud infrastructure instead of burning your local CPU/RAM — is just emerging. Related: Addy Osmani (Google) describes GitHub's Jules and Copilot Agent doing the same with async cloud VMs. The idea of "your agent has its own machine" is catching mainstream developer attention.
 
@@ -100,11 +66,11 @@
 - Addy Osmani's Medium post (Dec 2025) mentions async cloud VMs for Jules/Copilot Agent but doesn't cover DIY setup.
 - Search intent: informational + how-to. Developer audience (solo devs, indie hackers, small teams).
 - Very low competition on this specific angle. High opportunity for a 1,500-word practical guide to rank on "coding agent cloud VM," "run Claude Code cloud," or "Grass alternative DIY."
-- Window: topic is 2 days old. Write within 5–7 days before others cover it.
+- Window: topic is ~5 days old. Write within 2–3 days before others cover it.
 
 ---
 
-## 7. Reviewing AI-Generated Pull Requests — A Senior Engineer's Checklist
+## 5. Reviewing AI-Generated Pull Requests — A Senior Engineer's Checklist
 
 **Why it's trending:** An April 2026 survey shows 84% of developers use AI coding tools daily, but only 29% trust what they ship in production. A viral Medium post (April 6, 2026, 19 claps) from a staff engineer details the exact checks he runs on every AI-generated PR before it touches production. Reddit r/vibecoding is full of devs asking how to manage AI output quality. This "trust gap" is the defining pain point for engineering teams in 2026: agents are fast, but no one has a standardized way to validate their output.
 
@@ -118,3 +84,23 @@
 - Search intent: informational + task-oriented. Strong developer audience.
 - Low competition on the specific senior-engineer / operational-correctness angle. High shareability on LinkedIn and Hacker News.
 - Ranking potential: good within 2–3 weeks on long-tail phrases like "how to review AI generated code pull request" or "AI agent PR review checklist."
+
+---
+
+## 6. Claude Code Ultraplan as a Team Planning Gate — The Workflow Nobody Is Writing About
+
+**Why it's trending:** Anthropic shipped `/ultraplan` in beta (April 7, 2026) — featured on Product Hunt April 11 as "Claude Code ultraplan" (#2 that day, 305 upvotes). The feature offloads the planning phase of a coding task to a cloud-based Claude Code session, producing a browser-reviewable plan with inline commenting before a single line of code changes. Rapidly discussed on Reddit r/ClaudeAI (2 days ago) and on Hacker News. Anthropic shipped it alongside "Claude Code Web" at claude.ai/code, signaling a deliberate push toward cloud-first agentic workflows.
+
+**Suggested blog angle:** *"How I use Claude Code Ultraplan as a pre-execution review gate for my team"* — a practical workflow guide, not a feature explainer. Specific focus: how to integrate Ultraplan into a small-team PR process (trigger Ultraplan → review in browser → leave inline comments → approve or revise → execute or kick back to CLI), why it solves the "wall of terminal output" problem for team coordination, what the sharp edges are (research preview limitations, policy churn, GitHub repo requirement), and when it's NOT worth using (small <1-hour tasks). Written from "I've used it for a week on real work" perspective.
+
+**Competition notes:**
+- DevOps.com (Apr 8): explains the feature for DevOps teams — enterprise framing, no real workflow integration steps.
+- Steve Kinney personal blog (Apr 7): honest "I tried it" review — good but solo-developer focused, no team angle.
+- UX Planet / Medium (Apr 7): 6-minute explainer, 1 clap — minimal distribution, no team angle.
+- MindStudio blog (Apr 7): covers token costs and requirements, not workflow integration.
+- YouTube (multiple Apr 7–8 tutorials): feature walkthrough videos, not blog-format or team-workflow focused.
+- Towards AI / Medium (Apr 12, published today): Claude Code "top 1% playbook" — broader scope, not Ultraplan-specific.
+- **Gap:** No post exists for *integrating Ultraplan into a team code review workflow* specifically — not a solo productivity post, not a feature explainer. The "use it as a gate between planning and execution in team context" angle is unclaimed.
+- Search intent: strongly informational + how-to. Developer + small engineering team audience.
+- Low competition on the specific "Ultraplan team workflow" angle. Moderate competition beginning to build on general "Ultraplan" queries.
+- Window: topic is 5 days old. Write within 4–5 days before the general coverage catches up to the team-workflow angle.
