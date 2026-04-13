@@ -1,6 +1,6 @@
 # Good Contenders
 *Trends with low competition, specific enough to rank for, high informational intent.*
-*Last updated: 2026-04-12*
+*Last updated: 2026-04-13*
 
 ---
 
@@ -89,18 +89,37 @@
 
 ## 6. Claude Code Ultraplan as a Team Planning Gate — The Workflow Nobody Is Writing About
 
-**Why it's trending:** Anthropic shipped `/ultraplan` in beta (April 7, 2026) — featured on Product Hunt April 11 as "Claude Code ultraplan" (#2 that day, 305 upvotes). The feature offloads the planning phase of a coding task to a cloud-based Claude Code session, producing a browser-reviewable plan with inline commenting before a single line of code changes. Rapidly discussed on Reddit r/ClaudeAI (2 days ago) and on Hacker News. Anthropic shipped it alongside "Claude Code Web" at claude.ai/code, signaling a deliberate push toward cloud-first agentic workflows.
+**Why it's trending:** Anthropic shipped `/ultraplan` in beta (April 7, 2026) — featured on Product Hunt April 11 as "Claude Code ultraplan" (#2 that day, 305 upvotes). The feature offloads the planning phase of a coding task to a cloud-based Claude Code session, producing a browser-reviewable plan with inline commenting before a single line of code changes. Rapidly discussed on Reddit r/ClaudeAI and on Hacker News. Anthropic shipped it alongside "Claude Code Web" at claude.ai/code, signaling a deliberate push toward cloud-first agentic workflows.
 
 **Suggested blog angle:** *"How I use Claude Code Ultraplan as a pre-execution review gate for my team"* — a practical workflow guide, not a feature explainer. Specific focus: how to integrate Ultraplan into a small-team PR process (trigger Ultraplan → review in browser → leave inline comments → approve or revise → execute or kick back to CLI), why it solves the "wall of terminal output" problem for team coordination, what the sharp edges are (research preview limitations, policy churn, GitHub repo requirement), and when it's NOT worth using (small <1-hour tasks). Written from "I've used it for a week on real work" perspective.
 
-**Competition notes:**
+**Competition notes (updated Apr 13):**
 - DevOps.com (Apr 8): explains the feature for DevOps teams — enterprise framing, no real workflow integration steps.
-- Steve Kinney personal blog (Apr 7): honest "I tried it" review — good but solo-developer focused, no team angle.
-- UX Planet / Medium (Apr 7): 6-minute explainer, 1 clap — minimal distribution, no team angle.
-- MindStudio blog (Apr 7): covers token costs and requirements, not workflow integration.
+- MindStudio blog (Apr 7, two articles): covers token costs, the 3-explorer-plus-1-critic multi-agent architecture, and how to build similar workflows in MindStudio. These are detailed and well-written but are vendor-focused (MindStudio upsell) and do not cover the team review gate use case.
+- WaveSpeed AI (Apr 7): leaked source analysis + Ultraplan overview, no workflow guide.
+- Steve Kinney personal blog (Apr 7): honest "I tried it" review — solo-developer focused, no team angle.
+- UX Planet / Medium (Apr 7): 6-minute explainer, minimal distribution.
 - YouTube (multiple Apr 7–8 tutorials): feature walkthrough videos, not blog-format or team-workflow focused.
-- Towards AI / Medium (Apr 12, published today): Claude Code "top 1% playbook" — broader scope, not Ultraplan-specific.
-- **Gap:** No post exists for *integrating Ultraplan into a team code review workflow* specifically — not a solo productivity post, not a feature explainer. The "use it as a gate between planning and execution in team context" angle is unclaimed.
+- Towards AI / Medium (Apr 12): Claude Code "top 1% playbook" — broader scope, not Ultraplan team-workflow specific.
+- **Gap still open:** No post exists for *integrating Ultraplan into a team code review workflow gate* — the specific "use it to gate planning from execution for a small engineering team" angle remains unclaimed. MindStudio's architecture post is the closest but is framed for solo developers replicating the multi-agent pattern, not team coordination.
 - Search intent: strongly informational + how-to. Developer + small engineering team audience.
-- Low competition on the specific "Ultraplan team workflow" angle. Moderate competition beginning to build on general "Ultraplan" queries.
-- Window: topic is 5 days old. Write within 4–5 days before the general coverage catches up to the team-workflow angle.
+- ⚠️ **Window is closing fast.** Competition has noticeably increased since Apr 12. The general Ultraplan queries are becoming moderately competitive. The team-workflow-gate angle is still open but write within 2–3 days max.
+
+---
+
+## 7. Offsite and the "Org Chart Model" for Hybrid Human-Agent Teams
+
+**Why it's trending:** Offsite launched on Product Hunt April 9, 2026 — #4 on the April monthly leaderboard (578 upvotes), "Launch of the Day." The product lets you organize humans and AI agents in a live org chart, watch them collaborate in real time, approve real-world actions, and connect out-of-the-box to Claude Code, OpenClaw, and any MCP-compatible agent. The makers built the product with a 3-person team and 30+ agents. This reflects a genuinely new design pattern: instead of running agents in isolated terminal sessions and copy-pasting outputs between them, you treat agents as org-chart members with roles, visibility, and coordination. The broader concept of "mixed human-agent org charts" is emerging as the next evolution past "multi-agent orchestration."
+
+**Suggested blog angle:** *"The org chart model for AI agents: why Offsite got 578 upvotes and what it tells you about managing hybrid teams"* — a conceptual + practical guide exploring the shift from "agents as tools" to "agents as teammates," what this model actually looks like in practice (role assignments, visibility, approval flows), how it compares to running agents in LangGraph/CrewAI/AutoGen (debuggability, observability, coordination), what types of workflows benefit most (founders running lean teams, operators managing complex pipelines), and how to set up your first hybrid human-agent team. Alternative angle: *"From 5 tabs to 1 org chart: how to stop copy-pasting between AI agents and start actually managing them."*
+
+**Competition notes:**
+- Product Hunt page and maker comments (Apr 9–11): describes the product concept but is not a tutorial or workflow guide.
+- No blog post, tutorial, or independent developer guide covers the Offsite product or the "org chart model for agents" design pattern as of April 13.
+- Taskade blog (Mar 17): covers multi-agent AI team building in general — vendor-promotional, no Offsite-specific or org-chart-model framing.
+- Medium / various (Apr 9–11): roundup posts on agentic AI products briefly mention the category but nothing Offsite-specific.
+- Search intent: informational + how-to. Audience: founders, indie hackers, operators, PMs — anyone running lean teams with AI.
+- Very low competition on "Offsite AI agents," "hybrid human-agent teams org chart," or "AI agent org chart model." No dedicated post exists.
+- High opportunity: the product is 4 days old, has strong community traction (#4 monthly on Product Hunt), and the underlying concept — managing agents like teammates with roles and visibility — is one of the freshest angles in the AI-workflow space right now.
+- Ranking potential: strong on long-tail phrases like "Offsite AI agents review," "hybrid human agent team workflow," and "AI agents org chart model" within 2–3 weeks.
+- **Window: 3–5 days before coverage appears.** Write now.
