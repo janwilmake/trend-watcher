@@ -1,6 +1,6 @@
 # Good Contenders
 *Trends with low competition, specific enough to rank for, high informational intent.*
-*Last updated: 2026-04-14*
+*Last updated: 2026-04-15*
 
 ---
 
@@ -53,25 +53,7 @@
 
 ---
 
-## 4. Running Claude Code on a Cloud VM — The "Grass" Approach for Laptop-Free Agent Workflows
-
-**Why it's trending:** Product Hunt launched Grass (April 9, 2026, 260 upvotes) — a tool that gives your coding agent a dedicated 24/7 cloud VM so you don't need your laptop open. Built on Daytona compute, it lets developers monitor and steer Claude Code or OpenCode sessions from their phone. The broader concept — offloading your coding agent to persistent cloud infrastructure instead of burning your local CPU/RAM — is just emerging. Related: Addy Osmani (Google) describes GitHub's Jules and Copilot Agent doing the same with async cloud VMs. The idea of "your agent has its own machine" is catching mainstream developer attention.
-
-**Suggested blog angle:** *"Why your coding agent needs its own VM (and how to set one up for free)"* — a practical guide covering: why running Claude Code locally is suboptimal (RAM contention, session loss, laptop tie-up), how persistent cloud VMs change the workflow, how to use Grass or DIY with a Daytona/Hetzner/Fly.io VM, and what "monitor from your phone" actually looks like in practice. Alternative angle: *"The case for running your AI coding agent in the cloud: a solo developer's guide to async coding workflows."*
-
-**Competition notes (updated Apr 14):**
-- Grass product page (Product Hunt, April 9): describes the product but not a tutorial.
-- Oblien.com (Feb 23, 2026): guide on "How to Run Claude Code in the Cloud Without a Local Machine" — covers the concept but Oblien-specific, not a general workflow guide or Grass comparison.
-- Remote Browser Substack / Kiran Prasad (Apr 1, 2026): "Cloud Code: How to have Claude as an Always On Coding Assistant" using Shellbox — covers persistent cloud Claude Code. First independent how-to guide in this space.
-- Stanislas.blog (Feb 7, 2026): "Building a Self-Hosted Cloud Coding Agent" — deep technical architecture post (microVMs, JuiceFS, snapshots), self-hosting focused, not Grass-specific.
-- Andrew Baker blog (Apr 8, 2026): Covers Claude Code Remote Control + Computer Use — phone monitoring angle partially covered.
-- Search intent: informational + how-to. Developer audience.
-- **The specific "Grass product review and workflow guide" angle is still unclaimed.** The general "run Claude Code in the cloud" how-to space is now moderately occupied by 3–4 posts with real how-to content.
-- ⚠️ **Window is closing.** The general angle now has ~3 independent how-to guides. The Grass-specific angle (comparing Grass vs. Shellbox vs. Daytona DIY, real workflow screenshots, phone monitoring) is still open, but the novelty of the category is fading. Write within 1–2 days or the broader story may be told fully by others.
-
----
-
-## 5. Reviewing AI-Generated Pull Requests — A Senior Engineer's Checklist
+## 4. Reviewing AI-Generated Pull Requests — A Senior Engineer's Checklist
 
 **Why it's trending:** An April 2026 survey shows 84% of developers use AI coding tools daily, but only 29% trust what they ship in production. A viral Medium post (April 6, 2026, 19 claps) from a staff engineer details the exact checks he runs on every AI-generated PR before it touches production. Reddit r/vibecoding is full of devs asking how to manage AI output quality. This "trust gap" is the defining pain point for engineering teams in 2026: agents are fast, but no one has a standardized way to validate their output.
 
@@ -88,27 +70,7 @@
 
 ---
 
-## 6. Claude Code Ultraplan as a Team Planning Gate — The Workflow Nobody Is Writing About
-
-**Why it's trending:** Anthropic shipped `/ultraplan` in beta (April 7, 2026) — featured on Product Hunt April 11 as "Claude Code ultraplan" (#2 that day, 305 upvotes). The feature offloads the planning phase of a coding task to a cloud-based Claude Code session, producing a browser-reviewable plan with inline commenting before a single line of code changes. Rapidly discussed on Reddit r/ClaudeAI and on Hacker News. Anthropic shipped it alongside "Claude Code Web" at claude.ai/code, signaling a deliberate push toward cloud-first agentic workflows.
-
-**Suggested blog angle:** *"How I use Claude Code Ultraplan as a pre-execution review gate for my team"* — a practical workflow guide, not a feature explainer. Specific focus: how to integrate Ultraplan into a small-team PR process (trigger Ultraplan → review in browser → leave inline comments → approve or revise → execute or kick back to CLI), why it solves the "wall of terminal output" problem for team coordination, what the sharp edges are (research preview limitations, policy churn, GitHub repo requirement), and when it's NOT worth using (small <1-hour tasks). Written from "I've used it for a week on real work" perspective.
-
-**Competition notes (updated Apr 13):**
-- DevOps.com (Apr 8): explains the feature for DevOps teams — enterprise framing, no real workflow integration steps.
-- MindStudio blog (Apr 7, two articles): covers token costs, the 3-explorer-plus-1-critic multi-agent architecture, and how to build similar workflows in MindStudio. These are detailed and well-written but are vendor-focused (MindStudio upsell) and do not cover the team review gate use case.
-- WaveSpeed AI (Apr 7): leaked source analysis + Ultraplan overview, no workflow guide.
-- Steve Kinney personal blog (Apr 7): honest "I tried it" review — solo-developer focused, no team angle.
-- UX Planet / Medium (Apr 7): 6-minute explainer, minimal distribution.
-- YouTube (multiple Apr 7–8 tutorials): feature walkthrough videos, not blog-format or team-workflow focused.
-- Towards AI / Medium (Apr 12): Claude Code "top 1% playbook" — broader scope, not Ultraplan team-workflow specific.
-- **Gap still open:** No post exists for *integrating Ultraplan into a team code review workflow gate* — the specific "use it to gate planning from execution for a small engineering team" angle remains unclaimed. MindStudio's architecture post is the closest but is framed for solo developers replicating the multi-agent pattern, not team coordination.
-- Search intent: strongly informational + how-to. Developer + small engineering team audience.
-- ⚠️ **Window is closing fast.** Competition has noticeably increased since Apr 12. The general Ultraplan queries are becoming moderately competitive. The team-workflow-gate angle is still open but write within 2–3 days max.
-
----
-
-## 7. Offsite and the "Org Chart Model" for Hybrid Human-Agent Teams
+## 5. Offsite and the "Org Chart Model" for Hybrid Human-Agent Teams
 
 **Why it's trending:** Offsite launched on Product Hunt April 9, 2026 — #4 on the April monthly leaderboard (578 upvotes), "Launch of the Day." The product lets you organize humans and AI agents in a live org chart, watch them collaborate in real time, approve real-world actions, and connect out-of-the-box to Claude Code, OpenClaw, and any MCP-compatible agent. The makers built the product with a 3-person team and 30+ agents. This reflects a genuinely new design pattern: instead of running agents in isolated terminal sessions and copy-pasting outputs between them, you treat agents as org-chart members with roles, visibility, and coordination. The broader concept of "mixed human-agent org charts" is emerging as the next evolution past "multi-agent orchestration."
 
@@ -125,11 +87,11 @@
 - Ranking potential: still strong on long-tail phrases like "Offsite AI agents review," "hybrid human agent team workflow," and "Offsite AI setup guide" within 2–3 weeks.
 - **Conceptual competition growing (updated Apr 14):** The *enterprise* "AI agents in the org chart" angle now has Business Insider (Mar 9), McKinsey State of Organizations report (2026), WEF report (2026), Agile Leadership blog (Dec 2025). These dominate the *business/management* version of this topic. **However, all of that coverage is enterprise/HR framing** — none covers Offsite specifically, or the *developer-first* practical "set up your first hybrid human-agent team in 30 minutes" angle. The gap remains open on the hands-on developer guide, but the SEO landscape for broad "AI org chart" terms is now more competitive.
 - **Recommended pivot:** Narrow the angle to "Offsite review: the tool that finally makes hybrid human-agent teams practical for indie developers and small teams." This differentiates from enterprise framing and claims the developer-first space.
-- **Window: 1–3 days.** Conceptual angles are filling up. Write the Offsite-specific developer guide now before it becomes yet another "AI agents org chart" overview post.
+- ⛔ **Window has closed as of Apr 15.** This entry will be archived in the next run. The Offsite product is now 6 days old. The conceptual "agents in the org chart" space is occupied by enterprise/HR content. The developer-first Offsite guide was the remaining opportunity, but at 6 days post-launch with no major new product development, organic search momentum for the product-specific angle has faded. Do not write this post.
 
 ---
 
-## 8. GitHub Stacked PRs (`gh stack`) — How AI Agents Can Self-Organize Their Own Work
+## 6. GitHub Stacked PRs (`gh stack`) — How AI Agents Can Self-Organize Their Own Work
 
 **Why it's trending:** GitHub shipped the native `gh stack` CLI extension on April 10, 2026 (v0.0.1, private beta — sign up at gh.io/stacksbeta). The official LinkedIn announcement from GitHub's Sameen Karim explicitly called out the AI agent angle: "What's even cooler is seeing AI coding agents use stacks themselves. They can use the CLI to break up their own work into focused, reviewable PRs as they build." The Hacker News thread hit 336 points and 203 comments within hours of publishing on April 14 (today). GitHub also shipped a `gh-stack` skill installable via `npx skills add github/gh-stack` so coding agents like Claude Code can natively manage stacked PRs. This is the first time GitHub has built stacked PRs directly into the platform — previously it required third-party tools like Graphite or Axolo.
 
@@ -141,15 +103,18 @@
 - LinkedIn (Sameen Karim / GitHub team): launch announcement, not a tutorial.
 - Medium/Substack (Sarel, Feb 2026): covers Graphite/Stacking.dev workflow, predates `gh stack`.
 - The "AI agent using stacked PRs to self-organize work" angle: no dedicated blog post exists anywhere yet.
-- Hacker News discussion (today, 336 points): community-level but no blog follow-up yet.
+- Hacker News discussion (Apr 14, 336 points, 203 comments): community-level discussion with no dedicated blog follow-up as of Apr 15.
+- InfoWorld (Apr 14): news article covering the launch — high-authority tech pub, but framing is "enterprise manages big code changes," not a developer workflow tutorial.
+- The Register (Apr 14): news article, framing it as "GitHub recalls Phabricator" — historical context piece, not a practical guide.
+- byteiota.com (Apr 14): brief launch summary post.
 - Search intent: informational + how-to. Developer audience (individual contributors, teams using AI agents, Graphite users looking for alternatives).
-- **Low competition** on "github native stacked PRs tutorial," "gh stack CLI guide," and "Claude Code stacked PRs workflow." The `gh-stack` skill angle is essentially uncovered.
-- Ranking potential: strong on very specific phrases. Broad "stacked PRs GitHub" faces existing competition from Graphite blog posts and older tutorials, but anything with "gh stack," "native GitHub stacked PRs," or "AI agent stacked PRs" is wide open.
-- **Window: 3–5 days before Graphite, Axolo, and developer newsletter writers cover this.** The private beta limitation (requires feature flag) reduces urgency slightly since readers can't immediately try it — but sign-up posts and explainers rank well regardless.
+- **Low-to-moderate competition** on "github native stacked PRs tutorial," "gh stack CLI guide," and "Claude Code stacked PRs workflow." News coverage arrived April 14, but all from a news/analysis angle — no hands-on developer workflow guide or AI-agent-focused tutorial exists yet.
+- Ranking potential: strong on very specific phrases. Broad "stacked PRs GitHub" faces competition from Graphite blog posts and older tutorials. Anything with "gh stack CLI tutorial," "native GitHub stacked PRs setup," or "AI agent stacked PRs workflow" remains wide open.
+- **Window: 2–4 days.** InfoWorld and The Register have now covered the news angle. Graphite will publish a response post within days (defending their moat). Developer newsletter writers (TLDR, Pointer, Cooper Press) will include this in weekend digests. The hands-on tutorial and AI-agent-workflow angle is still unclaimed, but the clock is ticking faster than yesterday.
 
 ---
 
-## 9. ContextPool — Giving Your AI Coding Agent Persistent Memory Across Sessions
+## 7. ContextPool — Giving Your AI Coding Agent Persistent Memory Across Sessions
 
 **Why it's trending:** ContextPool launched on Product Hunt April 13, 2026 — #6 on the day, 157+ upvotes, "Launch of the Day" winner. The product solves a universal pain: every Claude Code or Cursor session starts with zero memory of what you previously debugged, decided, or learned. ContextPool scans past sessions, extracts actionable engineering insights (bugs, root causes, fixes, design decisions, gotchas), and loads relevant context automatically via MCP at the start of each new session. Free and open-source (MIT), with team sync for $7.99/month. The "coding agent amnesia" problem has been extensively documented (a February 2026 Medium post by Sourabh Sharma has a blueprint for solving it architecturally, and the DEV Community prediction thread from late 2025 flagged "persistent agent memory as a first-class MCP primitive" as a key 2026 trend). ContextPool is now the cleanest one-command solution.
 
@@ -170,7 +135,7 @@
 
 ---
 
-## 10. shutup-mcp — Solving the MCP Tool Overload Problem with Semantic Intent Filtering
+## 8. shutup-mcp — Solving the MCP Tool Overload Problem with Semantic Intent Filtering
 
 **Why it's trending:** `shutup-mcp` launched on Product Hunt April 13–14, 2026, and a detailed DEV Community writeup by the builder went up April 13. The core problem it addresses is real and increasingly painful: as developers add more MCP servers to their agents (GitHub, filesystem, Jira, Brave Search, Slack, databases...), the total tool count balloons — one developer had 167 tools visible to their agent at once. LLM accuracy drops, token costs spike, and agents start picking wrong tools. `shutup-mcp` is a zero-config Python proxy that sits between your agent and all MCP servers, uses local embeddings (`all-MiniLM-L6-v2`, ~80MB, runs offline) to match the agent's intent to the 3–5 most relevant tools, and hides everything else. The creator reports measurable improvements in both token usage and accuracy. Rick Hightower's "Is MCP Dead?" piece (Towards AI, Apr 4, 65 claps) identified context pollution from too many tools as a key failure mode — `shutup-mcp` is the direct answer.
 

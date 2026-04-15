@@ -1,6 +1,6 @@
 # High Competition
 *Real trends but already saturated with content. Hard for a solo blogger to rank page 1.*
-*Last updated: 2026-04-13*
+*Last updated: 2026-04-15*
 
 ---
 
@@ -355,6 +355,42 @@
 - Tech Startups (April 8 — "Anthropic's AI cybersecurity push signals a new phase")
 
 **Why it's hard to rank:** Major publications from NYT to Wired covered every angle within days: the "what it can do" angle (NYT), the "is this really a reckoning?" skeptical take (Wired), the technical documentation (Anthropic red team blog), the enterprise implications (InfoQ), and the competing-startup reaction (AISLE). The model is not publicly available and access is controlled — there is no hands-on developer content to create. The cybersecurity policy and implications angles are dominated by institutional security vendors and specialist press.
+
+---
+
+## 22_TEMP_SAAS. SaaSpocalypse — AI Disrupting the SaaS Business Model
+
+**Why it's trending:** After Anthropic's Claude Cowork launch in January 2026, enterprise SaaS stocks sold off sharply (~$2 trillion in software market cap erased over 12 months). Salesforce down 30%+, Workday down 33%, IGV ETF down 23%. Commentators coined "SaaSpocalypse" to describe the narrative that vibe coding and AI agents would let companies build their own software instead of paying for SaaS. The Verge's "The AI code wars are heating up" (Apr 12) calls out the threat directly. TechCrunch published "SaaS in, SaaS out" (Mar 1, 2026) on the disruption thesis.
+
+**Who dominates:**
+- GTMfund / Max Altschuler (Substack, Mar 6, 2026 — "The SAASpocalypse" — founder/GTM audience, heavily shared)
+- BullOak (Feb 18, 2026 — investor-focused analysis with portfolio context)
+- SaasRise / Ryan Allis (Apr 7, 2026 — "What the SaaSpocalypse Really Means for Founders" — M&A/exit-focused)
+- TechCrunch (Mar 1, 2026 — "SaaS in, SaaS out: here's what's driving the SaaSpocalypse")
+- The Verge (Apr 12, 2026 — "The AI code wars are heating up" — includes SaaSpocalypse framing)
+- Intellectia.ai (deep Gartner-cited analysis of which SaaS categories face displacement)
+- Multiple finance/investing blogs covering the stock selloff angle
+
+**Why it's hard to rank:** The term "SaaSpocalypse" has been claimed by high-authority sources across investor, founder, and mainstream tech press. The SaaStr, GTMfund, and TechCrunch audiences own the narrative for their respective readerships. The "will SaaS survive?" and "what this means for founders" angles are both occupied. A niche take (e.g., "SaaSpocalypse for a specific SaaS vertical") might still have space, but the general topic is saturated.
+
+---
+
+## 23_TEMP_CC. Claude Code Desktop Redesign + Routines
+
+**Why it's trending:** Anthropic launched a full redesign of the Claude Code desktop app on April 14, 2026, adding parallel session management (sidebar), drag-and-drop workspace, integrated terminal, in-app file editor, side chats (Cmd+;), and three view modes. Shipped alongside "Routines" — a cloud automation feature that lets you save a Claude Code prompt + repo + connectors as a trigger-based job (schedule, API call, or GitHub event) running on Anthropic-managed infrastructure without your laptop on.
+
+**Who dominates (within 24 hours of launch):**
+- Anthropic official blog (claude.com/blog/claude-code-desktop-redesign — April 14 — primary authority, will dominate search)
+- The Register (Apr 14 — "Claude Code routines promise mildly clever cron jobs" — tech press coverage)
+- The New Stack (Apr 14 — "Anthropic's redesigned Claude Code desktop app lets you burn through tokens even faster" — developer infrastructure press)
+- Thurrott.com (Apr 14 — full feature breakdown)
+- BuildFastWithAI (Apr 15 — "Claude Code Desktop Redesign: Multi-Sessions + Routines (2026)" — 13-min comprehensive tutorial, includes Routines use cases, getting started guide)
+- DEV Community / BuildrLab (Apr 15 — "Anthropic Turns Claude Code Into a More Autonomous Developer Workspace" — published same day)
+- Medium / AI Software Engineer (Apr 15 — within hours of launch)
+- Pasqualepillitteri.it (Apr 15 — includes Claude Opus 4.7 leak context)
+- YouTube (multiple "Claude Code redesign" videos within 24 hours)
+
+**Why it's hard to rank:** The official Anthropic blog post will dominate all "Claude Code redesign" and "Claude Code routines" search queries by default. BuildFastWithAI published a comprehensive how-to guide on the same day as this analysis run (Apr 15). The news and feature-overview angles are fully covered. No meaningful gap remains for a general tutorial. The only potential opening would be a very specific operational use case for Routines (e.g., "Using Claude Code Routines to automate nightly database migration tests") targeting a narrow long-tail phrase — but even that will face competition from BuildFastWithAI's detailed Routines use-cases section.
 
 ---
 
