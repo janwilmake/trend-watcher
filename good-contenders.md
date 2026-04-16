@@ -1,6 +1,6 @@
 # Good Contenders
 *Trends with low competition, specific enough to rank for, high informational intent.*
-*Last updated: 2026-04-15*
+*Last updated: 2026-04-16*
 
 ---
 
@@ -19,24 +19,9 @@
 
 ---
 
-## 2. Security Checklist for AI-Generated Code (Vibe Coding Security)
-
-**Why it's trending:** Daily.dev reports 45% of AI-generated code contains vulnerabilities. Forbes published "Vibe Coding Has a Massive Security Problem." Pomerium's April 2026 post covers MCP security risks. Developer communities are now waking up to the fact that vibe-coded apps routinely introduce auth flaws, SQL injection, and IDOR vulnerabilities.
-
-**Suggested blog angle:** *"The vibe-coded app security checklist: 12 things to audit before you ship"* or *"What to look for when reviewing AI-generated code for security flaws."* Practical, actionable, list-format. Could also target: *"Why Lovable/Replit apps get hacked: the top 5 security mistakes in vibe-coded apps."*
-
-**Competition notes:**
-- Forbes has one article on "vibe coding security problem" (broad, high-level).
-- Pomerium and WorkOS cover MCP security specifically (different angle).
-- HackerNoon covers "AI code security" broadly.
-- No one has published a CHECKLIST specifically for auditing vibe-coded / AI-generated code — this is the gap.
-- Search intent: informational + task-oriented. Checklist posts rank well and get shared.
-- Low competition on the specific "vibe coding security checklist" angle. Moderate competition on "AI code security" generally.
-- Ranking potential: high within 3 weeks for long-tail phrases.
-
 ---
 
-## 3. Running Local LLMs with Ollama + MLX on Apple Silicon — A Developer's Setup Guide
+## 2. Running Local LLMs with Ollama + MLX on Apple Silicon — A Developer's Setup Guide
 
 **Why it's trending:** Ollama 0.19 (released March 30, 2026) switched to Apple's MLX backend on Apple Silicon, delivering ~1.6× faster prefill and ~2× faster generation on M-series chips. Covered by MacRumors, 9to5Mac, AppleInsider. Product Hunt ranked Ollama v0.19 #8 in April. The update specifically benefits users running Claude Code, OpenClaw, and coding agents locally. Apple Silicon Mac owners who were using local LLMs for coding agents suddenly have a meaningfully different experience.
 
@@ -53,7 +38,7 @@
 
 ---
 
-## 4. Reviewing AI-Generated Pull Requests — A Senior Engineer's Checklist
+## 3. Reviewing AI-Generated Pull Requests — A Senior Engineer's Checklist
 
 **Why it's trending:** An April 2026 survey shows 84% of developers use AI coding tools daily, but only 29% trust what they ship in production. A viral Medium post (April 6, 2026, 19 claps) from a staff engineer details the exact checks he runs on every AI-generated PR before it touches production. Reddit r/vibecoding is full of devs asking how to manage AI output quality. This "trust gap" is the defining pain point for engineering teams in 2026: agents are fast, but no one has a standardized way to validate their output.
 
@@ -70,28 +55,9 @@
 
 ---
 
-## 5. Offsite and the "Org Chart Model" for Hybrid Human-Agent Teams
-
-**Why it's trending:** Offsite launched on Product Hunt April 9, 2026 — #4 on the April monthly leaderboard (578 upvotes), "Launch of the Day." The product lets you organize humans and AI agents in a live org chart, watch them collaborate in real time, approve real-world actions, and connect out-of-the-box to Claude Code, OpenClaw, and any MCP-compatible agent. The makers built the product with a 3-person team and 30+ agents. This reflects a genuinely new design pattern: instead of running agents in isolated terminal sessions and copy-pasting outputs between them, you treat agents as org-chart members with roles, visibility, and coordination. The broader concept of "mixed human-agent org charts" is emerging as the next evolution past "multi-agent orchestration."
-
-**Suggested blog angle:** *"The org chart model for AI agents: why Offsite got 578 upvotes and what it tells you about managing hybrid teams"* — a conceptual + practical guide exploring the shift from "agents as tools" to "agents as teammates," what this model actually looks like in practice (role assignments, visibility, approval flows), how it compares to running agents in LangGraph/CrewAI/AutoGen (debuggability, observability, coordination), what types of workflows benefit most (founders running lean teams, operators managing complex pipelines), and how to set up your first hybrid human-agent team. Alternative angle: *"From 5 tabs to 1 org chart: how to stop copy-pasting between AI agents and start actually managing them."*
-
-**Competition notes:**
-- Product Hunt page and maker comments (Apr 9–11): describes the product concept but is not a tutorial or workflow guide.
-- No blog post, tutorial, or independent developer guide covers the Offsite product or the "org chart model for agents" design pattern as of April 13.
-- Taskade blog (Mar 17): covers multi-agent AI team building in general — vendor-promotional, no Offsite-specific or org-chart-model framing.
-- Medium / various (Apr 9–11): roundup posts on agentic AI products briefly mention the category but nothing Offsite-specific.
-- Search intent: informational + how-to. Audience: founders, indie hackers, operators, PMs — anyone running lean teams with AI.
-- Very low competition on "Offsite AI agents," "hybrid human-agent teams org chart," or "AI agent org chart model." No dedicated post exists.
-- High opportunity: the product is 5 days old, has strong community traction (#4 monthly on Product Hunt), and the underlying concept — managing agents like teammates with roles and visibility — is fresh in the developer space.
-- Ranking potential: still strong on long-tail phrases like "Offsite AI agents review," "hybrid human agent team workflow," and "Offsite AI setup guide" within 2–3 weeks.
-- **Conceptual competition growing (updated Apr 14):** The *enterprise* "AI agents in the org chart" angle now has Business Insider (Mar 9), McKinsey State of Organizations report (2026), WEF report (2026), Agile Leadership blog (Dec 2025). These dominate the *business/management* version of this topic. **However, all of that coverage is enterprise/HR framing** — none covers Offsite specifically, or the *developer-first* practical "set up your first hybrid human-agent team in 30 minutes" angle. The gap remains open on the hands-on developer guide, but the SEO landscape for broad "AI org chart" terms is now more competitive.
-- **Recommended pivot:** Narrow the angle to "Offsite review: the tool that finally makes hybrid human-agent teams practical for indie developers and small teams." This differentiates from enterprise framing and claims the developer-first space.
-- ⛔ **Window has closed as of Apr 15.** This entry will be archived in the next run. The Offsite product is now 6 days old. The conceptual "agents in the org chart" space is occupied by enterprise/HR content. The developer-first Offsite guide was the remaining opportunity, but at 6 days post-launch with no major new product development, organic search momentum for the product-specific angle has faded. Do not write this post.
-
 ---
 
-## 6. GitHub Stacked PRs (`gh stack`) — How AI Agents Can Self-Organize Their Own Work
+## 4. GitHub Stacked PRs (`gh stack`) — How AI Agents Can Self-Organize Their Own Work
 
 **Why it's trending:** GitHub shipped the native `gh stack` CLI extension on April 10, 2026 (v0.0.1, private beta — sign up at gh.io/stacksbeta). The official LinkedIn announcement from GitHub's Sameen Karim explicitly called out the AI agent angle: "What's even cooler is seeing AI coding agents use stacks themselves. They can use the CLI to break up their own work into focused, reviewable PRs as they build." The Hacker News thread hit 336 points and 203 comments within hours of publishing on April 14 (today). GitHub also shipped a `gh-stack` skill installable via `npx skills add github/gh-stack` so coding agents like Claude Code can natively manage stacked PRs. This is the first time GitHub has built stacked PRs directly into the platform — previously it required third-party tools like Graphite or Axolo.
 
@@ -114,7 +80,7 @@
 
 ---
 
-## 7. ContextPool — Giving Your AI Coding Agent Persistent Memory Across Sessions
+## 5. ContextPool — Giving Your AI Coding Agent Persistent Memory Across Sessions
 
 **Why it's trending:** ContextPool launched on Product Hunt April 13, 2026 — #6 on the day, 157+ upvotes, "Launch of the Day" winner. The product solves a universal pain: every Claude Code or Cursor session starts with zero memory of what you previously debugged, decided, or learned. ContextPool scans past sessions, extracts actionable engineering insights (bugs, root causes, fixes, design decisions, gotchas), and loads relevant context automatically via MCP at the start of each new session. Free and open-source (MIT), with team sync for $7.99/month. The "coding agent amnesia" problem has been extensively documented (a February 2026 Medium post by Sourabh Sharma has a blueprint for solving it architecturally, and the DEV Community prediction thread from late 2025 flagged "persistent agent memory as a first-class MCP primitive" as a key 2026 trend). ContextPool is now the cleanest one-command solution.
 
@@ -135,7 +101,7 @@
 
 ---
 
-## 8. shutup-mcp — Solving the MCP Tool Overload Problem with Semantic Intent Filtering
+## 6. shutup-mcp — Solving the MCP Tool Overload Problem with Semantic Intent Filtering
 
 **Why it's trending:** `shutup-mcp` launched on Product Hunt April 13–14, 2026, and a detailed DEV Community writeup by the builder went up April 13. The core problem it addresses is real and increasingly painful: as developers add more MCP servers to their agents (GitHub, filesystem, Jira, Brave Search, Slack, databases...), the total tool count balloons — one developer had 167 tools visible to their agent at once. LLM accuracy drops, token costs spike, and agents start picking wrong tools. `shutup-mcp` is a zero-config Python proxy that sits between your agent and all MCP servers, uses local embeddings (`all-MiniLM-L6-v2`, ~80MB, runs offline) to match the agent's intent to the 3–5 most relevant tools, and hides everything else. The creator reports measurable improvements in both token usage and accuracy. Rick Hightower's "Is MCP Dead?" piece (Towards AI, Apr 4, 65 claps) identified context pollution from too many tools as a key failure mode — `shutup-mcp` is the direct answer.
 
@@ -152,3 +118,46 @@
 - **Very low competition** on "shutup-mcp tutorial," "shutup-mcp review," "MCP tool overload solution," or "reduce MCP tools agent accuracy." The product is 1 day old.
 - Ranking potential: high for specific phrases. The broader "MCP context pollution" angle is also a good target — the problem is real and underserved in terms of solutions-focused content.
 - **Window: 3–5 days.** The product is very new and the builder's DEV post will be the reference for now, but independent guides and reviews will appear within a week as more developers try it. Being early here means owning the "third-party review" slot on page 1.
+
+---
+
+## 7. Windsurf 2.0 — Agent Command Center + Spaces Workflow Guide
+
+**Why it's trending:** Cognition AI launched Windsurf 2.0 on April 16, 2026 (today). The centerpiece is the **Agent Command Center** — a Kanban-style view inside the IDE that shows every running agent (local and cloud) grouped by status. Alongside it: **Spaces**, which bundle agent sessions, PRs, files, and context for a given project/task, eliminating the need to re-state context every time. Crucially, Windsurf 2.0 integrates **Devin** (Cognition's autonomous cloud agent) directly — developers can plan locally and delegate to Devin in the cloud with one click, then close their laptop while it runs. When Devin finishes, it submits a PR for review in the same Windsurf workspace. This is a meaningful shift: Windsurf is no longer an IDE with AI; it is a command center for a team of AI agents. The launch landed on Product Hunt today (April 16) with the "Windsurf 2.0" listing (80 upvotes early). Windsurf has ~700K developers on the platform.
+
+**Suggested blog angle:** *"Windsurf 2.0 first look: how the Agent Command Center changes how you manage AI coding sessions"* — a hands-on walkthrough covering: what the Agent Command Center Kanban view looks like in practice (local Cascade sessions vs. cloud Devin sessions), what Spaces actually solve (the "re-explain your entire project every session" problem), how to set up your first Space with an existing project, how to delegate to Devin from Windsurf and what the handoff/review flow looks like, real workflow before-and-after (old: manage each Cascade tab manually; new: track agents by status across tasks), and notable limitations (Devin rolling out gradually over 48 hours, credit usage implications). Alternative angle: *"Windsurf 2.0 vs Cursor 3 Agents Window: which parallel agent management UI actually works?"*
+
+**Competition notes:**
+- Windsurf official blog (windsurf.com/blog/windsurf-2-0): launch post — thin on details (landing-page style, no deep tutorial content; full article appears to be short).
+- Windsurf docs (docs.windsurf.com/windsurf/agent-command-center): reference documentation — explains the feature but not a narrative workflow guide.
+- Reddit r/windsurf (Apr 16): maker announcement post only.
+- KuCoin Flash (Apr 16): crypto news brief — launch summary, no developer tutorial.
+- Taskade blog (Apr 10): "Windsurf Review 2026" covers Cascade and general Windsurf features but predates Windsurf 2.0 by 6 days — does not cover Agent Command Center or Spaces.
+- LinkedIn (Windsurf official): announcement post.
+- DeployHQ guide (Mar 5): general Windsurf setup guide, outdated relative to 2.0.
+- **No independent hands-on developer tutorial for Windsurf 2.0 exists yet.** The launch is hours old.
+- Search intent: informational + how-to. Developer audience (existing Windsurf users evaluating the upgrade, Cursor users comparing, teams considering cloud agent delegation).
+- **Very low competition** on "Windsurf 2.0 Agent Command Center tutorial," "Windsurf Spaces workflow," or "Windsurf Devin cloud agent setup." All current results are either official docs or launch announcements.
+- Ranking potential: strong on long-tail phrases like "Windsurf 2.0 Agent Command Center guide," "how to use Windsurf Spaces," or "Windsurf vs Cursor 3 agent management." The comparison angle against Cursor 3 is particularly strong — both shipped parallel-agent management within 2 weeks of each other.
+- **Window: 2–4 days.** DataCamp-style comprehensive guides will likely follow within 48–72 hours (they published a Cursor 3 guide within 6 days of that launch). YouTube tutorials will appear by tomorrow. The narrow window for a first-mover independent tutorial is open now.
+
+---
+
+## 8. stagewise v2 — The Frontend Coding Agent That Actually Sees Your App
+
+**Why it's trending:** stagewise relaunched on Product Hunt today (April 16, 2026) as a full standalone coding agent — not just the toolbar extension it was at its August 2025 launch (325 upvotes). The v2 product is a purpose-built browser with a coding agent built directly into it: it can see your running app (DOM, console, debugger), click elements, inspect live state, and edit the source code in your local codebase — all without context switching. 6,500+ GitHub stars, backed by Y Combinator (S25). The product hits a genuine pain point: most coding agents are "blind" to the actual running product and require developers to describe UI bugs from memory. stagewise lets you literally point at the element and say "fix this." Open source (AGPL-3.0), bring-your-own-key across all major model providers.
+
+**Suggested blog angle:** *"stagewise v2: the first time my coding agent could actually see what I was looking at"* — a first-person hands-on guide covering: the core problem (why terminal-based agents like Claude Code are "blind" to the running UI), how stagewise's browser-with-agent approach works (install via `npx stagewise`, DOM context selection, live console/debugger access), a real use case walkthrough (fixing a specific visual bug in an existing React/Next.js app by clicking the element and prompting), how the IDE integration works for reviewing diffs, how to set up BYOK for Claude or GPT-4o, comparison to alternatives (vs. Cursor Browser Preview — stagewise has a full coding agent inside vs. just a preview pane; vs. Lovable — production-codebase-native vs. greenfield only). Alternative angle: *"Point, click, fix: why stagewise is the missing tool for frontend developers using AI agents."*
+
+**Competition notes:**
+- stagewise original launch (Aug 2025): skywork.ai review (Oct 2025) — covers the toolbar extension, outdated relative to v2 standalone browser product.
+- vibecodinghub.org/tools/stagewise (Apr 4, 2026): tools-directory overview entry — not a hands-on tutorial or workflow guide.
+- Medium AI Web Browsers guide (Apr 13): mentions Firecrawl, Browser Use, Stagehand (different tools for autonomous browser agents/scraping), does **not** cover stagewise.
+- YouTube (Apr 8): 3-minute stagewise demo video — demonstrates the product but not a written tutorial.
+- GitHub README (stagewise-io/stagewise): install instructions and feature list, not a workflow narrative.
+- docs.stagewise.io: reference documentation, no narrative tutorial.
+- **No independent hands-on written tutorial for stagewise v2** exists on any blog, Medium, or DEV Community as of April 16, 2026.
+- Search intent: informational + how-to. Developer audience (frontend developers working on existing codebases who use Cursor, Claude Code, or similar agents).
+- **Very low competition** on "stagewise v2 review," "stagewise coding agent tutorial," "frontend coding agent browser setup," or "stagewise vs Cursor." The v2 launch is hours old, and the Oct 2025 review covers a different (older) product.
+- Ranking potential: high on product-specific long-tail phrases. Strong shareability in r/vibecoding and r/webdev — the "agent that sees your app" narrative resonates with frontend developers frustrated by context-blindness.
+- **Window: 3–5 days.** The v2 launch has strong Product Hunt momentum (previously 325 upvotes at first launch). YC backing means dev newsletter writers (TLDR, Pointer) will include it this week. Independent tutorials will start appearing within 3–5 days. First-mover review owns the "stagewise v2 hands-on" search slot.
