@@ -1,6 +1,6 @@
 # High Competition
 *Real trends but already saturated with content. Hard for a solo blogger to rank page 1.*
-*Last updated: 2026-04-16*
+*Last updated: 2026-04-17*
 
 ---
 
@@ -408,6 +408,41 @@
 - Forbes (multiple articles, Forbes Technology Council Apr 9) — mainstream press coverage of the execution-layer security gap.
 
 **Why it's hard to rank:** The specific "vibe coding security checklist" angle — which was genuinely empty as recently as early April — is now covered by at least three independent checklist posts from different angles (CISO/enterprise, startup/CTO, and developer/indie). Aikido.dev's checklist is particularly strong: it's the original comprehensive one, well-marketed, and targeting the exact same developer/startup audience a solo blogger would target. A solo blogger entering this space now would need an extremely niche angle (e.g., a checklist specifically for one framework like Next.js + Supabase + Lovable, or a checklist focused only on AI agent-to-database attack surfaces) to carve out a unique search position.
+
+---
+
+## 25. Claude Opus 4.7 — General Launch Coverage
+
+**Why it's trending:** Anthropic launched Claude Opus 4.7 on April 16, 2026 — most capable generally available Opus model, featuring: 1M token context window, 128K max output tokens, 3× vision resolution (2,576px long edge), improved instruction following, better file-system memory for long agentic sessions, a new `xhigh` effort level, and task budgets in API beta. Covers the cybersecurity use-case gap after Mythos Preview was restricted — ships with cyber safeguards and a Cyber Verification Program for legitimate security researchers. Available via Claude.ai, API, Amazon Bedrock, Google Vertex AI, Microsoft Foundry, GitHub Copilot.
+
+**Who dominates (as of April 17, 2026):**
+- Anthropic official blog (anthropic.com/news/claude-opus-4-7 — primary authority, April 16)
+- Mashable (Apr 16 — "How to try it, benchmarks, safety" — comprehensive consumer guide)
+- AWS News Blog (Apr 16 — Bedrock-specific enterprise guide, official)
+- Vellum AI (Apr 16 — "Benchmarks Explained" — thorough technical benchmark breakdown)
+- Karo Zieminski Substack (Apr 17 — 17K readers, role-mapped practical review with real testing)
+- GitHub Copilot Changelog (Apr 16 — Copilot-specific integration guide)
+- YouTube ("The New Claude Opus 4.7 Feature Developers Are Obsessed With" — Apr 16, same-day coverage)
+- tosea.ai (Apr 16 — "Complete Guide to Anthropic's New Model")
+- Reddit r/ClaudeAI (official announcement thread — community discussion)
+
+**Why it's hard to rank:** The general "Claude Opus 4.7 review/guide" space was saturated within 24 hours of launch. Official docs from Anthropic, AWS, and GitHub Copilot dominate for platform-specific queries. Karo Zieminski and Vellum already cover the benchmark-explanation and practical-builder angles respectively. Consumer guides from Mashable fill the "how do I use it" queries. A solo blogger entering with another general Opus 4.7 overview would be 5th+ on page 1 at best. (See good-contenders for the narrow API-level task budgets + cost analysis angle, which remains open.)
+
+---
+
+## 26. OpenAI Agents SDK Update (April 2026) — General Coverage
+
+**Why it's trending:** OpenAI updated the Agents SDK on April 15, 2026, adding: a model-native harness for file and tool coordination, configurable memory, sandbox-aware orchestration, Codex-like filesystem tools, MCP integrations, shell execution, apply-patch file editing, and native sandbox execution. Designed to make "long-horizon" agents (multi-step, multi-hour tasks) production-viable without custom infrastructure.
+
+**Who dominates (as of April 17, 2026):**
+- OpenAI official blog (openai.com/index/the-next-evolution-of-the-agents-sdk/ — April 15 — primary authority)
+- TechCrunch (Apr 15 — "OpenAI updates its Agents SDK to help enterprises build safer, more capable agents")
+- Junia AI blog (Apr 15 — "OpenAI Agents SDK Update: What Changed for Agent Builders" — comprehensive developer breakdown with practical takeaways)
+- Incremys (Apr 2 — broader "OpenAI AI Agent 2026" guide, older context)
+- Official OpenAI Agents SDK docs (developers.openai.com — continuously updated reference)
+- "A practical guide to building agents" (openai.com — official guide with Python examples)
+
+**Why it's hard to rank:** TechCrunch covered the enterprise angle same-day. Junia AI published a thorough developer-facing breakdown ("in plain terms" + "practical takeaways") on April 15. OpenAI's own practical guide with code examples is authoritative for the how-to angle. The "what changed" and "how to use sandbox execution" angles are both covered. A solo blogger publishing now (2 days post-launch) is behind the curve with no differentiation available on general angles.
 
 ---
 
