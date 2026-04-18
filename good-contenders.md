@@ -1,6 +1,6 @@
 # Good Contenders
 *Trends with low competition, specific enough to rank for, high informational intent.*
-*Last updated: 2026-04-17*
+*Last updated: 2026-04-18*
 
 ---
 
@@ -53,27 +53,9 @@
 
 ---
 
-## 4. Windsurf 2.0 — Agent Command Center + Spaces Workflow Guide
-
-**Why it's trending:** Cognition AI launched Windsurf 2.0 on April 16, 2026. The centerpiece is the **Agent Command Center** — a Kanban-style view inside the IDE that shows every running agent (local and cloud) grouped by status. Alongside it: **Spaces**, which bundle agent sessions, PRs, files, and context for a given project/task, eliminating the need to re-state context every time. Crucially, Windsurf 2.0 integrates **Devin** (Cognition's autonomous cloud agent) directly — developers can plan locally and delegate to Devin in the cloud with one click, then close their laptop while it runs. When Devin finishes, it submits a PR for review in the same Windsurf workspace. This is a meaningful shift: Windsurf is no longer an IDE with AI; it is a command center for a team of AI agents. The launch landed on Product Hunt today (April 16) with the "Windsurf 2.0" listing (80 upvotes early). Windsurf has ~700K developers on the platform.
-
-**Suggested blog angle:** *"Windsurf 2.0 first look: how the Agent Command Center changes how you manage AI coding sessions"* — a hands-on walkthrough covering: what the Agent Command Center Kanban view looks like in practice (local Cascade sessions vs. cloud Devin sessions), what Spaces actually solve (the "re-explain your entire project every session" problem), how to set up your first Space with an existing project, how to delegate to Devin from Windsurf and what the handoff/review flow looks like, real workflow before-and-after (old: manage each Cascade tab manually; new: track agents by status across tasks), and notable limitations (Devin rolling out gradually over 48 hours, credit usage implications). Alternative angle: *"Windsurf 2.0 vs Cursor 3 Agents Window: which parallel agent management UI actually works?"*
-
-**Competition notes:**
-- Windsurf official blog (windsurf.com/blog/windsurf-2-0): launch post — thin on details (landing-page style, no deep tutorial content).
-- Windsurf docs (docs.windsurf.com/windsurf/agent-command-center and docs.windsurf.com/windsurf/spaces): reference documentation — explains features but not a narrative workflow guide.
-- Reddit r/windsurf (Apr 16): maker announcement post only.
-- KuCoin Flash (Apr 16): crypto news brief — launch summary, no developer tutorial.
-- LinkedIn (Windsurf official): announcement post, 2 days ago.
-- **No independent hands-on developer tutorial for Windsurf 2.0 exists yet.** The launch is ~24 hours old.
-- Search intent: informational + how-to. Developer audience (existing Windsurf users evaluating the upgrade, Cursor users comparing, teams considering cloud agent delegation).
-- **Very low competition** on "Windsurf 2.0 Agent Command Center tutorial," "Windsurf Spaces workflow," or "Windsurf Devin cloud agent setup."
-- Ranking potential: strong on long-tail phrases. The comparison angle against Cursor 3 is particularly strong — both shipped parallel-agent management within 2 weeks of each other.
-- **Window: 1–3 days remaining.** DataCamp-style comprehensive guides will likely follow within 48–72 hours. The narrow window for a first-mover independent tutorial is still open but closing fast.
-
 ---
 
-## 5. stagewise v2 — The Frontend Coding Agent That Actually Sees Your App
+## 4. stagewise v2 — The Frontend Coding Agent That Actually Sees Your App
 
 **Why it's trending:** stagewise relaunched on Product Hunt today (April 16, 2026) as a full standalone coding agent — not just the toolbar extension it was at its August 2025 launch (325 upvotes). The v2 product is a purpose-built browser with a coding agent built directly into it: it can see your running app (DOM, console, debugger), click elements, inspect live state, and edit the source code in your local codebase — all without context switching. 6,500+ GitHub stars, backed by Y Combinator (S25). The product hits a genuine pain point: most coding agents are "blind" to the actual running product and require developers to describe UI bugs from memory. stagewise lets you literally point at the element and say "fix this." Open source (AGPL-3.0), bring-your-own-key across all major model providers.
 
@@ -93,7 +75,7 @@
 
 ---
 
-## 6. Claude Design — First Hands-On Guide for Product Teams
+## 5. Claude Design — First Hands-On Guide for Product Teams
 
 **Why it's trending:** Anthropic launched **Claude Design** today (April 17, 2026) — a new Anthropic Labs product (powered by Claude Opus 4.7's vision model) that lets you collaborate with Claude to produce polished visual work: interactive prototypes, pitch decks, product wireframes, landing pages, and marketing collateral. Available in research preview for Claude Pro/Max/Team/Enterprise. Claude Design reads your team's codebase and design files during onboarding to build a team design system automatically, then applies those colors, typography, and components to every new project. The product integrates with Claude Code (PMs can sketch feature flows and hand them off to Claude Code for implementation) and exports to Canva, PPTX, PDF, and URLs. Notably, Anthropic CPO Mike Krieger (Instagram co-founder) just stepped down from Figma's board immediately before this launch — a clear signal of intent to compete in the design tooling space.
 
@@ -113,7 +95,7 @@
 
 ---
 
-## 7. Vercel Workflows GA — Building Durable AI Agents with `"use workflow"` + `"use step"`
+## 6. Vercel Workflows GA — Building Durable AI Agents with `"use workflow"` + `"use step"`
 
 **Why it's trending:** Vercel launched **Workflows** as generally available on April 16–17, 2026. Workflows is a durable execution framework built into the Vercel platform: developers add `"use workflow"` and `"use step"` TypeScript directives to turn ordinary async functions into durable, resumable, observable workflows — no separate queue infrastructure, state databases, or orchestration services required. AI SDK v7 ships alongside it with a `WorkflowAgent` class that deeply integrates durable execution with tool calling. Since the October 2025 beta, Workflows has processed 100M+ runs and 500M+ steps across 1,500+ customers, with 200K+ npm downloads/week. The Python SDK just entered public beta. For AI agent developers, the value proposition is concrete: agents that need to pause for human approval, survive server restarts, stream output across reconnects, or pass 2GB of image/video data between steps can now do so with two directive annotations. Vercel Day (April 17) spotlighted Workflows prominently. The open-source Workflow SDK supports self-hosted deployments via community "Worlds" adapters (MongoDB, Redis, Cloudflare).
 
@@ -136,7 +118,7 @@
 
 ---
 
-## 8. Claude Opus 4.7 Task Budgets API — Controlling Token Spend in Production Agent Loops
+## 7. Claude Opus 4.7 Task Budgets API — Controlling Token Spend in Production Agent Loops
 
 **Why it's trending:** Claude Opus 4.7 (launched April 16, 2026) ships with two developer-facing features that are genuinely new and underexplored: (1) **Task budgets** (public beta on the API) — a `task_budget: { type: "tokens", total: N }` parameter that shows Claude a running countdown of available tokens so it can prioritize work and finish tasks gracefully as the budget is consumed, rather than truncating mid-thought; and (2) the **`xhigh` effort level** — a new setting between `high` and `max` that gives more granular control over the reasoning/latency tradeoff (Claude Code now defaults to `xhigh`). Combined with the new `/ultrareview` slash command (a dedicated code review session that reads changes and flags bugs/design issues a senior reviewer would catch), these three features compose a practical "production agent quality control" toolkit that hasn't been documented from a real-world developer perspective. The key context: Opus 4.7's new tokenizer means the same prompts use up to 35% more output tokens — meaning production teams need to immediately audit and recalibrate their existing cost models and agent loops.
 
@@ -157,3 +139,50 @@
 - **Low-to-moderate competition** on "Claude Opus 4.7 task budgets guide," "xhigh effort level claude," or "claude opus 4.7 production migration." The general "Opus 4.7 review" space is crowded but the production API / cost control angle is not.
 - Ranking potential: moderate-strong on long-tail phrases like "claude opus 4.7 task budget example" or "claude 4.7 xhigh effort when to use." The specific cost-impact analysis framing (35% tokenizer change → your bill) is a hook that drives shares among CTOs and senior developers.
 - **Window: 5–7 days.** The launch is fresh. DataCamp-style comprehensive guides will cover Opus 4.7 broadly within the week but are unlikely to go deep on API-level task budget configuration and cost modeling. The production-engineer angle has a longer window than product launch coverage.
+
+---
+
+## 8. Figma for Agents — Writing Your Team's First Design System Skill
+
+**Why it's trending:** Figma opened the canvas to AI agents on April 10, 2026 via the new `use_figma` MCP tool — and relaunched as "Figma for Agents" on Product Hunt on April 14 (#1 Product of the Day, 528 upvotes). The core problem it solves is the "design system blindness" of AI agents: Claude Code, Codex, and Cursor generate UI that looks technically correct but ignores the actual component library, variables, and spacing tokens a team has spent months building. The `use_figma` tool reads your live Figma file; **Skills** (markdown files encoding your team's design conventions) guide how agents behave in that canvas — which components to reach for, how to handle variants, what naming conventions to follow. Skills are cross-agent (Claude Code, Cursor, Copilot, Codex all read the same SKILL.md). Community members from Uber, Edenspiekermann, and others published 9 example skills at launch. Free in open beta. The Figma blog published "Agents, Meet the Figma Canvas" on April 10, and Figma's own YouTube tutorial (6.6K views, 2 days old) covers the setup — but neither addresses the specific workflow of *authoring* a custom skill for an existing design system.
+
+**Suggested blog angle:** *"I wrote a Figma skill for our design system — here's what 30 minutes of effort actually bought us"* — a real-team walkthrough covering: what a skill file looks like (SKILL.md structure: name, description, instructions with concrete examples), the three things every design team should encode first (which component to reach for vs. create from scratch, how to apply color tokens vs. hardcoding, spacing grid rules), a before/after screenshot comparison (agent output with vs. without the skill active), how to test the skill against a real use case in Claude Code (connect Figma MCP, point at your file, prompt the agent), and the 2–3 gotchas Figma's own docs underplay (the `figma-use` base skill must load before `use_figma` calls; agents still can't handle FigJam files; custom fonts require a workaround). Alternative angle: *"Figma Skills vs. Claude Code CLAUDE.md: two ways to teach your agent your design system."*
+
+**Competition notes:**
+- Figma official blog (figma.com/blog/the-figma-canvas-is-now-open-to-agents, Apr 10): launch post — explains the concept well but no practical skill-authoring guide.
+- Figma YouTube tutorial (Apr 7/16): 6.6K views — covers MCP setup (Claude Code, Cursor, Codex) but not skill authoring.
+- Muzli Blog (March 24): overview of what changed, mentions Skills — no workflow guide.
+- UX Collective / Christine Vallaure (Apr 6): "Agentic AI, design systems & Figma: a practical guide" — philosophical, designer-audience, no skill-authoring tutorial.
+- Medium / Mohit Aggarwal (Apr 9): "10 Figma Claude Skills for PMs" — covers pre-built skills to use, not how to write your own from scratch.
+- Medium / Nurkhon (Apr 16): "Your Figma Library Is Invisible to AI Agents" — frames the problem well, no solution walkthrough.
+- vectosolve.com (Apr 14): Figma Weave + MCP pipeline tutorial — niche (image-to-SVG), mentions skills briefly.
+- Reddit r/FigmaDesign (Apr 10): community thread announcing the feature, no tutorials.
+- **No independent written tutorial for authoring a custom Figma skill from scratch** (the SKILL.md authoring workflow, connecting it to your team's actual component library, testing it via Claude Code MCP) exists on any blog as of April 18.
+- Search intent: informational + how-to. Audience: design engineers, frontend developers who own the design system connection in their team, PMs who manage Figma workflows, and designers curious about whether agent-generated designs can finally respect their work.
+- **Very low competition** on "how to write a Figma skill," "Figma skill SKILL.md tutorial," "Figma for Agents design system setup," or "use_figma skill authoring guide."
+- Ranking potential: strong on product-specific phrases. Figma's own blog ranks for "Figma for agents" but not for authoring-level tutorials. The "before/after screenshot with vs. without skill" angle is highly shareable in design/developer Twitter and r/FigmaDesign.
+- **Window: 3–5 days.** The April 14 Product Hunt launch is 4 days old; the concept is spreading through design newsletters (Sidebar, Dense Discovery, Designer News). YouTube tutorial makers (TD Sunshine channel, DesignWithArash) are publishing adjacent Figma AI content but haven't yet covered skill authoring. The "write your first skill" tutorial window is open but will close once Figma publishes an official tutorial or a high-authority design YouTuber covers it.
+
+---
+
+## 9. JetBrains Air — Practical Comparison: Air vs. Cursor 3 vs. Windsurf 2.0 for Multi-Agent Workflows
+
+**Why it's trending:** JetBrains entered the Agentic Development Environment (ADE) category in March 2026 with Air (public preview, free for macOS). Air is a standalone desktop app — not a plugin or IDE extension — that runs Codex, Claude Agent, Gemini CLI, and Junie concurrently in Git worktrees or Docker containers, with a task-card UI for managing concurrent agent work and a code-aware diff review panel. It sits in direct comparison with Cursor 3's Agents Window (launched April 2) and Windsurf 2.0's Agent Command Center (launched April 16). All three shipped parallel-agent management within six weeks of each other, creating a natural "which one should I use?" search query that is not yet authoritatively answered. The category name "Agentic Development Environment" is gaining traction (Thoughtworks April 2026 macro trends post, JetBrains survey showing 85% AI tool adoption). Air has 74 HN upvotes (4 months ago for the alpha) and the March 24 public preview announcement.
+
+**Suggested blog angle:** *"Air vs. Cursor 3 vs. Windsurf 2.0: I ran the same three tasks in each parallel-agent system — here's what actually worked"* — a practical developer comparison covering: the core architecture difference (Air: standalone ADE for agent orchestration, your IDE stays separate; Cursor 3: multi-agent inside your existing editor; Windsurf 2.0: IDE + cloud Devin delegation), how each handles task isolation (Air: Git worktrees or Docker; Cursor 3: background worktrees; Windsurf 2.0: local Cascade + cloud Devin), the review workflow in each (Air: code-aware diff panel with line-commenting; Cursor 3: diff in editor; Windsurf 2.0: PR review in Spaces), real gotchas for each (Air: macOS only, no Claude Agent without JetBrains AI subscription; Cursor 3: agents hang when window loses focus; Windsurf 2.0: Devin credits cost extra), and a clear recommendation matrix (solo dev vs. team, macOS vs. cross-platform, local-first vs. cloud delegation preference). Alternative angle: *"The rise of the Agentic Development Environment: why your coding agent needs a control plane, not a chat window."*
+
+**Competition notes:**
+- Medium / Saeed Zarinfam (Mar 30): "JetBrains Air: The Future of Multi-Agent Coding, or Just More AI Noise?" — paywalled, 7 claps, covers Air at overview level but no hands-on comparison vs. Cursor or Windsurf.
+- JetBrains blog (Apr 9): "My Journey to Agent-First Development With Air" — testimonial-style from a JetBrains engineer. Official, but not an independent comparison.
+- JetBrains blog (Mar 24): Air launch post — authoritative but marketing-tone overview, not hands-on workflow.
+- Augment Code (Apr 12): "JetBrains Central vs Intent" — compares two enterprise products, mentions Air, not a hands-on Air workflow guide.
+- Reddit r/Jetbrains: "Thoughts on JetBrains' new agentic IDE, Air" — critical user thread ("feels half-baked"), no tutorial.
+- HN thread (74 points, 4 months ago): developer reactions, no dedicated tutorial.
+- YouTube: JetBrains official promo video + a few shorts — no independent hands-on comparison with Cursor or Windsurf.
+- **No independent developer-authored comparison of Air vs. Cursor 3 vs. Windsurf 2.0** exists yet. The category comparison search — "JetBrains Air vs Cursor" or "ADE comparison 2026" — returns no authoritative results.
+- Search intent: informational + decision-support. Developer audience (devs who've heard of all three products from separate launch announcements and want one comparison to inform which they adopt).
+- **Low competition** on "JetBrains Air review," "JetBrains Air vs Cursor," "agentic development environment comparison 2026," or "Air IDE review." The only substantive content is Figma's own blog, official JetBrains posts, and a paywalled Medium article.
+- Ranking potential: good on long-tail comparison phrases. The "I actually ran the same task in all three" framing differentiates from official launch posts. Developer Twitter and HN love head-to-head tool comparisons with real benchmark tasks.
+- **Window: 7–14 days.** Air has been in public preview since March 24 (25 days old) but is still macOS-only and underexposed. Windsurf 2.0 launched April 16 (2 days ago) and adds fresh search demand for the comparison angle. DataCamp and similar high-authority blogs have not yet published a three-way comparison. The window is wider than most product-launch opportunities because Air's preview phase has been slow to attract English-language independent coverage.
+EOF; echo "
+__CWD_TRACK__$(pwd)"

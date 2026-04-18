@@ -1,6 +1,6 @@
 # High Competition
 *Real trends but already saturated with content. Hard for a solo blogger to rank page 1.*
-*Last updated: 2026-04-17*
+*Last updated: 2026-04-18*
 
 ---
 
@@ -465,3 +465,43 @@
 - DeepLearning.AI (official short course with Google Cloud and IBM Research)
 
 **Why it's hard to rank:** The combination of Google's own authoritative blog posts and codelabs, the DeepLearning.AI course, Stellagent's comprehensive anniversary retrospective, and multiple developer community guides (DEV Community, Medium, GetStream) has saturated the general A2A explanation and "MCP vs A2A" comparison space. The official Google course and codelabs will dominate search. A very narrow niche angle (e.g., "A2A with a specific uncommon framework" or "A2A + AP2 for agentic payments — a real implementation") might still have a window, but the general tutorial and explainer space is gone.
+---
+
+## 27. Spec-Driven Development (SDD) — General Guides
+
+**Why it's trending:** "Spec-driven development" is 2026's answer to vibe coding's quality problem. Amazon Kiro (AWS) pioneered the term; GitHub Spec Kit (open-source CLI), Tessl (spec-as-source), and OpenSpec (Fission AI) followed. Thoughtworks April 2026 Macro Trends post calls it "harness engineering." Forbes Tech Council (March 9, 2026) published a comprehensive framing. Martin Fowler analyzed three SDD tools. The core idea — structured requirements (specify → design → plan → build) replacing ad-hoc prompting — has genuine traction across engineering teams who hit the vibe coding quality wall.
+
+**Who dominates:**
+- Forbes Technology Council (March 9, 2026 — "How Spec-Driven Development Sets The New Standard") — high authority, widely cited.
+- productbuilder.net (Feb 22, 2026 — 20-min comprehensive guide covering Claude Code Skills, GitHub Spec Kit, Amazon Kiro, Tessl, and three SDD tiers — "spec-first, spec-anchored, spec-as-source") — extremely thorough.
+- Martin Fowler (martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html — comparative analysis of Kiro, Spec Kit, and Tessl) — highest-authority developer thought leader.
+- Thoughtworks (April 2026 Macro Trends — positions SDD under "harness engineering") — institutional authority.
+- InfoQ (infoq.com/articles/spec-driven-development — "When Architecture Becomes Executable") — developer audience authority.
+- Kiro.dev blog (kiro.dev/blog/kiro-and-the-future-of-software-development — Amazon's own vision piece) — primary authority for Kiro queries.
+- Medium / Jerome VDL (Feb 10, 2026 — "Spec-driven development, Back to the Future?!" — practical workflow with Kiro CLI) — popular practitioner post.
+- Red Hat Developer Guide (developers.redhat.com — "How Spec-Driven Development Improves AI Coding Quality") — enterprise audience.
+- Augment Code (comprehensive Kiro alternatives guide — "Best Spec-Driven Development Tools") — ranks for tools comparison queries.
+- YouTube (RedMonk analyst discussion, Six Five On the Road Kiro interview, multiple "spec-driven dev" explainers) — video-format covered.
+
+**Why it's hard to rank:** Martin Fowler + Kiro.dev official blog + Forbes Tech Council + productbuilder.net 20-min guide together cover the concept definition, tool comparison, workflow tutorial, and "why it matters" angles. productbuilder.net's "2026 Guide to Production AI Code" is a particularly strong all-in-one resource that ranks on most SDD queries. A solo blogger would need a very specific niche (e.g., "SDD with a specific framework like FastAPI + Supabase" or "SDD vs BMAD for brownfield projects") to carve out any ranking position.
+
+---
+
+## 28. OpenAI Codex Major Update — Computer Use, 90+ Plugins, In-App Browser (April 16, 2026)
+
+**Why it's trending:** OpenAI's April 16, 2026 Codex update ("Codex for almost everything") transformed Codex from a cloud coding agent into a full desktop agent: background Computer Use (operates your Mac with its own cursor in parallel with your own work), an in-app browser with comment-annotation for frontend iteration, 90+ plugins (skills, app integrations, MCP servers), image generation via gpt-image-1.5 inside workflows, cross-session automations, and memory preview. 3M+ weekly users. Forbes covered how Codex agents autonomously run OpenAI's data platform (Apr 17). Product Hunt: listed alongside Claude Opus 4.7 on April 17 daily leaderboard.
+
+**Who dominates (as of April 18, 2026):**
+- OpenAI official blog (openai.com/index/codex-for-almost-everything — April 16 — primary authority, will dominate "codex computer use" and related queries).
+- Digital Applied (Apr 16 — "OpenAI Codex for (Almost) Everything: Release Guide" — 14-min comprehensive breakdown of all April 16 features, deployment patterns, comparison with Claude Code and Jules).
+- AnotherWrapper (Apr 17 — "Codex Computer Use: Complete Guide" — specific to the computer-use feature, with SEO demand analysis, TL;DR table, safety limits, comparison to Claude Computer Use).
+- AI.cc blog (Apr 17 — "How to Use Codex: April 2026 Computer Use & Full Guide" — step-by-step setup).
+- Zack Proser blog (updated review, 2026 — "OpenAI Codex Review 2026 — Updated from Daily Use" — real daily workflow at WorkOS, feature comparisons).
+- JP Caparas Medium (Apr 17 — "OpenAI Codex now controls your computer" — summary for general developer audience).
+- Forbes (Apr 17 — "OpenAI Says Codex Agents Are Running Its Data Platform Autonomously" — production use case angle).
+- YouTube (full course published 7 days ago with 13K+ views — "CODEX FULL COURSE: From Zero to Deployed App (2026)").
+- OpenAI "Codex for (almost) everything" and Figma blog (Apr 10 — "Building Frontend UIs with Codex and Figma") — official cross-product integrations coverage.
+
+**Why it's hard to rank:** The launch is 2 days old but competition mobilized extremely fast. OpenAI's official blog dominates the primary queries. Digital Applied (14-min guide with deployment patterns), AnotherWrapper (Computer Use deep-dive), and AI.cc (step-by-step guide) all published same-day or next-day. YouTube's "CODEX FULL COURSE" (13K views, published 7 days before launch for prior content) will rank for broad queries. The Codex brand has three years of SEO history, which means new content must clear a high bar. No unclaimed angle exists for a solo blogger on general Codex Computer Use coverage.
+EOF; echo "
+__CWD_TRACK__$(pwd)"
