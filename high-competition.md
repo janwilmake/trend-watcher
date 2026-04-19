@@ -1,6 +1,6 @@
 # High Competition
 *Real trends but already saturated with content. Hard for a solo blogger to rank page 1.*
-*Last updated: 2026-04-18*
+*Last updated: 2026-04-19*
 
 ---
 
@@ -503,5 +503,25 @@
 - OpenAI "Codex for (almost) everything" and Figma blog (Apr 10 — "Building Frontend UIs with Codex and Figma") — official cross-product integrations coverage.
 
 **Why it's hard to rank:** The launch is 2 days old but competition mobilized extremely fast. OpenAI's official blog dominates the primary queries. Digital Applied (14-min guide with deployment patterns), AnotherWrapper (Computer Use deep-dive), and AI.cc (step-by-step guide) all published same-day or next-day. YouTube's "CODEX FULL COURSE" (13K views, published 7 days before launch for prior content) will rank for broad queries. The Codex brand has three years of SEO history, which means new content must clear a high bar. No unclaimed angle exists for a solo blogger on general Codex Computer Use coverage.
+
+---
+
+## 29. Claude Design — General Tutorial / Review Coverage (Previously a Good Contender — Competition Caught Up)
+
+**Why it's trending:** Anthropic launched Claude Design on April 17, 2026 — an Anthropic Labs product powered by Claude Opus 4.7's vision model that generates interactive prototypes, pitch decks, wireframes, and marketing collateral from text prompts. Available in research preview for Claude Pro/Max/Team/Enterprise. Directly challenges Figma for the rapid prototyping workflow; Anthropic's CPO Mike Krieger resigned from Figma's board same day.
+
+**Who dominates (as of April 19, 2026):**
+- Anthropic official blog (anthropic.com/news/claude-design-anthropic-labs, Apr 17 — primary authority)
+- TechCrunch (Apr 17, Aisha Malik — "Anthropic launches Claude Design, a new product for creating quick visuals")
+- VentureBeat (Apr 17 — "turns prompts into prototypes and challenges Figma")
+- Gizmodo (Apr 17 — "Figma stock immediately nosedives")
+- tosea.ai (Apr 16 — "Complete Guide to Anthropic's New Prompt-to-Prototype Tool")
+- BuildFastWithAI (Apr 18 — "Claude Design: Complete Guide for Non-Designers 2026" — comprehensive step-by-step including limitations)
+- Medium / Abhi Chatterjee (Apr 18 — "Claude Design Just Launched — A Designer's First Walkthrough")
+- Medium / Design Bootcamp (Apr 18 — "Claude Design, Figma MCP, Claude Code. The Full Loop" — covers the full Claude → Figma → Code design workflow)
+- Creator Economy / Peter Yang (Apr 18 — paid newsletter, 5 real demos: videos, slides, websites, apps, design systems)
+- The New Stack (Apr 17 — "Anthropic Claude Design launch review")
+
+**Why it's hard to rank:** Within 48 hours of launch, four independent comprehensive tutorials and multiple news articles now cover every core angle: the "non-designer guide" (BuildFastWithAI), the "designer's first walkthrough" (Chatterjee), the "full Claude/Figma/Code loop" (Design Bootcamp), and the "5 real demos" (Peter Yang). The official Anthropic blog naturally dominates for brand queries. The "vs. Figma Make" comparison angle has strong demand but both Figma and Anthropic will publish authoritative comparison content within the week. A solo blogger entering now would need a very specific niche (e.g., "Claude Design for pitch deck creation step-by-step" or "Claude Design with a specific design system token structure") to carve out any ranking position.
 EOF; echo "
 __CWD_TRACK__$(pwd)"
