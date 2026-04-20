@@ -1,6 +1,6 @@
 # High Competition
 *Real trends but already saturated with content. Hard for a solo blogger to rank page 1.*
-*Last updated: 2026-04-19*
+*Last updated: 2026-04-20*
 
 ---
 
@@ -506,6 +506,40 @@
 
 ---
 
+## 30. Cloudflare Agents Week 2026 — General Recap / Overview
+
+**Why it's trending:** Cloudflare ran Agents Week April 14–20, 2026, shipping 20+ announcements covering the full agent stack: Project Think (new Agents SDK), Cloudflare Email Service (public beta), Browser Run (give agents a browser), Agent Readiness Score (isitagentready.com), Flagship (feature flags for AI code), Managed OAuth for Access, Secure private networking for agents, AI Search primitive, Voice agents, and more.
+
+**Who dominates:**
+- Cloudflare official blog (blog.cloudflare.com/agents-week-in-review, Apr 20 — comprehensive recap of all 20+ announcements, primary authority for every "Cloudflare Agents Week" query)
+- Cloudflare.com/agents-week (dedicated hub page with all announcements — owns the category)
+- nohacks.co (Apr 18 — thorough breakdown of the Agent Readiness Score specifically)
+- Cloudflare Community (official thread with day-by-day announcement list)
+- Individual Cloudflare blog posts for each announcement (email service, project think, browser run, etc.) — all official, all authoritative
+- Product Hunt listings for individual products (Email Service: 259 upvotes Apr 18)
+
+**Why it's hard to rank:** Cloudflare published the definitive recap of its own week-long event on April 20 at blog.cloudflare.com/agents-week-in-review. This will dominate all "Cloudflare Agents Week 2026" queries. Individual product announcements (Email Service, Project Think, Browser Run) also have official Cloudflare blog posts that will rank for product-specific queries. The only window for independent content is narrow, specific how-to tutorials for individual products (e.g., "how to deploy the agentic inbox" — see good-contenders #7).
+
+---
+
+## 31. Qwen3.6 — General Model Review / Benchmark Coverage
+
+**Why it's trending:** Alibaba open-sourced Qwen3.6-35B-A3B on April 15, 2026 — a MoE model with 35B total / 3B active parameters, strong agentic coding benchmarks, Apache 2.0 license. Hit HN front page April 20 with "Qwen3.6-Max-Preview: Smarter, Sharper, Still Evolving" (139 points). Listed on Product Hunt April 17. Qwen3.6-Max (larger, closed) also previewed. 82K HuggingFace downloads in first week.
+
+**Who dominates:**
+- Qwen official blog (qwen.ai/blog?id=qwen3.6-35b-a3b, Apr 15 — primary technical reference)
+- HuggingFace model card (Qwen/Qwen3.6-35B-A3B — 82K downloads, community PRs and discussions)
+- GitHub QwenLM/Qwen3.6 (2.7K stars, official repo — ranks for all "qwen3.6 github" queries)
+- vLLM Recipes (official deployment guide for Qwen3.5/3.6 — covers SGLang, vLLM, GB200, MI355X)
+- Medium / Sebastian Buzdugan (Apr 18 — paywalled but indexed, general coverage)
+- YouTube "Qwen3.6 on M5 Max is INSANE" (local performance demo)
+- MarkTechPost (Apr 16 — typical model launch coverage, captcha-blocked but indexed)
+- DataCamp (Jul 2025 Qwen Code guide — old but authoritative, will update)
+
+**Why it's hard to rank:** The official Qwen blog and HuggingFace model card together dominate all "Qwen3.6 what is it" and "Qwen3.6 benchmark" queries. MarkTechPost and similar AI news aggregators publish model launch coverage within hours. DataCamp will publish a Qwen3.6 guide within the week. The general "Qwen3.6 review" space will be saturated quickly. (See good-contenders #8 for the specific "Claude Code + Qwen3.6 free API" angle, which remains open.)
+
+---
+
 ## 29. Claude Design — General Tutorial / Review Coverage (Previously a Good Contender — Competition Caught Up)
 
 **Why it's trending:** Anthropic launched Claude Design on April 17, 2026 — an Anthropic Labs product powered by Claude Opus 4.7's vision model that generates interactive prototypes, pitch decks, wireframes, and marketing collateral from text prompts. Available in research preview for Claude Pro/Max/Team/Enterprise. Directly challenges Figma for the rapid prototyping workflow; Anthropic's CPO Mike Krieger resigned from Figma's board same day.
@@ -523,5 +557,3 @@
 - The New Stack (Apr 17 — "Anthropic Claude Design launch review")
 
 **Why it's hard to rank:** Within 48 hours of launch, four independent comprehensive tutorials and multiple news articles now cover every core angle: the "non-designer guide" (BuildFastWithAI), the "designer's first walkthrough" (Chatterjee), the "full Claude/Figma/Code loop" (Design Bootcamp), and the "5 real demos" (Peter Yang). The official Anthropic blog naturally dominates for brand queries. The "vs. Figma Make" comparison angle has strong demand but both Figma and Anthropic will publish authoritative comparison content within the week. A solo blogger entering now would need a very specific niche (e.g., "Claude Design for pitch deck creation step-by-step" or "Claude Design with a specific design system token structure") to carve out any ranking position.
-EOF; echo "
-__CWD_TRACK__$(pwd)"
