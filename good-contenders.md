@@ -1,6 +1,6 @@
 # Good Contenders
 *Trends with low competition, specific enough to rank for, high informational intent.*
-*Last updated: 2026-04-20*
+*Last updated: 2026-04-21*
 
 ---
 
@@ -168,3 +168,25 @@
 - **Very low competition** on "atlassian ai training opt out guide," "atlassian jira confluence data contribution steps," or "atlassian rovo data collection engineering team."
 - Ranking potential: strong and fast. This is breaking news with a hard deadline. The HN thread has a "what should I do?" tone — a practical guide published today or tomorrow captures that intent before the news cycle moves on.
 - **Window: 2–4 days.** This is breaking news as of April 20. The HN post will drive search interest this week. Forbes Tech Council, TechCrunch, and medium-authority SaaS management blogs will publish "what this means" takes within 48–72 hours — but a "step-by-step CTO checklist" with the opt-out settings walkthrough is a specific enough angle to still be unclaimed 3–4 days from now. The urgency framing (119 days until the deadline) gives the post ongoing relevance beyond the news spike.
+
+---
+
+## 10. Resend CLI 2.0 Agent Skills — Giving Your Coding Agent a Full Email Workflow
+
+**Why it's trending:** Resend ran **Launch Week 6** (April 13–20, 2026), capping it off with a wrap-up post on April 20. The standout developer-facing feature is **Resend CLI 2.0** (Product Hunt Week of Apr 13–19: #13, 348 upvotes), which ships with **Agent Skills** (`npx skills add resend/resend-skills`) — five structured SKILL.md files that give any coding agent (Claude Code, Cursor, Codex, Windsurf, GitHub Copilot) a complete, opinionated email capability: send emails, handle inbound email with an agent inbox, use the CLI from the agent terminal, apply email best practices, and configure automations. The key developer story: unlike MCP (which gives an agent *access* to a tool), Agent Skills give an agent *expertise* in how to use that tool correctly — best practices, retry logic, idempotency keys, bounce handling, DMARC compliance, and the full Resend API surface, all encoded as portable Markdown files the agent reads on demand. The `Agent Email Inbox` skill is particularly underexplored: it gives a coding agent its own persistent email address so it can sign up for services, receive and parse confirmation emails, respond to users, and trigger automations — entirely without manual intervention. Resend also shipped **React Email 6.0** (April 17) and **Automations** (April 13) in the same week, creating a complete "email-native agent" stack.
+
+**Suggested blog angle:** *"How to give your Claude Code agent a full email workflow with Resend CLI 2.0 and Agent Skills"* — a practical developer guide covering: what Agent Skills actually are (SKILL.md vs MCP — the "hands vs. know-how" distinction), the one-command install (`npx skills add resend/resend-skills`), five real use cases for email-capable agents (1: agent signs up for a SaaS trial and auto-verifies its email; 2: agent sends transactional emails from a vibe-coded app; 3: agent monitors an inbox for customer replies and triggers a workflow; 4: agent builds and tests a React Email template in the terminal; 5: agent configures DMARC/SPF/DKIM for a new domain), and a cost/tier rundown (free Resend tier: 3K emails/month — sufficient for development and small agents). Alternative angle: *"Agent Skills vs. MCP: when to use structured domain expertise instead of raw tool access — using Resend as the example."*
+
+**Competition notes:**
+- Resend official blog (resend.com/blog/resend-cli-2, Apr 15): launch announcement with brief Agent Skills overview — no workflow tutorial or use-case narrative.
+- Resend official blog (resend.com/blog/how-to-create-a-devtools-agent-skill, Feb 5): deep-dive on *building* Agent Skills as a DevTool vendor — covers the *author* side only, not the consumer-side workflow guide.
+- Zeno Rocha LinkedIn (Apr 15): launch announcement — no tutorial.
+- Medium / unicodeveloper (Apr 1): "10 Must-Have CLIs for AI Agents" — brief mention of Resend, no dedicated guide.
+- Product Hunt discussion (Apr 13–19 week): feature announcements only, no hands-on content.
+- **No independent developer blog or tutorial covers using Resend CLI 2.0 Agent Skills in a coding agent workflow.**
+- Search intent: informational + how-to. Developer audience: anyone building agentic apps who needs email capability in their coding agent (very broad — email is in nearly every production app).
+- **Low competition** on "resend agent skills tutorial," "resend CLI 2.0 coding agent email," "claude code resend email workflow," or "give coding agent email inbox."
+- Ranking potential: strong on long-tail phrases. Resend has 1M+ users, high developer newsletter presence, and the Agent Skills pattern is spreading across devtools (Figma, Apify, TX Text Control all ship Agent Skills), so the consumer-side guide fills a growing gap.
+- **Window: 3–5 days.** Launch Week 6 wrapped April 20. Newsletter coverage (TLDR, JavaScript Weekly, Bytes, Pointer) will include the Launch Week recap in the April 21–27 cycle. Resend's own blog consistently produces polished developer content but has not yet published a consumer-side agent workflow guide.
+EOF; echo "
+__CWD_TRACK__$(pwd)"

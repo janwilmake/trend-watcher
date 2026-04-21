@@ -1,6 +1,6 @@
 # High Competition
 *Real trends but already saturated with content. Hard for a solo blogger to rank page 1.*
-*Last updated: 2026-04-20*
+*Last updated: 2026-04-21*
 
 ---
 
@@ -537,6 +537,26 @@
 - DataCamp (Jul 2025 Qwen Code guide — old but authoritative, will update)
 
 **Why it's hard to rank:** The official Qwen blog and HuggingFace model card together dominate all "Qwen3.6 what is it" and "Qwen3.6 benchmark" queries. MarkTechPost and similar AI news aggregators publish model launch coverage within hours. DataCamp will publish a Qwen3.6 guide within the week. The general "Qwen3.6 review" space will be saturated quickly. (See good-contenders #8 for the specific "Claude Code + Qwen3.6 free API" angle, which remains open.)
+
+---
+
+## 32. AI Productivity Gains "10%, Not 10x" — The DX Research Study
+
+**Why it's trending:** DX (the developer productivity measurement platform) published "AI productivity gains are 10%, not 10x" on March 11, 2026 — a longitudinal study of 400 companies showing that despite 65% growth in AI tool usage, PR throughput only improved ~10%. The study hit Hacker News today (April 21, 2026 — "Preliminary data from a longitudinal AI impact study," 57 points, 39 comments), resurfacing the data 41 days after publication. ShiftMag published a Laura Tacho (DX CTO) keynote summary on March 31 expanding the dataset to 121,000 developers across 450+ companies with the same ~10% finding. The Exceeds.ai blog (Apr 13) adds the "AI coding productivity paradox" angle (teams 19% slower even as individuals feel 20% faster).
+
+**Who dominates:**
+- DX (getdx.com/blog + newsletter.getdx.com — primary authority, the original study, comprehensive, well-SEO-optimized)
+- ShiftMag (March 31 — keynote coverage from a named CTO with full dataset expansion)
+- BuildMVPFast (March 23 — "DX Core 4 Framework" post with the 10% numbers embedded)
+- MetaCTO (April 13 — "Amplification vs Augmentation" using DX as source)
+- Exceeds.ai blog (April 13 — "AI Coding Agent Productivity Paradox" with the 19% slowdown study integration)
+- FlowLabs Substack (March 11 — André Meyer replication comment, own data post)
+- LinkedIn (multiple engineering managers and CTOs resharing — Sam Newman, developer-experience official account — broad distribution)
+- Reddit r/EngineeringManagers (link share, active discussion)
+- Hacker News (April 21 — active thread today)
+- YouTube ("It's Not 10x, it's 100x" — counter-narrative, Mar 30)
+
+**Why it's hard to rank:** The original DX study is 6 weeks old and the primary source dominates all search queries for its own findings. ShiftMag's keynote summary is the second-most-authoritative take. BuildMVPFast's DX Core 4 guide and Exceeds.ai's productivity paradox post cover the follow-on "what do we do about it" angle. The topic has been fully covered from every angle: the data summary, the CTO perspective, the framework implication, the counter-argument, and the productivity paradox integration. A solo blogger entering now would be the 6th+ result for any "AI productivity 10 percent" query.
 
 ---
 
