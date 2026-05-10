@@ -1,6 +1,6 @@
 # Good Contenders
 *Trends with low competition, specific enough to rank for, high informational intent.*
-*Last updated: 2026-04-21*
+*Last updated: 2026-05-10*
 
 ---
 
@@ -71,64 +71,9 @@
 
 ---
 
-## 5. JetBrains Air — Practical Comparison: Air vs. Cursor 3 vs. Windsurf 2.0 for Multi-Agent Workflows
 
-**Why it's trending:** JetBrains entered the Agentic Development Environment (ADE) category in March 2026 with Air (public preview, free for macOS). Air is a standalone desktop app — not a plugin or IDE extension — that runs Codex, Claude Agent, Gemini CLI, and Junie concurrently in Git worktrees or Docker containers, with a task-card UI for managing concurrent agent work and a code-aware diff review panel. It sits in direct comparison with Cursor 3's Agents Window (launched April 2) and Windsurf 2.0's Agent Command Center (launched April 16). All three shipped parallel-agent management within six weeks of each other, creating a natural "which one should I use?" search query that is not yet authoritatively answered. The category name "Agentic Development Environment" is gaining traction (Thoughtworks April 2026 macro trends post, JetBrains survey showing 85% AI tool adoption).
 
-**Suggested blog angle:** *"Air vs. Cursor 3 vs. Windsurf 2.0: I ran the same three tasks in each parallel-agent system — here's what actually worked"* — a practical developer comparison covering: the core architecture difference (Air: standalone ADE for agent orchestration; Cursor 3: multi-agent inside your existing editor; Windsurf 2.0: IDE + cloud Devin delegation), how each handles task isolation, the review workflow in each, real gotchas for each, and a clear recommendation matrix (solo dev vs. team, macOS vs. cross-platform, local-first vs. cloud delegation preference). Alternative angle: *"The rise of the Agentic Development Environment: why your coding agent needs a control plane, not a chat window."*
-
-**Competition notes:**
-- Medium / Saeed Zarinfam (Mar 30): paywalled, 7 claps, overview level only — no hands-on comparison vs. Cursor or Windsurf.
-- JetBrains blog (Apr 9): testimonial-style from a JetBrains engineer — official, not independent.
-- Reddit r/Jetbrains: "feels half-baked" thread — no tutorial.
-- YouTube: JetBrains official promo + a few shorts — no independent hands-on comparison with Cursor or Windsurf.
-- **No independent developer-authored comparison of Air vs. Cursor 3 vs. Windsurf 2.0** exists yet.
-- Search intent: informational + decision-support.
-- **Low competition** on "JetBrains Air review," "JetBrains Air vs Cursor," "agentic development environment comparison 2026."
-- **Window: 7–14 days.** Air has been in public preview since March 24 but is still macOS-only and underexposed. DataCamp and similar high-authority blogs have not yet published a three-way comparison.
-
----
-
-## 6. Fathom 3.0 + Official MCP Server — The "Meeting Memory" Workflow for Developer Teams
-
-**Why it's trending:** Fathom launched version 3.0 on April 15, 2026 (#1 Product Hunt of the Day, 581 upvotes) — the biggest update since Fathom 2.0. The headline feature is bot-free capture, but the under-covered developer story is the simultaneous launch of Fathom's **official MCP server** (April 17, registered on PulseMCP). This MCP server connects Claude, Claude Code, ChatGPT, and Cursor directly to your Fathom meeting history — enabling queries like "What did the client say about the database migration last week?" without leaving your IDE. For developer teams who use Fathom to record standups, architecture calls, and customer interviews, the combination of bot-free capture + the official MCP server creates a "meeting memory" layer that feeds directly into coding agents — but the workflow is completely undocumented from a practitioner standpoint.
-
-**Suggested blog angle:** *"I connected Fathom 3.0 to Claude Code — my meetings are now part of my development context"* — a developer-focused workflow guide covering: why meeting knowledge is usually lost for engineering decisions, how to connect the official Fathom MCP server to Claude Code in one command, three concrete use cases for developer teams (1: query last week's architecture call before writing a spec; 2: extract all open action items from standup transcripts; 3: pull client feedback from sales calls into a feature brief), and what the new account-wide Ask Fathom means for engineering team leads.
-
-**Competition notes:**
-- Fathom official MCP docs (developers.fathom.ai/mcp-docs/claude): step-by-step connection reference — not a workflow narrative or use-case tutorial.
-- TechCrunch (Apr 15): "Fathom adds a bot-less meeting mode" — covers the launch, no developer workflow guide.
-- PulseMCP (Apr 17): listing entry — index only, no tutorial.
-- agencyenterprise/fathom-mcp-server (GitHub): community-built MCP repo — code only, no tutorial post.
-- **No independent developer workflow post** covers connecting the official Fathom MCP to Claude Code or using meeting context in an engineering workflow as of April 20, 2026.
-- Search intent: informational + how-to. Audience: developers and engineering team leads who use Fathom for meeting notes and also use Claude/Claude Code.
-- **Low competition** on "Fathom MCP server tutorial," "Fathom 3.0 Claude Code integration," or "meeting intelligence developer workflow."
-- **Window: 3–5 days** (from Apr 20). The official MCP server launched April 17 (3 days ago). Window is wider than pure product launch because the integration angle is non-obvious.
-
----
-
-## 7. Cloudflare Agentic Inbox — Building a Self-Hosted AI Email Agent on Workers
-
-**Why it's trending:** Cloudflare concluded **Agents Week 2026** (April 14–20) with 20+ announcements targeting the agent-native cloud layer. The standout developer-facing product is **Cloudflare Email Service** (now in public beta, announced April 16) — the infrastructure primitive that lets AI agents send, receive, and process email natively from Cloudflare Workers. Cloudflare published a reference implementation called **Agentic Inbox** (GitHub: cloudflare/agentic-inbox) — a complete self-hosted email client built on Workers, Durable Objects, and R2, with a built-in AI agent (Cloudflare Agents SDK + Workers AI) that can read, search, draft, and send emails, plus an MCP server at `/mcp` that lets external tools (Claude Code, Cursor) operate on any mailbox. The reference app uses React 19, Hono, and the Cloudflare Agents SDK. This is not a toy demo — it is a production-ready reference implementation for the "email-as-agent-channel" pattern that Cloudflare is betting will define the next layer of the agentic web. Product Hunt listed Cloudflare Email Service on April 18 (259 upvotes). The only available content as of today (April 20) is Cloudflare's own blog post and a YouTube tutorial with 5 views published 8 hours ago.
-
-**Suggested blog angle:** *"I deployed Cloudflare's Agentic Inbox: here's what a self-hosted AI email agent actually looks like"* — a developer walkthrough covering: what Cloudflare Email Service adds on top of Email Routing (Email Service adds sending + programmatic processing, Email Routing was receive-only), the architecture of the Agentic Inbox reference app (Workers + Durable Objects per mailbox + R2 attachments + Agents SDK), how to deploy it to your own Cloudflare account (clone repo, `wrangler deploy`, configure Cloudflare Access), how the built-in AI agent works (9 email tools, auto-draft on new email, persistent chat history with streaming markdown), how to connect external tools via the MCP endpoint (`/mcp` with mailboxId parameter), and where the trust boundaries are (Cloudflare Access is the single boundary — any tool that passes it can access any mailbox). Alternative angle: *"Cloudflare Agents Week 2026: the five announcements that actually matter for developers building agents."*
-
-**Competition notes:**
-- Cloudflare official blog (blog.cloudflare.com/email-for-agents, Apr 16): full technical description and architecture — authoritative, will rank for "Cloudflare Email Service" but not for "how to deploy" or "self-hosted email agent."
-- YouTube tutorial (youtube.com/watch?v=UKAxFjxoHfg, Apr 20, "Max"): 5 views, 35 min tutorial — just published today (8 hours ago), extremely low distribution, no SEO.
-- funblocks.net/aitools/reviews/cloudflare-email-service: 3-day-old brief overview — no setup guide.
-- Reddit r/HostingReport: 4-day-old link share — no commentary.
-- No Hacker News submission for Email Service yet (Agents Week overall is on HN but the Email Service specifically is not its own thread).
-- nohacks.co (Apr 18): excellent breakdown of the Agent Readiness Score specifically, does not cover Email Service.
-- **No independent developer walkthrough of Agentic Inbox deployment exists as of April 20.**
-- Search intent: informational + how-to. Developer audience: Cloudflare Workers developers, indie hackers building AI-native apps, anyone who wants an email agent without giving a third-party SaaS access to their inbox.
-- **Very low competition** on "Cloudflare agentic inbox," "Cloudflare email service tutorial," "self-hosted AI email agent Workers," or "cloudflare/agentic-inbox deploy."
-- Ranking potential: strong on product-specific long-tail phrases. Cloudflare has a very large developer community (50M+ websites, significant developer following). The Agents Week recap will generate significant newsletter/social traffic this week.
-- **Window: 3–5 days.** Agents Week wrapped today (April 20). Newsletters (TLDR, Bytes, Cooper Press) will include the recap this week. The YouTube tutorial (5 views) will naturally attract some viewers, but a written guide with SEO will capture the "how do I actually deploy this" search intent that video doesn't serve. The window is tight — Cloudflare has a large developer-content ecosystem (Cloudflare TV, community blogs) that produces tutorials quickly.
-
----
-
-## 8. Qwen3.6-35B-A3B + Qwen Code — The Free Claude Code Alternative Setup Guide
+## 5. Qwen3.6-35B-A3B + Qwen Code — The Free Claude Code Alternative Setup Guide
 
 **Why it's trending:** Alibaba open-sourced **Qwen3.6-35B-A3B** on April 15, 2026 — a sparse MoE model with 35B total / 3B active parameters that delivers agentic coding performance rivaling much larger dense models (Gemma4-31B, Qwen3.5-27B), with 82,000 HuggingFace downloads/month in its first week. The genuinely underreported story: Qwen3.6's API (`qwen3.6-flash` on Alibaba Cloud Model Studio) **supports the Anthropic API protocol natively**, meaning developers can point Claude Code directly at Qwen's API endpoint with two environment variables and get a free (within the Alibaba Cloud free tier) coding agent experience — no Claude subscription required. Qwen Code, the open-source terminal agent (GitHub: QwenLM/qwen-code), is also updated to work with Qwen3.6 and is gaining traction (on HN front page today: "Qwen3.6-Max-Preview: Smarter, Sharper, Still Evolving" — 139 points, 60 comments as of April 20). The model also runs well locally via Ollama on an M5 Max (YouTube demo: "Qwen3.6 on M5 Max is INSANE") — and on Product Hunt on April 17 it appeared as "Qwen3.6-35B-A3B: The open sparse MoE model for agentic coding" (listed as an April 17 daily entry).
 
@@ -150,43 +95,86 @@
 
 ---
 
-## 9. Atlassian AI Training Data Opt-Out — What Engineering Teams Must Do Before August 17, 2026
 
-**Why it's trending:** On April 17–19, 2026, Atlassian announced that starting **August 17, 2026**, it will automatically collect metadata and in-app content from Jira, Confluence, and other cloud products to train its AI models (Rovo and Rovo Dev) — affecting ~300,000 customers. Free and Standard tiers **cannot opt out of metadata collection at all**. Free/Standard can opt out of in-app data (Jira issue content, Confluence page bodies) but it's on by default. Premium keeps metadata always on. Only Enterprise has both off by default. Data retained for up to 7 years. This hit HN front page today (April 20, 181 points, 45 comments in 3 hours), trending on LinkedIn (Steph Ango / kepano X post going viral: 418 retweets in hours), and The Register covered it April 18 with 23 comments. The deadline is 119 days away — enough time to act, but close enough to feel urgent. For engineering teams with confidential Jira boards (unreleased features, security vulnerabilities, salary negotiations, M&A due diligence) this is genuinely high stakes.
+## 6. pay.sh + x402 Protocol — Giving Your Claude Code Agent a Wallet
 
-**Suggested blog angle:** *"Atlassian is training AI on your Jira and Confluence data starting August 17 — here's exactly what to do"* — a practical engineering team guide covering: exactly what data Atlassian collects (metadata = readability scores, story points, sprint dates, SLA values; in-app = page titles, issue descriptions, comments, workflow names), which plans can opt out of what (the tier matrix explained clearly), how to actually opt out (Atlassian Administration → data contribution settings, with screenshots), what "de-identified and aggregated" really means (the limits of anonymization with Jira data), what to do if you're on Free/Standard and can't opt out of metadata (your options: upgrade to Enterprise, migrate to Data Center, migrate off Atlassian), and a compliance checklist for CTOs and engineering VPs (7 action items, GDPR/HIPAA implications, contractual considerations for enterprise customers). Alternative angle: *"The Atlassian AI training announcement is a preview of what every SaaS will do — here's how to audit your stack."*
+**Why it's trending:** The Solana Foundation and Google Cloud jointly launched **pay.sh** on May 5, 2026 — a pay-as-you-go API gateway that lets AI agents discover, access, and pay for APIs using stablecoins on Solana, with zero account setup or API keys required. The payment *is* the credential: agents connect a Solana wallet, onramp with a credit card in 60 seconds, then autonomously browse a unified catalog of 72+ API providers (Google Cloud's Gemini, BigQuery, Vertex AI, plus community providers covering email, market data, social, enrichment, and compute), view live pricing, and pay per request using USDC via the x402 protocol. Pay.sh launched simultaneously with a CLI tool, an MCP server (for Claude Code, Codex, Gemini, Openclaw), and an Agent Skills index. It's built on x402 — the open HTTP 402 payment standard originally developed by Coinbase, now governed by the Linux Foundation (backed by Adyen, AWS, American Express, Base, Circle, Cloudflare, Google, Mastercard, Microsoft, Shopify, Stripe, and Visa). The Linux Foundation launched the x402 Foundation on April 2, 2026. Pay.sh is the first major "wallet for AI agents" product combining Google Cloud's official API catalog with Solana's near-instant micropayment rails into a developer-ready package. Product Hunt listed pay.sh (#13 of May 2026 so far). The launch is 5 days old.
+
+**Suggested blog angle:** *"I gave my Claude Code agent a Solana wallet — it now pays for its own APIs"* — a developer workflow guide covering: what pay.sh actually does (wallet-as-identity model, no API keys, per-request USDC payments via x402), the exact three-step setup with Claude Code (install CLI, connect wallet, add Pay MCP server to `.mcp.json`), a live walkthrough of the agent calling a real API (e.g., Gemini for image analysis or market data from StableCrypto) and paying autonomously, the cost math (most endpoints $0.001–$0.01 per call vs. monthly subscription economics), when you'd actually want this vs. direct API keys (agentic tasks that span multiple unknown APIs; avoiding credential management in code), and how to publish your own paid API endpoint to the pay.sh catalog if you're an API provider. Alternative angle: *"x402 and pay.sh: the payment layer that lets AI agents buy services — a practical guide for developers."*
 
 **Competition notes:**
-- The Register (Apr 18): "Atlassian to train AI on user data unless law or cash say no" — 23 comments, covers the policy clearly, links to official docs. News format, no actionable checklist.
-- letsdatascience.com (Apr 19): 6-source aggregation with technical details — useful summary but no action guide.
-- byteiota.com (Apr 20, 3 hours ago): "Your 2026 Data Will Train AI Until 2033" — brief analysis, no opt-out steps.
-- Steph Ango / kepano (X, Apr 20): viral post (418 retweets) — awareness only, links to official page.
-- Atlassian official trust page (atlassian.com/trust/ai/data-contribution): detailed FAQ — no third-party perspective, no checklist for engineering teams.
-- Atlassian webinar (Apr 28): official — in the future, and webinar format not searchable.
-- **No independent "what engineering teams should do" guide or CTO checklist exists yet.** The conversation is happening on X, HN, and LinkedIn but hasn't been codified into a practical post.
-- Search intent: informational + task-oriented. Audience: CTOs, VPs of Engineering, and engineering managers at companies using Atlassian cloud products — exactly the audience that reads developer blogs and is making decisions about data governance this week.
-- **Very low competition** on "atlassian ai training opt out guide," "atlassian jira confluence data contribution steps," or "atlassian rovo data collection engineering team."
-- Ranking potential: strong and fast. This is breaking news with a hard deadline. The HN thread has a "what should I do?" tone — a practical guide published today or tomorrow captures that intent before the news cycle moves on.
-- **Window: 2–4 days.** This is breaking news as of April 20. The HN post will drive search interest this week. Forbes Tech Council, TechCrunch, and medium-authority SaaS management blogs will publish "what this means" takes within 48–72 hours — but a "step-by-step CTO checklist" with the opt-out settings walkthrough is a specific enough angle to still be unclaimed 3–4 days from now. The urgency framing (119 days until the deadline) gives the post ongoing relevance beyond the news spike.
+- Solana Foundation official launch post (solana.com/news, May 5): comprehensive technical explanation — not a developer workflow narrative.
+- TheStreet Crypto (May 5): "Solana rolls out Pay.sh" — news format, no tutorial.
+- TECHi (May 6): "Solana Pay.sh Turns AI Agents Into API Buyers" — analytical/explainer, no setup guide.
+- Backpack Exchange Learn (May 7): "What Is Pay.sh? Solana and AI Agent Payments Explained" — excellent conceptual explainer, no hands-on walkthrough.
+- YouTube (May 7, small channel): "How AI Agents Can Pay for Things | Pay.sh tutorial and integrations" — video format, limited reach, no written counterpart.
+- proxies.sx blog: "Build an autonomous AI agent that pays for its own compute" — x402 tutorial predating pay.sh, different scope.
+- Simplescraper blog: "How to x402: The Complete Guide" — February 2026, covers the underlying protocol deeply but predates pay.sh by 3 months.
+- **No independent developer blog covers the specific pay.sh + Claude Code wallet setup workflow** with hands-on steps, cost analysis, and real API call examples.
+- Search intent: how-to + informational. Audience: developers building agentic apps who want to give agents autonomy over API purchases; indie hackers who want to avoid managing API key rotation and subscriptions; developers building on Cloudflare Workers or Claude Code who want to monetize their own APIs via pay.sh.
+- **Low competition** on "pay.sh tutorial," "pay.sh claude code," "give AI agent a wallet," "x402 pay.sh setup," or "AI agent pays for APIs stablecoin guide."
+- Ranking potential: strong on long-tail phrases. Pay.sh sits at the intersection of Solana (large crypto developer community), Claude Code (large AI developer community), and Google Cloud APIs (enterprise developers). TECHi's article will attract some clicks but has no setup walkthrough. The YouTube video has minimal SEO.
+- **Window: 5–7 days.** Launched May 5 (5 days ago). Developer newsletters covering AI infrastructure (TLDR Dev, Bankless Dev, Pointer) will feature the launch this week. The "no-account API access for agents" concept is genuinely novel enough that posts written this week will define the search vocabulary. CoinDesk and crypto-adjacent media covered the financial angle but not the developer workflow angle.
 
 ---
 
-## 10. Resend CLI 2.0 Agent Skills — Giving Your Coding Agent a Full Email Workflow
+## 7. Kilo Code v7 on OpenCode — Parallel Agents in VS Code with Git Worktrees
 
-**Why it's trending:** Resend ran **Launch Week 6** (April 13–20, 2026), capping it off with a wrap-up post on April 20. The standout developer-facing feature is **Resend CLI 2.0** (Product Hunt Week of Apr 13–19: #13, 348 upvotes), which ships with **Agent Skills** (`npx skills add resend/resend-skills`) — five structured SKILL.md files that give any coding agent (Claude Code, Cursor, Codex, Windsurf, GitHub Copilot) a complete, opinionated email capability: send emails, handle inbound email with an agent inbox, use the CLI from the agent terminal, apply email best practices, and configure automations. The key developer story: unlike MCP (which gives an agent *access* to a tool), Agent Skills give an agent *expertise* in how to use that tool correctly — best practices, retry logic, idempotency keys, bounce handling, DMARC compliance, and the full Resend API surface, all encoded as portable Markdown files the agent reads on demand. The `Agent Email Inbox` skill is particularly underexplored: it gives a coding agent its own persistent email address so it can sign up for services, receive and parse confirmation emails, respond to users, and trigger automations — entirely without manual intervention. Resend also shipped **React Email 6.0** (April 17) and **Automations** (April 13) in the same week, creating a complete "email-native agent" stack.
+**Why it's trending:** Kilo Code launched **v7 for VS Code** on May 5, 2026 (#1 Product Hunt of the Week, 524 points) — the biggest architectural change since launch: a complete rebuild on the **OpenCode server** (MIT-licensed open-source foundation for agentic coding), bringing parallel tool calls, parallel subagents, cross-platform session continuity, and native worktree isolation to VS Code. Key new features: parallel tool calls (file reads, searches, terminal commands execute simultaneously instead of sequentially, visible speedup), parallel subagents (implementation + tests + docs each get their own specialist agent, merge back to parent), the rebuilt **Agent Manager** (control panel for running multiple Kilo tabs simultaneously, with worktree isolation), an inline **diff reviewer** (file-by-file unified/split view, leave comments before applying), and a **model comparison panel** (run the same task against two models side-by-side). The rebuild is based on OpenCode, the same foundation Warp ADE uses for cross-platform agent sessions. 2.3M installs, 19K GitHub stars, free and open source. The move to OpenCode means Kilo now supports cross-IDE session resumption — start a task in VS Code, continue from the CLI or JetBrains without re-prompting. The v7 launch follows Kilo's April 2 GA of the rebuilt extension to its full install base — v7 adds the Product Hunt launch visibility.
 
-**Suggested blog angle:** *"How to give your Claude Code agent a full email workflow with Resend CLI 2.0 and Agent Skills"* — a practical developer guide covering: what Agent Skills actually are (SKILL.md vs MCP — the "hands vs. know-how" distinction), the one-command install (`npx skills add resend/resend-skills`), five real use cases for email-capable agents (1: agent signs up for a SaaS trial and auto-verifies its email; 2: agent sends transactional emails from a vibe-coded app; 3: agent monitors an inbox for customer replies and triggers a workflow; 4: agent builds and tests a React Email template in the terminal; 5: agent configures DMARC/SPF/DKIM for a new domain), and a cost/tier rundown (free Resend tier: 3K emails/month — sufficient for development and small agents). Alternative angle: *"Agent Skills vs. MCP: when to use structured domain expertise instead of raw tool access — using Resend as the example."*
+**Suggested blog angle:** *"Kilo Code v7: setting up parallel agents with git worktrees in VS Code — a practical workflow guide"* — covering: what "rebuilt on OpenCode" actually means for daily users (session continuity, parallel tool calls vs. sequential), the specific setup for running 3 parallel agents on the same project using worktrees (create worktree, assign agent role, merge back), how to use the inline diff reviewer to gate agent output before applying, the model comparison panel as a sanity check for important tasks (run against Claude and GPT-5.5, compare outputs side-by-side), what breaks and what doesn't (memory spikes on Windows still being addressed, rate-limit edge cases with high parallelism), and a clear workflow for solo developers who don't need Cursor's price point but want full parallel-agent capability.
 
 **Competition notes:**
-- Resend official blog (resend.com/blog/resend-cli-2, Apr 15): launch announcement with brief Agent Skills overview — no workflow tutorial or use-case narrative.
-- Resend official blog (resend.com/blog/how-to-create-a-devtools-agent-skill, Feb 5): deep-dive on *building* Agent Skills as a DevTool vendor — covers the *author* side only, not the consumer-side workflow guide.
-- Zeno Rocha LinkedIn (Apr 15): launch announcement — no tutorial.
-- Medium / unicodeveloper (Apr 1): "10 Must-Have CLIs for AI Agents" — brief mention of Resend, no dedicated guide.
-- Product Hunt discussion (Apr 13–19 week): feature announcements only, no hands-on content.
-- **No independent developer blog or tutorial covers using Resend CLI 2.0 Agent Skills in a coding agent workflow.**
-- Search intent: informational + how-to. Developer audience: anyone building agentic apps who needs email capability in their coding agent (very broad — email is in nearly every production app).
-- **Low competition** on "resend agent skills tutorial," "resend CLI 2.0 coding agent email," "claude code resend email workflow," or "give coding agent email inbox."
-- Ranking potential: strong on long-tail phrases. Resend has 1M+ users, high developer newsletter presence, and the Agent Skills pattern is spreading across devtools (Figma, Apify, TX Text Control all ship Agent Skills), so the consumer-side guide fills a growing gap.
-- **Window: 3–5 days.** Launch Week 6 wrapped April 20. Newsletter coverage (TLDR, JavaScript Weekly, Bytes, Pointer) will include the Launch Week recap in the April 21–27 cycle. Resend's own blog consistently produces polished developer content but has not yet published a consumer-side agent workflow guide.
-EOF; echo "
-__CWD_TRACK__$(pwd)"
+- Kilo Code official blog (blog.kilo.ai, May 5): "We're back on Product Hunt — here's how far Kilo has come" — product announcement narrative, not a setup tutorial.
+- Kilo Code official blog (April 2): GA announcement with feature list — comprehensive but product-authored.
+- YouTube (various, pre-v7): Kilo parallel agents CLI walkthrough (Nov 2025), Agent Manager feature walkthrough (Feb 2026) — pre-v7 OpenCode rebuild, out of date.
+- aitoolly.com (May 5): "Product Hunt Daily Pick" listing — brief product description only.
+- Reddit r/kilocode: community thread asking about parallel agents in VS Code (Jan 2026) — shows demand but no tutorial response.
+- tessl.io (Dec 2025): "Inside Kilo Code" deep-dive — technical/strategic, pre-v7.
+- **No independent developer setup guide exists for v7** covering the OpenCode rebuild, worktree workflow, and model comparison panel.
+- Search intent: how-to + decision-support. Audience: VS Code developers who've heard about parallel agents (from Cursor 3, JetBrains Air, or Warp) but want an open-source, free option with Kilo's model-agnostic approach.
+- **Low competition** on "Kilo Code v7 setup," "Kilo Code parallel agents VS Code," "Kilo Code worktree workflow," or "OpenCode VS Code parallel agents."
+- Ranking potential: strong on long-tail phrases. Kilo has a passionate community (r/kilocode, Discord), 2.3M installs, and the #1 Product Hunt of the Week generates real search demand. The open-source angle attracts developers who don't want to pay Cursor's $20/month.
+- **Window: 5–7 days.** Launched May 5 (5 days ago). The Kilo team ships fast — the April 2 GA was immediately followed by community adoption posts. An independent hands-on guide this week captures users arriving from the Product Hunt launch. DataCamp will likely cover Kilo Code v7 within 2 weeks but focuses on overview-level content, not the specific worktree + model-comparison workflow.
+
+---
+
+## 8. Superset 2.0 Remote Workspaces — Running Coding Agents Across Multiple Machines
+
+**Why it's trending:** Superset launched **version 2.0** on May 6, 2026 (Product Hunt #8 monthly, 427 points) — a complete rewrite of the parallel-agent IDE to support **remote workspaces** and cloud execution. The v1 (launched February 27, 2026 as Product Hunt Launch of the Day) let developers run 10–50 coding agents in isolated git worktrees on their local machine. The v2 rewrite addresses the physical constraint: users were hitting machine meltdowns running 20–50+ worktrees simultaneously. Superset 2.0 adds remote workspaces (offload agents to any machine or cloud VM, work in real-time as if local), automations (schedule agents to pick up tasks when you're not at your desk — similar to Openclaw's heartbeat feature), a new CLI (Superset CLI gives agents "superpowers" and unlocks new programmatic workflows), MCP v2 support (backed by an expanded toolset), and real-time team collaboration (share and co-edit a parallel-agent workspace with teammates). The product is agent-agnostic: works with Claude Code, Codex, OpenCode, Cursor Agent, Gemini CLI, or any CLI agent. YC company, 3 ex-CTOs.
+
+**Suggested blog angle:** *"Superset 2.0: how to run your coding agents on a remote machine and never melt down your laptop again"* — a practical setup guide covering: why local parallelism hits a hard wall at 20+ worktrees (CPU/RAM contention, worktree filesystem overhead), the exact setup for remote workspaces in Superset 2.0 (connect a remote machine, grant least-privilege access, spin up worktrees on the remote), how the Superset CLI unlocks new agent workflows (give an agent the `superset` command as a tool, let it manage its own workspace), the automations feature for async agent work (set up a task queue that runs agents overnight while you sleep), and a comparison of the v1 vs v2 architecture for developers already using v1 who need to upgrade. Alternative angle: *"The 'code factory' pattern: how to structure your agentic development workflow around remote parallelism."*
+
+**Competition notes:**
+- launchllama.co (March 5, 2026): "Superset Review 2026: Is This Multi-Agent IDE Actually Worth It?" — covers v1, pre-remote workspaces, now 2+ months outdated.
+- yuv.ai blog (March 6, 2026): "Superset: The First IDE for Orchestrating Multiple AI Coding Agents" — v1 technical overview, no v2.
+- Superset official comparison page (superset.sh/compare/best-ai-coding-agents-2026): self-promotional, covers v2 architecture but is vendor content.
+- YouTube "What the heck is Superset 2.0?" (founder walkthrough, May 6, 4 days old): official founder video — narrow audience, not SEO-targeted.
+- LinkedIn (Kiet Ho, May 6): launch announcement — awareness only.
+- **No independent developer hands-on guide covers Superset 2.0 remote workspaces or the Superset CLI workflow.**
+- Search intent: how-to + decision-support. Audience: developers already using Superset v1 who need remote capabilities; developers who've seen Cursor 3 or Kilo Code v7 and want a more orchestration-focused, agent-agnostic alternative; teams who want to share a parallel-agent workspace.
+- **Low competition** on "Superset 2.0 remote workspaces," "Superset CLI tutorial," "run coding agents on remote machine," or "parallel agents cloud VM 2026."
+- Ranking potential: moderate-strong on long-tail phrases. Superset has a passionate user community (Discord, Twitter/X), YC backing, and 1.5K Product Hunt followers. The v2 rewrite is fresh and the "remote code factory" concept is genuinely new territory not covered by any other product guide.
+- **Window: 5–7 days.** Launched May 6 (4 days ago). The YouTube founder walkthrough has limited SEO footprint. Newsletter coverage (TLDR, Bytes) will include Superset 2.0 in the May 4–10 cycle this weekend. An independent hands-on review published this week captures the launch momentum before the window closes.
+
+---
+
+## 9. Warp Open-Source ADE — The "Humans Decide, Agents Build" Contribution Model
+
+**Why it's trending:** Warp open-sourced its core product on **April 28, 2026** — not just releasing code, but launching a new model for open-source contribution: **Open Agentic Development**, where humans file issues, write specs, and verify outcomes, while Oz (Warp's cloud agent orchestration platform) triages issues, writes product and tech specs, implements code, and opens pull requests — all publicly visible at build.warp.dev. OpenAI is the founding sponsor (GPT models power the agent workflows). The repo is 98% Rust, ~57K GitHub stars in 12 days. Key developer story: this is the most visible production example of "agent-managed open source" — a 57K-star repo where you can watch AI agents triage bugs, write specs, implement features, and review PRs in real time. The contribution model explicitly inverts traditional open source: contributors are expected to be orchestrators (submitting issues, approving specs, verifying agent output) rather than code authors. The docs were open-sourced May 4 as well (Astro + Starlight, all markdown). Fast Company covered April 28. The New Stack covered April 29. I-Programmer covered May 7. No solo developer has yet written "I actually tried contributing to Warp using this model — here's what happened."
+
+**Suggested blog angle:** *"I tried contributing to Warp's open-source repo using their agent-first model — here's what the process actually looks like"* — a developer narrative covering: how the contribution flow works in practice (file an issue → watch Oz triage and label it → review the Oz-generated product spec → approve or iterate on the tech spec → Oz implements and opens a PR → review the diff → approve or comment → merge), what kind of issues are "ready to spec" vs. "ready to implement," how to use the `/write-product-spec` and `/write-tech-spec` agent skills to scaffold your own contributions, what the build.warp.dev dashboard looks like (watching live agent sessions in a web-compiled Warp terminal), three things that work well and two things that feel awkward about the "humans supervise, agents code" model, and whether this is actually reproducible by other open-source maintainers via the Oz for OSS program. Alternative angle: *"What Warp's open-source release tells us about the future of software maintenance: from 'anyone can send a patch' to 'anyone can direct an agent.'"*
+
+**Competition notes:**
+- Fast Company (Apr 28): "Warp is going open source and wants you to improve its coding tools with AI" — news/product angle, no developer participation narrative.
+- The New Stack (Apr 29): "Warp's gamble: Going open source to take on closed-source rivals" — strategic analysis, not a contribution guide.
+- Jonathan Fulton / Medium (May 3): "What Warp's Open Source Release Tells Us About the Future of Agentic Software Development" — excellent analytical deep-dive on the architecture and operating model. The best existing piece, but written from an observer perspective (reading the code), not a participant perspective (actually contributing).
+- I-Programmer (May 7): technical overview of what's open-sourced — informational summary, no contribution walkthrough.
+- DeployHQ guide (Apr 30): "Warp Guide 2026: Agent Mode, MCP, Open Source & Deployments" — comprehensive user guide, not a contribution narrative.
+- knightli.com (May 7): "Warp Open Source: From Terminal to Agentic Development Environment" — repository exploration, not a contribution walkthrough.
+- Warp official blog (May 4): "Warp is now open-source" — announcement, not tutorial.
+- **No independent developer has published a first-person "I tried contributing to Warp" guide showing the Oz-managed workflow in practice.**
+- Search intent: informational + how-to. Audience: developers curious about contributing to Warp; open-source maintainers evaluating whether to adopt the Oz for OSS program; developers interested in the "agent-managed open source" model as a pattern.
+- **Low-to-moderate competition** on "how to contribute to Warp open source," "Warp Oz contribution workflow," or "agent-managed open source contribution."
+- Ranking potential: moderate. The Warp repo has 57K stars and a highly engaged developer community — demand for "how to contribute" content is real and growing. Jonathan Fulton's Medium piece is the strongest existing content but targets a different angle (analysis vs. participation). A developer-first "I tried it" narrative fills the participation gap.
+- **Window: 7–10 days.** The open-source launch is 12 days old (April 28). The contribution model is novel enough that the first "I actually did it" post will have strong shareability. Warp's team will actively amplify community contribution stories. The window is longer than a typical product launch because contributing to the repo requires actual Rust setup, issue filing, and waiting for Oz to triage — the participation barrier creates a natural content gap.
