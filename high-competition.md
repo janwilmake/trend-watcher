@@ -1,6 +1,6 @@
 # High Competition
 *Real trends but already saturated with content. Hard for a solo blogger to rank page 1.*
-*Last updated: 2026-05-11*
+*Last updated: 2026-05-12*
 
 ---
 
@@ -666,5 +666,75 @@
 - Business Insider (May 6 — launch party coverage)
 
 **Why it's hard to rank:** The general "GPT-5.5 review," "GPT-5.5 guide," and "GPT-5.5 API" space was saturated within 24–48 hours of launch. OpenAI's official blog and docs dominate all primary queries. Developers Digest's production field guide covers the developer workflow angle with real benchmarks. TechCrunch covers the consumer/ChatGPT default story. The launch is now 18 days old. A solo blogger publishing a general GPT-5.5 overview would rank 6th+ on page 1 at best. (See good-contenders #7 for the narrow "production cost trap / reasoning.effort recalibration" angle, which remains open.)
+EOF; echo "
+__CWD_TRACK__$(pwd)"
+---
+
+## 41. Kimi K2.6 + Claude Code — Free API Alternative Setup (Previously a Good Contender — Competition Caught Up)
+
+**Why it was a contender:** Moonshot AI open-sourced Kimi K2.6 on April 20, 2026, with state-of-the-art agentic coding benchmarks and native Claude Code integration. The specific "set ANTHROPIC_BASE_URL to Kimi's endpoint, compare costs, understand the limits" tutorial angle was unoccupied — only a YouTube video and brief blog mentions existed.
+
+**Who dominates (as of May 12, 2026):**
+- codersera.com (May 4 — "Kimi K2.6: The Complete Developer Guide (2026)" — comprehensive coverage of Claude Code setup, cost analysis, vs. Opus 4.7 comparison, benchmark tables, migration tips. The definitive independent reference.)
+- Medium / Suresh Kumar Ariya Gowder (Apr 28 — "I Spent Two Weeks Comparing Claude Code and Kimi K2.6. Here's the Honest Truth." — 12-min hands-on comparison, cost math, real task results)
+- Moonshot AI official docs (platform.kimi.ai/docs — explicit Claude Code setup guide with env var instructions)
+- Kimi.ai official tech blog (kimi.com/blog/kimi-k2-6 — complete benchmark tables and Agent Swarm documentation)
+- YouTube "Claude Code FREE with Kimi K2.6 — Full Tutorial 2026" (Apr 23 — video tutorial, limited written SEO but drives traffic)
+- apiyi.com (Apr 25 — integration guide with code examples and pricing comparison)
+- r/kimi (active subreddit — community discussions on Claude Code + K2.6 setup, gotchas)
+
+**Why it's hard to rank:** codersera.com's May 4 "Complete Developer Guide" is a comprehensive 3,000+ word reference that covers the Claude Code integration, all major API providers (Fireworks, Novita, DeepInfra, etc.), cost benchmarks, and when to choose K2.6 vs. Opus 4.7. Combined with the official Kimi docs and Suresh Kumar's hands-on comparison, the "setup guide" angle is fully occupied from multiple angles. A solo blogger publishing now would rank behind all three.
+
+---
+
+## 42. GPT-5.5 Production Migration — `reasoning.effort` Cost Trap (Previously a Good Contender — Window Closed)
+
+**Why it was a contender:** The `reasoning.effort` recalibration in GPT-5.5 (new `medium` = old `high`), combined with the `chat-latest` alias confusion and uncovered `text.verbosity` savings angle, made a production migration guide genuinely unclaimed as of April 29.
+
+**Who dominates (as of May 12, 2026):**
+- Developers Digest (Apr 29, updated — "GPT-5.5 for Developers: A Production Field Guide" — comprehensive, covers `reasoning.effort` recalibration with benchmarks, migration playbook, regression notes. The definitive independent production guide.)
+- almcorp.com (May 6 — "GPT-5.5 Instant: New Default ChatGPT Model Explained" — covers `chat-latest` vs `gpt-5.5` vs `gpt-5.5-instant` confusion with migration risk analysis)
+- OpenAI official docs (developers.openai.com — complete `reasoning.effort` and `text.verbosity` reference)
+- Framia.pro (Apr 27 — API setup guide with model string table)
+- Multiple LinkedIn posts (Rajdeep Mondal, Xavier Amatriain — short-form migration tips with wide distribution)
+
+**Why it's hard to rank:** The window was 5–7 days from April 29. It is now 19 days since the GPT-5.5 launch and the two strongest posts (Developers Digest + almcorp) together cover the `reasoning.effort`, `chat-latest`, and migration playbook angles. The launch is now old enough that DataCamp and similar publishers have either published or are imminently publishing comprehensive guides. No unclaimed angle remains for a solo blogger.
+
+---
+
+## 43. Vibe-Coded Apps Data Exposure — The RedAccess/WIRED Investigation
+
+**Why it's trending:** WIRED published a May 7, 2026 investigation (with RedAccess) finding 5,000 vibe-coded web apps hosted on Lovable, Base44, Replit, and Netlify with "virtually no security or authentication of any kind." In 40% of cases, apps exposed sensitive data: hospital work assignments with PII, go-to-market strategy presentations, sales and financial records. The investigation reframes vibe coding from a productivity story to an enterprise security story — anyone in a company can create and deploy an app that leaks corporate data, bypassing all normal development and security review processes.
+
+**Who dominates:**
+- WIRED (May 7 — the original investigation — primary authority, widely cited, high domain authority)
+- PCMag (May 9 — "Vibe Coding Is Causing 'Thousands' of Data Security Vulnerabilities" — comprehensive follow-up with company pushback)
+- Security Boulevard (May 7/8 — detailed security analysis including the "shadow AI" framing)
+- Axios (May 7 — company responses from Wix/Base44, Lovable, Netlify, Replit — the "disputed findings" angle)
+- LinkedIn News (May 7 — "New data shows exposure risks from AI vibe-coding apps" — OWASP statistics, widely shared)
+- TechStartups.com (May 7 — news summary in top tech stories)
+- The existing Aikido.dev CISO Vibe Coding Checklist, growexx.com CTO checklist, and simonroses.com field guide all predate this investigation but will now rank as "solutions" to the problem it describes.
+
+**Why it's hard to rank:** WIRED's investigation is the authoritative source and will dominate all "vibe coding security" queries. PCMag's follow-up covers the company responses and nuance. Security Boulevard covers the enterprise IT angle. The topic arrives into a landscape where the vibe coding security checklist space (entry #24 in this file) is already saturated. Any new content would need to be extremely specific (e.g., "how to audit an existing Lovable app for the specific vulnerabilities RedAccess found") to carve out ranking space — and even that would face competition from security vendor product marketing.
+
+---
+
+## 44. Claude Managed Agents — General Explainer and Feature Overview
+
+**Why it's trending:** Anthropic launched Claude Managed Agents on April 9, 2026 and shipped major upgrades (Dreaming, Outcomes, multiagent orchestration) at the Code with Claude SF conference on May 6, 2026. The combination of enterprise scale ($30B ARR confirmed at the same conference), Harvey's 6× task completion improvement with Dreaming, Netflix's multiagent orchestration deployment, and Wisedocs' 50% faster document processing with Outcomes creates a strong "this is real enterprise AI" narrative.
+
+**Who dominates:**
+- Anthropic official blog (claude.com/blog/new-in-claude-managed-agents, May 6 — primary authority)
+- Anthropic official docs (platform.claude.com/docs/en/managed-agents/overview — complete technical reference)
+- VentureBeat (May 6 — "Anthropic introduces dreaming, a system that lets AI agents learn from their own mistakes" — news/analysis)
+- MindStudio (May 8 — "How to Set Up Claude Dreaming for Persistent Agent Memory: Step-by-Step Guide")
+- MindStudio (May 9 — "Anthropic Dev Day: 6 New Managed Agent Features That Change How Claude Handles Long-Running Work" — comprehensive feature overview)
+- MindStudio (May 9 — "Claude Outcomes Feature Improved PowerPoint Quality 10.1%: How Rubric-Grading Agents Work")
+- Let's Data Science (May 11 — comprehensive retrospective including Harvey 6× result)
+- Medium / Mahmoud Bebars (Apr 14 — "Claude Managed Agents: The Part Nobody's Explaining to Developers" — April launch explainer)
+- Claude Cookbook (platform.claude.com/cookbook — official Outcomes code recipe published May 3)
+- Lushbinary (updated May 10 — Claude Opus 4.7 guide with Managed Agents sidebar)
+
+**Why it's hard to rank:** The general "what is Claude Managed Agents" and "Claude Dreaming explained" space is now covered by multiple dedicated posts from MindStudio (a high-authority Claude-focused publication), the official Anthropic blog and docs, and news coverage from VentureBeat and Let's Data Science. Any new general explainer would rank below these. (See good-contenders #7 for the specific "combining Dreaming + Outcomes in one workflow" angle that remains unclaimed.)
 EOF; echo "
 __CWD_TRACK__$(pwd)"
