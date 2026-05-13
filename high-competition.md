@@ -1,6 +1,6 @@
 # High Competition
 *Real trends but already saturated with content. Hard for a solo blogger to rank page 1.*
-*Last updated: 2026-05-12*
+*Last updated: 2026-05-13*
 
 ---
 
@@ -735,6 +735,39 @@ __CWD_TRACK__$(pwd)"
 - Claude Cookbook (platform.claude.com/cookbook — official Outcomes code recipe published May 3)
 - Lushbinary (updated May 10 — Claude Opus 4.7 guide with Managed Agents sidebar)
 
-**Why it's hard to rank:** The general "what is Claude Managed Agents" and "Claude Dreaming explained" space is now covered by multiple dedicated posts from MindStudio (a high-authority Claude-focused publication), the official Anthropic blog and docs, and news coverage from VentureBeat and Let's Data Science. Any new general explainer would rank below these. (See good-contenders #7 for the specific "combining Dreaming + Outcomes in one workflow" angle that remains unclaimed.)
-EOF; echo "
-__CWD_TRACK__$(pwd)"
+**Why it's hard to rank:** The general "what is Claude Managed Agents" and "Claude Dreaming explained" space is now covered by multiple dedicated posts from MindStudio (a high-authority Claude-focused publication), the official Anthropic blog and docs, and news coverage from VentureBeat and Let's Data Science. Any new general explainer would rank below these. (See good-contenders #6 for the specific "combining Dreaming + Outcomes in one workflow" angle that remains unclaimed.)
+
+---
+
+## 36. Zed 1.0 — General Launch Review / "VS Code Killer" Coverage
+
+**Why it's trending:** Zed reached **version 1.0 on April 29, 2026** — five years of development, 1M+ lines of Rust, GPU-accelerated rendering at 120fps, full Windows/macOS/Linux support, AI-native parallel agents via the Agent Client Protocol (ACP), real-time collaborative editing, a built-in debugger, and Zed for Business (team billing, org-wide AI controls). The founders (creators of Atom, Electron, and Tree-sitter) framed 1.0 as "a tipping point where most developers can quickly feel at home." Current GitHub repo: v1.1.8 as of May 12 (weekly release cadence). DeltaDB (CRDT-based multi-agent synchronization engine) is in active development as the next major architectural layer. 350k+ daily active developers. Listed on Product Hunt May leaderboard #15 (350 points).
+
+**Who dominates:**
+- Zed official blog (zed.dev/blog/zed-1-0, Apr 29 — the 1.0 announcement, extremely authoritative for all "Zed 1.0" queries)
+- Phoronix (Apr 29 — GPU editor release news, Linux community audience)
+- Builder.io (May 1 — "Is Zed ready for AI power users in 2026?" — updated for 1.0, parallel agents, Zed for Business; comprehensive and well-SEO-optimized)
+- abdulkadersafi.com (May 4 — "Zed 1.0 Is Here: A GPU-Rendered Editor That Outpaces VS Code" — 6-min independent review with hands-on parallel agent testing)
+- DeployHQ guide (Feb 24, updated — "Zed Editor Guide: Setup, AI Features & Deployment" — comprehensive setup + VS Code migration guide)
+- r/ZedEditor (active community with migration stories, "I converted" posts)
+- YouTube (multiple "Zed vs VS Code" and "How to Use Zed" tutorials predating 1.0, now all refreshed)
+- Zed releases page (weekly stable releases with detailed changelogs — ranks for "Zed latest version" queries)
+
+**Why it's hard to rank:** The 1.0 announcement is 2 weeks old. Builder.io's well-optimized "Is Zed ready for AI power users?" post covers the AI workflow angle comprehensively. abdulkadersafi.com's independent review covers the "parallel agents in practice" hands-on angle. DeployHQ's guide covers setup and VS Code migration. The official blog and docs own the primary brand queries. YouTube has extensive coverage. A general "Zed 1.0 review" or "Zed vs VS Code" post would need to outrank all of these on domain authority. The only remaining gap would be an extremely specific use-case angle (e.g., "Zed 1.0 for Python data science workflows" or "DeltaDB: what the next Zed architecture change means for team coding") — but the DeltaDB angle won't be available until that feature ships.
+
+---
+
+## 37. "Going Back to Writing Code by Hand" — The AI Coding Backlash Narrative
+
+**Why it's trending:** A dev log post from the k10s project — *"I'm going back to writing code by hand"* (blog.k10s.dev, May 9, 2026) — hit Hacker News front page and reached **996 points and 601 comments** by May 13. The author describes rebuilding k10s (a GPU-aware Kubernetes TUI) in Rust, rejecting vibe coding after experiencing "god-object" anti-patterns, loss of architectural control, and the AI generating "plausible-looking code" that didn't hold up. The post connects to a broader backlash narrative that's been building since early 2026: "AI makes me faster but I'm losing the instinct for when code is wrong." Related HN post "Now is the best time to write code by hand" (sitebloom.ch, May 9, also front page) adds 55+ comments. The "Local AI needs to be the norm" post (unix.foo) hit 1,247 points and 522 comments on May 13 — a related sentiment of "take back control from cloud AI services."
+
+**Who dominates:**
+- blog.k10s.dev (May 9 — the original viral post, 996 HN points — owns all "going back to writing code by hand" queries)
+- sitebloom.ch (May 9 — "Now is the best time to write code by hand" — 125 HN points, second perspective on same theme)
+- Steve Yegge / Medium ("The AI Vampire," Feb 2026, 106 claps — established the "AI is draining developer skills" narrative)
+- Harvard Business Review (Feb–Mar 2026 — "AI fatigue" and "brain fry" framing — high authority)
+- Siddhant Khare personal blog (viral HN post on developer burnout, 16-min read — well-established in this content category)
+- unix.foo (May 13 — "Local AI needs to be the norm" — 1,247 HN points, directly related backlash)
+- HN community discussions (link-aggregation authority on multiple threads)
+
+**Why it's hard to rank:** The k10s.dev post *is* the search destination for "going back to writing code by hand" — it will rank #1 for that exact phrase. The broader "AI coding backlash" and "developer AI fatigue" space is already owned by well-known bloggers (Steve Yegge), institutional presses (HBR), and community threads (HN). Any new post on this theme would need to offer a genuinely new angle — specific data, a new demographic's experience, or a concrete counter-proposal — to compete with established content. The sentiment is now mainstream, which means it's also crowded.
