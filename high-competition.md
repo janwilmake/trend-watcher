@@ -1,6 +1,6 @@
 # High Competition
 *Real trends but already saturated with content. Hard for a solo blogger to rank page 1.*
-*Last updated: 2026-05-13*
+*Last updated: 2026-05-14*
 
 ---
 
@@ -609,6 +609,39 @@
 - YouTube (multiple "CODEX FULL COURSE" and "Codex Computer Use" videos from major channels).
 
 **Why it's hard to rank:** Every angle is covered: the official product page and blog dominate brand queries; Digital Applied covers the comprehensive feature breakdown; AnotherWrapper covers computer use specifically; AI.cc covers setup; Zack Proser covers daily production use. The "autopilot coding loop" concept has been documented across multiple video tutorials. No substantive angle remains for a solo blogger without a very narrow niche (e.g., "Codex 3.0 for a specific language or framework") — and even those will face the Codex brand's 3+ years of SEO history.
+
+---
+
+## 36. GitHub Copilot Usage-Based Billing — General News / Reaction Coverage
+
+**Why it's trending:** GitHub announced June 1, 2026 transition from PRUs to AI Credits (token-based). Developer backlash exploded: 571 community thread comments, viral Reddit threads, multiple "this is a betrayal" takes. The story dominated developer Twitter/X in late April and early May. All major plan types affected. Opus 4.6 multiplier jumping to 27× under new model.
+
+**Who dominates:**
+- GitHub official blog (Apr 27, github.blog) — primary announcement, always page 1 for "GitHub Copilot usage-based billing."
+- Visual Studio Magazine (Apr 27) — "Devs Sound Off" — developer sentiment angle with real developer quotes.
+- The Decoder (Apr 28) — thorough news summary with pricing breakdown.
+- Thurrott.com (Apr 27) — news commentary with product history context.
+- Yahoo Tech / GlobalData (May 1) — "Developers face new, chaotic Copilot pricing" — industry analyst framing.
+- Ed Zitron / Where's Your Ed At (Apr 23) — broke the story with internal documents.
+- GitHub official docs (docs.github.com) — "Preparing for your move to usage-based billing" — the authoritative setup reference.
+
+**Why it's hard to rank:** The news coverage is fully saturated by April 27. For general "GitHub Copilot billing change" queries, GitHub's own blog and major tech press dominate. (See good-contenders #3 for the specific "April usage report survival guide" angle, which remains open until June 1.)
+
+---
+
+## 37. Vibe Testing — General QA for AI-Generated Code
+
+**Why it's trending:** As vibe coding went mainstream, the QA equivalent emerged: "vibe testing" — using AI to autonomously generate, maintain, and self-heal tests for AI-generated code. Functionize coined "the test is now the gate" (May 8, 2026). TestMu AI / LambdaTest built KaneAI around this concept. testgrid.io published a "Top 11 Vibe Testing Tools" roundup (Apr 15). Growing developer anxiety: if agents write the code, who (or what) tests it?
+
+**Who dominates:**
+- testgrid.io (Apr 15, 2026) — "Top 11 Vibe Testing Tools in 2026: Features, Pricing, and Comparison" — comprehensive roundup, highly SEO-optimized.
+- TestMu AI / LambdaTest (Feb 9, 2026) — "Vibe Testing: The Next Step in Software QA [2026]" — the earliest named explainer, high domain authority (LambdaTest).
+- Medium / Tvara Mehta (Mar 4, 2026) — "Vibe Testing: What It Is and Why QA Teams Are Paying Attention" — 6-min explainer, well-distributed.
+- Functionize blog (May 8, 2026) — "The Test Is Now the Gate" — operator perspective with production data, backed by real research citations.
+- evozon.com (Feb 10, 2026) — "How AI Is Redefining Software Testing Practices in 2026" — enterprise-focused analysis with multiple tool references.
+- Checkmarx (Mar 11, 2026) — "Top 12 AI Developer Tools in 2026" includes vibe testing section.
+
+**Why it's hard to rank:** The term "vibe testing" now has dedicated explainer posts from high-authority testing platforms (LambdaTest is a large SaaS company) and comprehensive tool roundups (testgrid.io). The "what is vibe testing" and "top vibe testing tools" angles are fully occupied. A solo blogger would need a very specific niche (e.g., "vibe testing for a specific framework like Next.js + Playwright" or "vibe testing in a CI/CD pipeline with a specific tool") to compete.
 
 ---
 
