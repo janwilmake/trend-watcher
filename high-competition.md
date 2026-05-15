@@ -1,6 +1,6 @@
 # High Competition
 *Real trends but already saturated with content. Hard for a solo blogger to rank page 1.*
-*Last updated: 2026-05-14*
+*Last updated: 2026-05-15*
 
 ---
 
@@ -804,3 +804,7 @@ __CWD_TRACK__$(pwd)"
 - HN community discussions (link-aggregation authority on multiple threads)
 
 **Why it's hard to rank:** The k10s.dev post *is* the search destination for "going back to writing code by hand" — it will rank #1 for that exact phrase. The broader "AI coding backlash" and "developer AI fatigue" space is already owned by well-known bloggers (Steve Yegge), institutional presses (HBR), and community threads (HN). Any new post on this theme would need to offer a genuinely new angle — specific data, a new demographic's experience, or a concrete counter-proposal — to compete with established content. The sentiment is now mainstream, which means it's also crowded.
+
+
+EOF; echo "
+__CWD_TRACK__$(pwd)"
