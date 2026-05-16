@@ -1,6 +1,6 @@
 # High Competition
 *Real trends but already saturated with content. Hard for a solo blogger to rank page 1.*
-*Last updated: 2026-05-15*
+*Last updated: 2026-05-16*
 
 ---
 
@@ -806,5 +806,66 @@ __CWD_TRACK__$(pwd)"
 **Why it's hard to rank:** The k10s.dev post *is* the search destination for "going back to writing code by hand" — it will rank #1 for that exact phrase. The broader "AI coding backlash" and "developer AI fatigue" space is already owned by well-known bloggers (Steve Yegge), institutional presses (HBR), and community threads (HN). Any new post on this theme would need to offer a genuinely new angle — specific data, a new demographic's experience, or a concrete counter-proposal — to compete with established content. The sentiment is now mainstream, which means it's also crowded.
 
 
+EOF; echo "
+__CWD_TRACK__$(pwd)"
+---
+
+## 38. Grok Build — General News Coverage / Launch Review
+
+**Why it's trending:** xAI launched **Grok Build** on **May 14–15, 2026** — Elon Musk's first serious coding agent, entering a market where Claude Code and OpenAI Codex have a 12+ month head start. Available in early beta to SuperGrok Heavy subscribers ($300/month). Runs from the terminal (`curl -fsSL https://x.ai/cli/install.sh | bash`), uses Grok 4.3 (1M token context), supports plan mode with diff review, parallel subagents, MCP servers, plugins, AGENTS.md integration, and ACP support for building orchestration apps. Positioned as "local-first" but requires a SuperGrok Heavy account. Bloomberg, Engadget, PCMag, and CIO Dive all covered the launch on May 15.
+
+**Who dominates:**
+- xAI official announcement (x.ai/news/grok-build-cli, May 14 — primary authority for all "Grok Build" queries)
+- Engadget (May 15 — "xAI introduces its coding agent called Grok Build" — comprehensive news with competitive context)
+- PCMag (May 15 — "Elon Musk's xAI Launches Grok Build, Its First AI Coding Agent")
+- CIO Dive (May 15 — enterprise IT angle with competitive positioning vs. Claude Code and Codex)
+- Bloomberg (May 14 — broke the story with "Musk's xAI Unveils First Coding Agent in Bid to Rival Anthropic")
+- Techzine (May 15 — European enterprise coverage)
+- Reddit r/accelerate (May 14 — community discussion thread)
+- Verdent.ai guide (Apr 23 — pre-launch "Grok for Coding 2026: What xAI Actually Ships" — already ranking for Grok coding queries, will update for Grok Build)
+
+**Why it's hard to rank:** The news cycle is fully covered by major tech publications within 24 hours. Tutorials are impossible to write without a $300/month SuperGrok Heavy subscription — the paywall eliminates independent hands-on review content from most solo bloggers. xAI's official announcement page will dominate all "Grok Build" brand queries. Once the beta opens wider, DataCamp and similar high-authority tutorial sites will publish comprehensive guides immediately. The window for a meaningful independent tutorial is blocked by the paywall; the window for a news/overview piece has already closed.
+
+---
+
+## 39. TanStack npm Supply Chain Attack (Mini Shai-Hulud) — Security Incident Coverage
+
+**Why it's trending:** On **May 11, 2026**, attackers compromised the TanStack Router npm package as part of the "Mini Shai-Hulud" campaign (attributed to TeamPCP), deploying malicious code via a poisoned GitHub Actions cache. 42 `@tanstack/*` packages and 84 malicious versions were published. The attack propagated to `@mistralai/mistralai`, `@uipath` (40+ packages), and 170+ total npm/PyPI packages. Two OpenAI employee devices were compromised (credential exfiltration confirmed, May 14). OpenAI instructed all macOS users to update apps by June 12. Linked to the same group behind the Axios npm compromise (March 2026), Trivy scanner hijack, and Bitwarden CLI attack.
+
+**Who dominates:**
+- TanStack official postmortem (tanstack.com/blog/npm-supply-chain-compromise-postmortem, May 11, updated May 15 — primary technical reference, will dominate all "TanStack supply chain attack" queries)
+- OpenAI official response (openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack/ — primary authority for all "OpenAI TanStack" queries)
+- Snyk blog (May 11 — "TanStack npm Packages Compromised Inside The Mini Shai-Hulud Supply Chain Attack" — comprehensive technical breakdown with full IoC list and remediation)
+- Socket.dev (May 11 — original attribution post linking to Mini Shai-Hulud campaign)
+- Orca Security (May 12 — "TanStack and 160+ npm/PyPI Packages Compromised in Supply Chain Worm Attack" — enterprise CSPM angle)
+- The Hacker News / Ravie Lakshmanan (May 16 — "TanStack Supply Chain Attack Hits Two OpenAI Employee Devices, Forces macOS Updates")
+- The Register (May 15 — "OpenAI caught in TanStack npm supply chain chaos")
+- The Record / Recorded Future (May 14 — "OpenAI asks macOS users to update after TanStack npm supply chain attack")
+- SafeDep (comprehensive campaign analysis with 170+ package list)
+- Aikido.dev (Mini Shai-Hulud is Back analysis)
+- r/programming (May 16 — viral thread)
+
+**Why it's hard to rank:** The incident is covered exhaustively within 5 days by every major security vendor, specialist publication, and the directly affected parties (TanStack official postmortem, OpenAI official response). Snyk's technical breakdown with the full package list and CVE is the go-to developer reference. The campaign attribution (TeamPCP, Mini Shai-Hulud worm chain) is documented by Socket, Orca, and Hunt.io. Any practical "checklist" content ("how to check if you're affected") has been preempted by the Snyk post and TanStack's own "what's safe to install" guidance. The OpenAI device compromise angle is now breaking news covered by The Register, The Record, and The Hacker News simultaneously.
+
+---
+
+## 40. AI Skill Atrophy — "Heavy AI Use Is Making Developers Forget How to Code"
+
+**Why it's trending:** A **404 Media investigation** published May 15, 2026 ("Software Developers Say AI Is Rotting Their Brains") interviewed developers at multiple software companies who describe losing fundamental coding skills through heavy AI use — forgetting framework implementations, shipping unaudited code under workload pressure, and experiencing the "context rot" of AI-generated codebases no one can understand. The piece triggered a viral Hacker News thread (May 15, item 48090029) and a Reddit r/AskProgramming thread ("Are you enjoying your work with LLMs?") simultaneously. PCMag covered it same-day (May 15). Anthropic published its own RCT research on the topic in January 2026 ("How AI assistance impacts the formation of coding skills") — an arXiv paper showing that AI assistance reduces skill formation in novice developers. The DEV Community published "The Skill Atrophy Crisis" (March 28, 2026). TechCrunch's "Tokenmaxxing" article (April 17) documented the related "quantity over quality" dynamic. The broader "developer cognitive offloading" narrative now has research, media coverage, and viral community discussion simultaneously.
+
+**Who dominates:**
+- 404 Media (May 15 — original investigation, will dominate all "AI rotting developer brains" and "AI skill atrophy" queries as the primary news source)
+- PCMag (May 15 — "Software Developers Claim Heavy AI Use Is Making Them Forget Critical Skills" — direct news coverage with HN + Reddit thread links)
+- Anthropic arXiv / research blog (Jan 29, 2026 — the RCT study. Academic authority, also high-authority secondary source)
+- DEV Community / Tanishka Karsulkar (Mar 28, 2026 — "The Skill Atrophy Crisis: How AI Is Quietly De-Skilling Developers in 2026" — comprehensive 2,000+ word post with data from Stack Overflow, Sonar, Veracode, Chainguard)
+- polymonster.co.uk (Mar 20 — personal essay "AI coding tools are powerful but we mustn't let our own skills atrophy" — genuine developer voice, 10 min read)
+- Steve Yegge / Medium ("The AI Vampire," Feb 2026, 106 claps — established the narrative)
+- Agilepainrelief.com (Feb 2026 — "AI and Skill Atrophy Anti-Pattern" — Agile community audience)
+- drlongnecker.com (May 2026 — "Our Dwindling Talent Pipeline" — junior developer pipeline angle)
+- Harvard Business Review (Feb–Mar 2026 — AI fatigue + "brain fry" — high-authority mainstream coverage)
+- TechCrunch (Apr 17 — Tokenmaxxing article — directly related productivity quality vs. quantity coverage)
+- Hacker News (May 15 — active thread today)
+
+**Why it's hard to rank:** Every meaningful angle is now covered by high-authority sources: the investigative journalism angle (404 Media), the news coverage (PCMag), the academic research angle (Anthropic/arXiv), the developer community essay angle (DEV Community, polymonster), the thought-leader narrative (Steve Yegge), the enterprise/management angle (HBR, Pragmatic Engineer), and the productivity data angle (TechCrunch/Tokenmaxxing). The viral HN thread surfaces multiple personal developer perspectives that establish community authority. A solo blogger entering now would need an extremely specific, differentiated frame — e.g., "how to design your personal AI workflow to prevent skill atrophy" or "skill atrophy in a specific language/domain" — to compete with the established sources across every major publishing format.
 EOF; echo "
 __CWD_TRACK__$(pwd)"
