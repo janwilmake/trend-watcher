@@ -1,6 +1,6 @@
 # High Competition
 *Real trends but already saturated with content. Hard for a solo blogger to rank page 1.*
-*Last updated: 2026-05-17*
+*Last updated: 2026-05-18*
 
 ---
 
@@ -888,6 +888,47 @@ __CWD_TRACK__$(pwd)"
 - YouTube (one video, 507 views — connection flow demo only)
 
 **Why it's hard to rank:** The general "ChatGPT Finances launch" and "ChatGPT connects bank account" queries are fully saturated by TechCrunch, MacRumors, Engadget, and OpenAI's own blog within 24 hours. Personal finance blog farms (NerdWallet, Bankrate, GOBankingRates) will publish SEO-optimized how-to content within 3–5 days. Personal finance YouTubers (Graham Stephan, Andrei Jikh, Meet Kevin) with millions of subscribers will produce review videos within the week. The general news angle is gone. *However:* the specific "hands-on practitioner review + real prompts + honest privacy assessment" angle remains open for 5–7 days (see good-contenders #6).
+
+---
+
+## 43. Vapi $500M Valuation Series B — Enterprise Voice AI Developer Platform
+
+**Why it's trending:** Vapi (San Francisco, YC alumni) raised a **$50M Series B at ~$500M valuation** on **May 12, 2026**, led by Peak XV Partners with M12 (Microsoft's Venture Fund), Kleiner Perkins, and Bessemer Venture Partners. Total funding now $72M. The milestone: 1 billion calls served, 1 million+ developers, 2.5M+ agents created. The Amazon Ring case study is the lead story — Ring evaluated 40+ AI voice vendors and went from zero to 100% of inbound support volume on Vapi in two weeks, with improved CSAT scores. Other enterprise customers include Intuit, New York Life, ServiceTitan, Kavak. The investor framing: "Vapi is the next Zapier and n8n for voice AI workflows." 1–5 million calls per day at peak. The bottom-up developer → enterprise motion is the differentiation story.
+
+**Who dominates:**
+- TechCrunch (May 12 — primary fundraise story with Amazon Ring case study, founder quotes, competitive landscape context)
+- GlobeNewsWire (May 12 — official press release, full investor list, ARR data)
+- VentureBurn (May 12 — comprehensive "1 billion calls" milestone analysis)
+- Efficiently Connected (May 12 — 1,500-word deep-dive on the infrastructure consolidation thesis and what it means for developers)
+- HackerNoon (May 12 — detailed founder and customer quotes)
+- Yahoo Finance (May 12 — wire service coverage)
+- Vapi blog (vapi.ai/blog/series-b — official Series B announcement)
+- Vapi "Findings from the Field: Deploying Voice AI at Enterprise Scale" (April 14 — covers the demo-to-production gap, guardrails, prompt engineering for voice)
+- GrowwStacks (Jan 2026 — "How to Build Voice AI Agents in 2026 As a Complete Beginner" — comprehensive no-code Vapi tutorial)
+- Vision.pk (March 2026 — "Vapi AI in 2026: The Ultimate Guide" — covers Flow Studio, function calling, enterprise use cases)
+- tested.media (April 7 — "How to Build an AI Voice Agent in 2026: Step by Step Guide" across Retell, Vapi, Synthflow)
+- YouTube (April 21 — "Vapi AI Voice Agent Tutorial for Beginners 2026" — full walkthrough video)
+
+**Why it's hard to rank:** The funding announcement is fully covered by major tech press and the official Vapi blog. Developer tutorial content (how to build your first voice agent with Vapi) exists from at least 4 independent sources published before this funding round — GrowwStacks (comprehensive no-code guide), Vision.pk (ultimate guide), tested.media (multi-platform comparison), and YouTube tutorials. The "enterprise voice AI" category is competitive with direct rivals (Sierra, Decagon, PolyAI, Bland, Retell, ElevenLabs) all generating their own coverage. A solo blogger entering now would be behind both the news cycle (6 days old) and the existing tutorial landscape (multiple comprehensive guides predating the funding round).
+
+---
+
+## 45. Google + SpaceX Orbital AI Data Centers ("Project Suncatcher")
+
+**Why it's trending:** The Wall Street Journal broke the story on **May 12, 2026** that Google and SpaceX are in talks to build data centers in orbit as part of Google's "Project Suncatcher" — testing ML and AI computing in space using solar-powered satellites with Google's Tensor Processing Unit (TPU) chips. The story came alongside SpaceX's $1.75 trillion IPO filing and Anthropic's separate deal with SpaceX (Colossus 1 Memphis data center + ambition to build "multiple gigawatts of orbital AI compute capacity"). SpaceX's pitch: space-based compute offers "near-limitless sustainable power with less impact on Earth" and will become cheaper than terrestrial data centers for AI within years.
+
+**Who dominates:**
+- Wall Street Journal (May 12 — original reporting, primary authority)
+- Reuters (May 12 — official wire coverage with Anthropic deal context)
+- TechCrunch (May 12 — "brief" but includes SpaceX IPO context and Anthropic/xAI connection)
+- Tom's Hardware (May 13 — "historic turning point" framing, technical limitations context)
+- Forbes (May 12 — GPT-4-level analysis of the partnership implications)
+- Bloomberg (May 12 — financial context, "Project Suncatcher" detail)
+- CRE Daily (May 14 — real estate/infrastructure angle)
+- TheAIInsider.tech (May 15 — comprehensive 7-min analysis including the "space compute race" framing)
+- YouTube ("Google and SpaceX explore launching data centers into orbit" — published 5 days ago, multi-thousand view counts)
+
+**Why it's hard to rank:** This is a speculative infrastructure story ("in talks" — not a confirmed deal) broken by the WSJ and covered immediately by every major tech, finance, and business publication. The story is now 6 days old. The "what this means for AI compute" analysis angle is covered by TheAIInsider and multiple LinkedIn think-pieces. The "is this technically feasible?" angle is covered by Tom's Hardware. The only remaining niche might be very specific: "what does orbital AI compute mean for AI inference costs?" or "how would space-based TPU clusters actually work?" — but both require deep technical expertise to write credibly, and even those angles have been touched by the existing coverage.
 
 ---
 
