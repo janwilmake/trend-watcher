@@ -1,6 +1,6 @@
 # High Competition
 *Real trends but already saturated with content. Hard for a solo blogger to rank page 1.*
-*Last updated: 2026-06-09*
+*Last updated: 2026-06-11*
 
 ---
 
@@ -1069,5 +1069,34 @@ __CWD_TRACK__$(pwd)"
 - Deutsche Bank Research, Ark Invest (analyst notes and price targets)
 
 **Why it's hard to rank:** This is financial news dominated by WSJ, NYT, CNBC, Bloomberg, and Forbes — publications with massive finance audiences, established Wall Street relationships, and dedicated equity coverage desks. The "what does this mean for developers" angle is covered by TechCrunch and ZDNet. The "how to invest in OpenAI" consumer angle will be covered by NerdWallet, Motley Fool, and Bankrate the moment shares are publicly tradeable. A solo developer blogger has essentially no path to ranking on any IPO-related query.
-EOF; echo "
-__CWD_TRACK__$(pwd)"
+
+---
+
+## 50. "AI-Pilled" Firms Spending $7,500/Employee/Month — Ramp AI Index (June 2026)
+
+**Why it's trending:** The Ramp AI Index (June 10, 2026) revealed that the top 1% of US companies by AI adoption ("AI-pilled" firms) spend $7,500 per employee per month on AI tools and compute. The median firm spends $11.38. TechCrunch published this as "'AI-pilled' firms spend $7,500 per employee each month on AI" on June 10, 2026. The Next Web published "The most AI-obsessed companies spend $7,500 per employee per month. The median spends $11." on the same day. This is the most concrete data point yet in the "Tokenpocalypse" / AI runaway costs narrative.
+
+**Who dominates:**
+- TechCrunch (Jun 10 — primary coverage of the Ramp AI Index finding)
+- The Next Web (Jun 10 — "The 680x gap between top 1% and typical firm" framing)
+- Ramp AI Index (primary data source — Ramp's own publication)
+- LinkedIn viral shares (techcrunch post, 14+ hours ago at time of writing)
+- Related context from earlier Tokenpocalypse coverage: TechCrunch "The token bill comes due" (Jun 5), TechCrunch "Is this the dawn of the Tokenpocalypse?" (Jun 7)
+
+**Why it's hard to rank:** TechCrunch and The Next Web both published on the same day with essentially the full story, including the stat, the context, and the paradox (tokens cheap, usage not — agentic orchestration 30× more expensive than linear workflow). Both are authoritative publications with massive developer audiences. The underlying Tokenpocalypse narrative (covered in good-contenders #15) remains a good contender for the **practitioner how-to angle** — but general "AI costs are rising" content is fully saturated. A solo blogger republishing the $7,500 stat without a unique audit-your-own-spend angle will not rank.
+
+---
+
+## 51. npm v12 Install Script Security Changes — General News Coverage
+
+**Why it's trending:** GitHub announced npm v12 breaking changes on June 9, 2026, turning install scripts off by default. The Hacker News published "GitHub to Disable npm Install Scripts by Default to Stop Supply Chain Attacks" on June 11, 2026. Directly linked to the Miasma supply chain worm (already in good-contenders #14).
+
+**Who dominates:**
+- The Hacker News (Jun 11 — security-focused news: "GitHub to Disable npm Install Scripts by Default to Stop Supply Chain Attacks")
+- GitHub official changelog (github.blog/changelog/2026-06-09, Jun 9 — primary announcement)
+- byteiota.com (Jun 9 — "npm v12 Breaking Changes: What Breaks in July 2026" — quick explainer)
+- daily.dev (Jun 9 — curated link, developer community discussion)
+- R/node (Jun 10 — link post with comments)
+- X/Twitter (watilde, Jun 10 — widely shared summary thread)
+
+**Why it's hard to rank (general security angle):** The Hacker News dominates the "npm install scripts security" query with same-day coverage. BleepingComputer will publish a security-focused developer remediation guide within 24–48 hours. GitHub's official changelog is the definitive reference. **However**, the specific **developer migration guide angle** ("what specifically breaks in my Node.js project and how to migrate before July") remains unclaimed — see good-contenders #17.
