@@ -1,6 +1,6 @@
 # High Competition
 *Real trends but already saturated with content. Hard for a solo blogger to rank page 1.*
-*Last updated: 2026-06-11*
+*Last updated: 2026-06-12*
 
 ---
 
@@ -1100,3 +1100,23 @@ __CWD_TRACK__$(pwd)"
 - X/Twitter (watilde, Jun 10 — widely shared summary thread)
 
 **Why it's hard to rank (general security angle):** The Hacker News dominates the "npm install scripts security" query with same-day coverage. BleepingComputer will publish a security-focused developer remediation guide within 24–48 hours. GitHub's official changelog is the definitive reference. **However**, the specific **developer migration guide angle** ("what specifically breaks in my Node.js project and how to migrate before July") remains unclaimed — see good-contenders #17.
+---
+
+## 52. Miasma Worm — General News and Security Research Coverage (Previously a Good Contender — Competition Caught Up)
+
+**Why it's trending:** The Miasma supply chain worm (active June 1–9, 2026) was the first supply chain attack to specifically target AI coding tools as the primary trigger mechanism — injecting malicious hooks into `.claude/settings.json`, `.gemini/settings.json`, `.cursor/rules/`, and `.vscode/tasks.json`. It hit 57+ npm packages (408K+ monthly downloads), 32 Red Hat Cloud Services npm packages, and 73 Microsoft Azure GitHub repositories. Credentials for GitHub, npm, AWS, Azure, GCP, Kubernetes, and SSH were stolen and exfiltrated. TechCrunch and 404 Media drove high developer search volume after June 8 coverage.
+
+**Who dominates (as of June 12, 2026):**
+- TechCrunch / Zack Whittaker (Jun 8 — "Microsoft's open source tools were hacked to steal passwords of AI developers" — primary mainstream news article, highest organic search authority for "Miasma worm" queries)
+- BleepingComputer (Jun 9–12 — developer-facing remediation guide with specific pre-open file checks and credential rotation order — now the definitive developer incident response resource)
+- StepSecurity blog (Jun 3 + Jun 5 — two forensic analysis posts, including the five-file signature and the Phantom Gyp technique deep-dive — primary security research authority)
+- SafeDep (Jun 5 — "Miasma Worm Targets AI Coding Agents via GitHub Repos" — covers the AI coding agent trigger specifics)
+- 404 Media (Jun 8 — "Microsoft Hacked to Deliver Malware to Claude and Gemini Users" — high-traffic consumer-facing news)
+- Morphisec (Jun 8 — "It's In Your AI Assistant Now: Shai-Hulud Wave 3 and the Miasma Worm Targeting npm" — historical wave analysis)
+- Rescana (Jun 7 — MITRE ATT&CK mapping)
+- Simon Willison (Jun 9–12 — security analysis post, as predicted)
+- HeroDevs, Upwind, ComplexDiscovery, HackerNoon — additional coverage filling remaining angles
+
+**Why it's hard to rank:** BleepingComputer published a developer-facing remediation guide (as predicted in the good-contenders entry when it was added June 9). This is the single most-trusted independent source for "how do I check if I'm affected and what do I do" queries from developers. TechCrunch and 404 Media dominate the news/awareness queries. StepSecurity and SafeDep dominate the security research queries with IoCs, forensic detail, and detection signatures. Simon Willison's analysis, once published, covers the developer-thought-leader angle. A solo blogger entering on June 12 would rank behind all five of these sources for any query in the "Miasma worm" namespace. The window was genuinely narrow (June 8–11) and is now closed.
+EOF; echo "
+__CWD_TRACK__$(pwd)"
