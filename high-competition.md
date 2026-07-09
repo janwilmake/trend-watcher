@@ -1,6 +1,6 @@
 # High Competition
 *Real trends but already saturated with content. Hard for a solo blogger to rank page 1.*
-*Last updated: 2026-06-18*
+*Last updated: 2026-07-09*
 
 ---
 
@@ -1195,4 +1195,75 @@ __CWD_TRACK__$(pwd)"
 
 **Why it's hard to rank:** Every angle of the Fable 5 ban story is now covered by authoritative sources across multiple categories: the news angle (BBC, InfoQ), the security angle (Snyk), the architectural implications (Gravitee.io), the pricing/credits transition (claudefa.st), the developer reaction (Simon Willison, Reddit), and the political backstory (Trilogy AI). The official Anthropic statement and suspension notice will dominate all brand-related queries. InfoQ's developer-focused summary with its comprehensive source links is the definitive reference piece. A solo blogger publishing general coverage now would be 8th+ on every relevant query. *(See good-contenders #27 and #28 for specific uncovered angles: the GLM-5.2-as-replacement practitioner comparison, and the multi-model failover architecture guide — both remain open as of June 18.)*
 HC_ENTRY; echo "
+__CWD_TRACK__$(pwd)"
+---
+
+## 40. GhostApproval — AI Coding Agent Symlink Vulnerability
+
+**Why it's trending:** Wiz Research published "GhostApproval: A Trust Boundary Gap in AI Coding Assistants" on **July 8, 2026** — a proof-of-concept attack where a malicious repository uses a symlink disguised as a config file (`project_settings.json` → `~/.ssh/authorized_keys`) to trick AI coding agents into writing attacker-controlled content to sensitive files outside the workspace. Affects six tools: Amazon Q Developer, Claude Code, Augment, Cursor, Google Antigravity, and Windsurf. Three vendors (AWS, Cursor, Google) shipped fixes; Augment and Windsurf have not patched. Anthropic disputed the classification, calling it "outside our threat model," but Claude Code's symlink warning already shipped in February 2026. The Wiz blog post includes a working proof-of-concept (4-line bash). The story hit the security press within hours of publication.
+
+**Who dominates:**
+- Wiz Research blog (July 8 — the primary technical source, includes PoC, vendor-by-vendor findings, disclosure timeline)
+- The Hacker News / thehackernews.com (July 9 — comprehensive security news coverage)
+- The Register (July 8 — "Bug in top AI coding agents shows that Unix-era security headaches never really die" — strong headline, developer audience)
+- SecurityWeek (July 9 — "AI Coding Tools Tricked Into Hacking Developer Machine via Decades-Old Technique")
+- SC Media (July 9 — detailed vendor-by-vendor breakdown including CVE numbers)
+- The Next Web (July 8 — "One symlink trick breaks 6 top AI coding agents")
+- Infosecurity Magazine (July 9)
+- CybersecurityNews.com (July 9)
+- Tom's Hardware (July 9)
+
+**Why it's hard to rank:** Within 24 hours of publication, eight major security and tech publications covered the story comprehensively. Wiz's own blog post (the primary source) will dominate "GhostApproval" queries indefinitely. The Register and SecurityWeek own the "developer-facing security news" angle. The Hacker News covers the broader audience. No meaningful angle remains uncovered for a general "what is GhostApproval" or "which tools are affected" piece. A narrow developer-facing "hardening guide" angle (specifically: how to sanitize a repo before running an AI coding agent on it) might still have a small window, but amux.io's "AI Agent Security Hardening" guide (May 5, 2026) already covers the defense-in-depth approach including directory scoping and config file auditing.
+
+---
+
+## 41. HalluSquatting — AI Coding Assistants Hallucinate Package Names, Attackers Register Them
+
+**Why it's trending:** Researchers published "HalluSquatting" on **July 8, 2026** — an attack that weaponizes AI coding assistant hallucinations about package names. When an AI assistant consistently invents a plausible-but-nonexistent package name (e.g., `react-codeshift`), an attacker can register that name on npm/PyPI and wait for AI agents to install it automatically. Ars Technica and others confirmed 9 major AI tools are vulnerable. Builds on earlier "slopsquatting" research from Aikido Security (January 2026, where `react-codeshift` was registered by a researcher before an attacker could). Palo Alto Unit 42 separately described 250,000 hallucinated domains available for "phantom squatting."
+
+**Who dominates:**
+- The Hacker News / thehackernews.com (July 8 — primary write-up with botnet context)
+- Ars Technica (July 8 — "Hackers can use 9 of the most popular AI tools to assemble massive botnets")
+- Tom's Hardware (July 9 — "New hack exploits AI hallucinations to trick agents into running malicious code")
+- Kusari.dev blog (March 18, 2026 — comprehensive background on slopsquatting; already widely indexed)
+- Aikido Security blog (January 2026 — the foundational `react-codeshift` discovery post)
+- Darktrace blog (2023 — original "package hallucination attacks" analysis)
+
+**Why it's hard to rank:** The Hacker News and Ars Technica are the authoritative sources for this new term. The "slopsquatting" predecessor angle is already covered by Kusari and Aikido. The practical mitigation advice (verify packages before installing, use SCA tools that flag newly registered packages) is covered across multiple security blog posts. No unclaimed angle exists for a solo blogger on this topic within the current news cycle.
+
+---
+
+## 42. SpaceX Acquires Cursor for $60 Billion
+
+**Why it's trending:** SpaceX announced on **June 16, 2026** — just days after its historic IPO (the largest ever) — that it is buying Anysphere (the company behind Cursor AI) for $60 billion in an all-stock deal. The acquisition is the largest venture-backed startup acquisition in history. SpaceX already merged xAI (Elon Musk's AI lab) in February 2026, and the Cursor deal extends the vertical integration: xAI model → Cursor IDE → SpaceX cloud infrastructure. Cursor has $2B ARR and is used by over half of Fortune 500 companies. The deal positions SpaceX/xAI's Grok models as the underlying intelligence for Cursor's next-generation Grok Build developer environment. The story generated massive coverage across all tech and business press.
+
+**Who dominates:**
+- CNBC (June 16 — first major wire report)
+- Reuters (June 16 — official SEC filing-based coverage)
+- Bloomberg (June 16 — "SpaceX Cements $60 Billion Cursor Takeover Following IPO")
+- CBS News (June 16)
+- AlphaMatch.ai (June 17 — detailed strategic analysis of what the acquisition means)
+- YouTube (multiple videos including Riley Brown's 70K-view analysis, June 16)
+
+**Why it's hard to rank:** Story broke across all major financial and tech press simultaneously on June 16. Reuters, CNBC, Bloomberg, and CBS News dominate the primary news queries. The "strategic implications" angle is covered by AlphaMatch.ai and YouTube analysis videos. The "what this means for developers" angle will be covered by Cursor's own communications and major tech press within a week of deal closing (expected Q3 2026). Three weeks have already passed since the announcement, making this firmly high-competition for any new solo blog post.
+
+---
+
+## 43. Claude Sonnet 5 — General Launch Coverage
+
+**Why it's trending:** Anthropic released Claude Sonnet 5 on **June 30, 2026** — a major upgrade to the Sonnet line that became the new default model for all Free and Pro users on launch day. Claims near-Opus performance at Sonnet pricing ($2/$10 per MTok introductory, through August 31, 2026). Key changes: adaptive thinking on by default, new tokenizer producing ~30% more tokens, temperature/top_p/top_k parameters now return 400 errors at non-default values, real-time cybersecurity safeguards as first Sonnet-tier model. Available immediately in Claude Code and across all major cloud platforms.
+
+**Who dominates:**
+- Anthropic official blog (anthropic.com/news/claude-sonnet-5, June 30 — primary authority)
+- Anthropic official platform docs (whats-new-sonnet-5, migration-guide — authoritative reference)
+- SitePoint (July 3 — "Claude Sonnet 5: The Developer's Guide to Anthropic's New Default Model" — comprehensive developer guide with pricing transition math)
+- Coursiv (June 30 — detailed quick facts + FAQ)
+- Eden AI (July 2 — pricing and benchmarks table)
+- explainx.ai (July 1 — product overview)
+- Simon Willison (June 30 — brief but authoritative developer take)
+- Reddit r/ClaudeAI + r/Anthropic (official announcement threads)
+
+**Why it's hard to rank:** Anthropic's own docs and blog dominate all primary queries. SitePoint published a comprehensive developer guide on July 3 covering the migration checklist, pricing transition, and production implementation. Coursiv and Eden AI cover the "what is it and how much does it cost" queries. General Claude Sonnet 5 review content is saturated within 9 days of launch. *(See good-contenders #28 for the specific tokenizer migration trap angle, which remains uncovered as of July 9.)*
+
+HC_ENTRIES; echo "
 __CWD_TRACK__$(pwd)"
