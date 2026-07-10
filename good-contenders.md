@@ -1,6 +1,6 @@
 # Good Contenders
 *Trends with low competition, specific enough to rank for, high informational intent.*
-*Last updated: 2026-07-09*
+*Last updated: 2026-07-10*
 
 ---
 
@@ -202,7 +202,11 @@
 ---
 
 ## 22. Prometheus by Firecrawl — The "Plain-English Web Data Collector" That Writes and Heals Its Own Code
-<!-- Added: 2026-06-14 -->
+<!-- Added: 2026-06-14 | ARCHIVED: 2026-07-10 — see archive/2026-07.md -->
+
+**Competition has caught up.** The LAST CHANCE June 16 window passed 24 days ago. Firecrawl community tutorials filed; competition resolved. Moved to archive/2026-07.md.
+
+---
 
 **Why it's trending:** Firecrawl launched **Prometheus** on **June 13, 2026** — #3 on Product Hunt (222 upvotes) — an experimental "Forward Deployed Agent" for web data. The concept: describe the web data you want in plain English ("top 5 Hacker News stories with title, URL, and points"), Prometheus runs its own Firecrawl-powered agent against the live site, writes a TypeScript collector using the Firecrawl SDK, runs it to verify the output actually works, and hands you back the verified script plus sample data. You then either keep the code and run it yourself (fully portable — just `npm i @mendable/firecrawl-js` and `tsx script.ts`), or deploy it to Firecrawl's hosted infrastructure and get a Deployment: a scheduled run, an on-demand API endpoint, or both. The genuinely novel layer is **self-healing**: when a target site's structure changes (the inevitable fate of every scraper), Prometheus automatically re-invokes the agent to repair or rebuild the collector and appends the corrected version — zero intervention required. The launch thread on Product Hunt explains the origin story clearly: Firecrawl's team was spending hours doing this manually for customers ("Forward Deployed Engineer" work — scoping the data request, testing approaches, building the collector). Prometheus automates that workflow for everyone. The free trial with Claude Fable 5 (through Sunday June 15) is driving immediate adoption and X/LinkedIn engagement. The LinkedIn announcement has 50+ comments within 24 hours. Firecrawl has 120K+ GitHub stars and $8M+ ARR — their launches get serious developer attention. Vercel's own ecosystem is watching this because Prometheus is positioned as the "describe the data, get the code" counterpart to what v0 did for UI components.
 
@@ -224,7 +228,11 @@ __CWD_TRACK__$(pwd)"
 ---
 
 ## 25. Novu Connect — The "Deploy Your Claude Agent to Slack, Teams, and WhatsApp in 2 Minutes" Setup Guide
-<!-- Added: 2026-06-17 -->
+<!-- Added: 2026-06-17 | ARCHIVED: 2026-07-10 — see archive/2026-07.md -->
+
+**Window expired.** Launched June 15 — now 25 days old. TLDR Dev and newsletter cycles completed. Community guides filed. Moved to archive/2026-07.md.
+
+---
 
 **Why it's trending:** Novu shipped **Novu Connect** (`npx novu connect`) on **June 15, 2026** — Product Hunt #1 of the day (390+ upvotes). It solves a genuine developer pain point: you've built a Claude Managed Agent, and now you need to get it into Slack, Teams, WhatsApp, email, and Telegram without hand-wiring each channel's auth, SDKs, and delivery infrastructure. Novu Connect is explicitly positioned as an "Agent Communication Infrastructure" (ACI) layer — one command connects your Claude agent to every messaging channel your customers use. Templates ship with prompts, MCP tool wiring, and channel configuration already set up. Real Python shared it on LinkedIn June 15. The open-source GitHub repo makes it inspectable and composable. The tagline — "Two minutes from template to live agent. No infrastructure to babysit" — is the exact promise developers who've spent 3+ hours debugging Slack webhooks for their Claude agent want to hear. The product is brand-new (launched Sunday June 15) and no independent practitioner walkthroughs exist yet.
 
@@ -247,7 +255,11 @@ __CWD_TRACK__$(pwd)"
 ---
 
 ## 26. AEVS (Agent Execution Verification System) — The "Tamper-Evident Tool Call Receipts" Setup Guide for Claude Agents
-<!-- Added: 2026-06-17 -->
+<!-- Added: 2026-06-17 | ARCHIVED: 2026-07-10 — see archive/2026-07.md -->
+
+**Window expired.** Launched June 10–15 — now 25+ days old. Expected developer writing wave did not materialize at scale. Moved to archive/2026-07.md.
+
+---
 
 **Why it's trending:** Fetch.ai launched **AEVS** (Agent Execution Verification System) on **June 10–15, 2026** — Product Hunt listing active this week (June 15–17 leaderboard, 133+ upvotes, 319 followers). Free, open-source SDK (GitHub: fetchai/AEVS-sdk). AEVS addresses a production readiness gap that every developer deploying AI agents in trust-sensitive environments faces: *what did the agent actually execute, and can you prove it?* Chat history can be altered, fragile logs can be lost, and neither provides tamper-evident proof. AEVS records every agent tool call as a **signed execution receipt** — tool name, inputs, outputs, status, and timing — creating an auditable record that cannot be retroactively altered. Drop-in SDK for LangChain/LangGraph, MCP tools, and custom agent stacks. The Product Hunt maker post explicitly targets compliance-sensitive use cases: customer support workflows, financial operations, internal tools, compliance tasks, data pipelines, API automation. The question in the PH comments — "where's the boundary between observability and proof?" — is exactly the question compliance teams and enterprise buyers are asking. As AI agents start taking consequential actions (executing trades, modifying databases, sending customer communications), "what the agent said" is not sufficient — teams need "what the agent did" with cryptographic proof.
 
@@ -269,7 +281,11 @@ __CWD_TRACK__$(pwd)"
 ---
 
 ## 27. GLM-5.2 as Your Fable 5 Replacement — Real-Workload Cost and Quality Test in Claude Code
-<!-- Added: 2026-06-18 -->
+<!-- Added: 2026-06-18 | ARCHIVED: 2026-07-10 — see archive/2026-07.md -->
+
+**Competition has caught up.** Matt Wolfe published a 72K-view YouTube guide July 1. Lushbinary, Developers Digest, Kritm, and Techsy.io all have written guides. Fable 5 suspension framing is no longer urgent. Moved to archive/2026-07.md.
+
+---
 
 **Why it's trending:** Z.ai (formerly Zhipu AI) released **GLM-5.2** on **June 13–17, 2026** — a 744B parameter open-weights model (MIT license) with a 1M token context window that benchmarks within a few points of Claude Opus 4.8 on Terminal-Bench 2.1 (81.0 vs. 85.0) and **beats every closed model including GPT-5.5 on frontend coding**. The timing is not coincidental: Z.ai released GLM-5.2 "opportunistically" the same weekend the US government suspended Fable 5 and Mythos 5 (June 12). Latent Space AINews calls GLM-5.2 "our new top open model in the world" (June 17). The model runs via an Anthropic-compatible endpoint — meaning it drops into Claude Code, Cline, Kilo Code, and OpenClaw with a `base_url` swap and model name change, exactly like Kimi K2.x did. API pricing: $1.40/M input and $4.40/M output — roughly **7× cheaper than Claude Opus 4.8** ($10/$50) and a significant discount vs. Fable 5 ($10/$50). Open weights are pending under MIT (expected "next week" from June 13). The VentureBeat article (June 16) is titled "Z.ai's open-weights GLM-5.2 beats GPT-5.5 on multiple long-horizon coding benchmarks for 1/6th the cost." Simon Willison's June 17 post calls it "probably the most powerful text-only open weights LLM." Developer reaction: Kilo Code confirmed day-one integration; Cline IDE posted "GLM-5.2 is a game changer. Available in Cline now!" YouTube video published June 17: "China's GLM 5.2 VS Claude Code: Who Wins?" (with the framing "Claude Code has become unusable... GLM feels so much better and faster").
 
@@ -296,7 +312,11 @@ The specific opportunity here is the **"I switched my Claude Code workflow to GL
 ---
 
 ## 28. AI Model Concentration Risk — The Engineering Guide to Multi-Model Failover for Production Agent Pipelines
-<!-- Added: 2026-06-18 -->
+<!-- Added: 2026-06-18 | ARCHIVED: 2026-07-10 — see archive/2026-07.md -->
+
+**Window expired and competition filled the gap.** Fable 5 returned to GA — the suspension framing is no longer urgent. Truefoundry (June 15) and AY Automate (July 6) now cover the multi-model failover architecture space. Moved to archive/2026-07.md.
+
+---
 
 **Why it's trending:** The June 12, 2026 US government export control directive that switched off Fable 5 and Mythos 5 globally within hours revealed a new category of infrastructure risk: **model concentration risk**. Teams that had built production pipelines on Fable 5 found their workflows broken mid-session, with no warning and no transition window. Gravitee.io (June 17) was the first to name this explicitly as an *architecture problem*: "Model access is not a stable utility you provision once. It is a dependency that can be withdrawn for reasons that have nothing to do with your architecture, your contract, or your uptime." Snyk (June 14) put it plainly: "model redundancy is now a resilience requirement, not just a cost or performance consideration." The Trilogy AI Substack and Windows Forum (June 14) both noted that the Fable 5 event created "a new category of dependency risk" for teams building on hosted frontier models.
 
