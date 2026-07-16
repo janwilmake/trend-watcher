@@ -1,6 +1,6 @@
 # High Competition
 *Real trends but already saturated with content. Hard for a solo blogger to rank page 1.*
-*Last updated: 2026-07-14*
+*Last updated: 2026-07-16*
 
 ---
 
@@ -1206,7 +1206,7 @@ HC_ENTRY; echo "
 
 ## 41. HalluSquatting — AI Coding Assistants Hallucinate Package Names, Attackers Register Them
 
-**Why it's trending:** Researchers published "HalluSquatting" on **July 8, 2026** — an attack that weaponizes AI coding assistant hallucinations about package names. When an AI assistant consistently invents a plausible-but-nonexistent package name (e.g., `react-codeshift`), an attacker can register that name on npm/PyPI and wait for AI agents to install it automatically. Ars Technica and others confirmed 9 major AI tools are vulnerable. Builds on earlier "slopsquatting" research from Aikido Security (January 2026, where `react-codeshift` was registered by a researcher before an attacker could). Palo Alto Unit 42 separately described 250,000 hallucinated domains available for "phantom squatting."
+**Why it's trending:** Researchers published "HalluSquatting" on **July 8, 2026** (arXiv 2607.07433) — an attack that weaponizes AI coding assistant hallucinations about package names and skill names. When an AI assistant consistently invents a plausible-but-nonexistent resource name, an attacker can register that name and wait for AI agents to fetch and execute it automatically. Up to 100% hallucination rate in skill installation scenarios. Tested against Cursor, Windsurf, GitHub Copilot, Cline, Gemini CLI, and three personal assistants. Enables remote code execution and botnet-scale malware distribution. Ars Technica, The Hacker News, and DevOps.com all covered. Palo Alto Unit 42 separately described "phantom squatting" for hallucinated domains (June 30, 2026). **Updated July 16:** avinashsangle.com published a comprehensive practitioner defence guide on July 15 with working `PreToolUse` hook code.
 
 **Who dominates:**
 - The Hacker News / thehackernews.com (July 8 — primary write-up with botnet context)
@@ -1460,3 +1460,23 @@ __CWD_TRACK__$(pwd)"
 - codersera.com (May 28) — covers the legacy alias migration in the context of the 75% permanent price cut.
 
 **Why it's hard to rank:** Ten independent posts published between April 24 and July 8 cover this migration from every angle: the simple one-line fix, the thinking-mode trap, the enterprise business case, the LangChain-specific migration, the AI gateway routing considerations, and the manager checklist. byteiota.com and WebCraft are the strongest competitors for the practitioner guide angle. The deadline is July 24 — search volume will spike this week but so will the competition; any new post enters a field with well-established guides already indexed for two months. The "deepseek-reasoner maps to Flash not Pro" trap is byteiota's strongest exclusive claim, and it's now been indexed and circulated since June 13.
+---
+
+## 58. Framer AI Agents / Framer 3.0 — General Tutorial Coverage
+
+**Why it's trending:** Framer launched Framer 3.0 on June 16, 2026, introducing Framer Agents (AI built directly into the canvas — builds pages, manages CMS, writes SEO metadata, creates code components), Branching (safe client-work reviews), and a new Community. Product Hunt #1 of the day on launch day. External Agents support lets Claude Code, Cursor, and Codex connect to Framer projects via the `@framer/agent` npm package. The redesign positions Framer as "Cursor for design." Verified on Product Hunt July 15 daily leaderboard (Framer AI Agents — 694 followers).
+
+**Who dominates:**
+- Framer official blog (framer.com/blog/framer-3/, June 16 — primary authority for all "Framer AI Agents" brand queries)
+- Framer official technical blog (framer.com/blog/building-framer-agents/ — detailed architectural explanation of canvas-native agent design, external agent integration)
+- Framer official AI hub (framer.com/ai/ — product page, always-on SEO)
+- Sergei Chyrkov (sergeichyrkov.com, July 15 — "Framer AI Agents: The Complete Guide (2026)" — thorough practitioner walkthrough covering canvas editing, CMS content generation, branching for client sites, and external Claude Code/Cursor/Codex connection; includes a video walkthrough)
+- The Bright Method / bybrightstudios.com (June 22 — "Framer Agents: A Practical Guide for 2026" — strong B2B SaaS angle, Branching explanation, FAQ, honest limitations)
+- YouTube Zander Whitehurst (Instagram reel, June 24 — "Framer just made AI useful for designers" — design-audience coverage)
+- YourGPT blog (general "How to Add AI Agent to Your Framer Website in 2026" — auto-generated style but indexed)
+
+**Why it's hard to rank:** Framer's own blog (announcement + technical companion) is the authoritative source. Sergei Chyrkov published a complete guide on July 15 covering every angle from canvas editing to external agent connection — exactly the "I tried it and here's what happened" format. The Bright Method covers the B2B SaaS / client-work angle. Both posts are indexed and distributed. A solo blogger entering now needs an extremely specific niche (e.g., "Connect Claude Code to Framer for automated blog content generation" or "Framer Agents for e-commerce CMS automation") to find unclaimed ranking space.
+
+
+EOF; echo "
+__CWD_TRACK__$(pwd)"
